@@ -1,0 +1,20 @@
+05/17/2022 10:55:49 - INFO: dict_items([('base_model', 'DyMADC'), ('model', 'default'), ('test_subset', 0.25), ('min_time', 4), ('max_time', 9), ('dataset', 'fb-forum'), ('dataname', 'fb-forum_8_by_edgesNumber_0.25'), ('time_steps', 8), ('GPU_ID', 0), ('epochs', 30), ('batch_size', 256), ('featureless', 'True'), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', 'False'), ('structural_head_config', '16,8,8'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', 'True'), ('optimizer', 'adam'), ('seed', 7), ('save_dir', '/output'), ('log_dir', '/log'), ('csv_dir', '/csv'), ('model_dir', '/model'), ('window', -1)])
+05/17/2022 10:57:06 - INFO: # train: 25290, # test: 8062
+05/17/2022 10:57:18 - WARNING: From D:\Anaconda3\envs\tf_1\lib\site-packages\tensorflow\python\ops\sparse_grad.py:281: calling sparse_reduce_sum (from tensorflow.python.ops.sparse_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+05/17/2022 10:57:47 - INFO: Mini batch Iter: 0 train_loss= 13.57207 graph_loss= 13.49346 reg_loss= 0.07861
+05/17/2022 10:57:48 - INFO: Mini batch Iter: 1 train_loss= 12.11365 graph_loss= 12.03546 reg_loss= 0.07819
+05/17/2022 10:57:48 - INFO: Mini batch Iter: 2 train_loss= 11.20713 graph_loss= 11.12934 reg_loss= 0.07779
+05/17/2022 10:57:49 - INFO: Mini batch Iter: 3 train_loss= 10.57587 graph_loss= 10.49846 reg_loss= 0.07741
+05/17/2022 10:57:49 - INFO: Time for epoch : 17.969038009643555
+05/17/2022 13:41:44 - INFO: dict_items([('base_model', 'DyMADC'), ('model', 'default'), ('test_subset', 0.25), ('min_time', 8), ('max_time', 9), ('dataset', 'fb-forum'), ('dataname', 'fb-forum_8_by_edgesNumber_0.25'), ('time_steps', 8), ('GPU_ID', 0), ('epochs', 30), ('batch_size', 256), ('featureless', 'True'), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', 'False'), ('structural_head_config', '16,8,8'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', 'True'), ('optimizer', 'adam'), ('seed', 7), ('save_dir', '/output'), ('log_dir', '/log'), ('csv_dir', '/csv'), ('model_dir', '/model'), ('window', -1)])
+05/17/2022 13:42:12 - INFO: # train: 25290, # test: 8430
+05/17/2022 13:42:24 - WARNING: From D:\Anaconda3\envs\tf_1\lib\site-packages\tensorflow\python\ops\sparse_grad.py:281: calling sparse_reduce_sum (from tensorflow.python.ops.sparse_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+05/17/2022 13:42:52 - INFO: Mini batch Iter: 0 train_loss= 13.61928 graph_loss= 13.54067 reg_loss= 0.07861
+05/17/2022 13:42:53 - INFO: Mini batch Iter: 1 train_loss= 12.05505 graph_loss= 11.97686 reg_loss= 0.07819
+05/17/2022 13:42:54 - INFO: Mini batch Iter: 2 train_loss= 11.18551 graph_loss= 11.10772 reg_loss= 0.07779
+05/17/2022 13:42:54 - INFO: Mini batch Iter: 3 train_loss= 10.63281 graph_loss= 10.55540 reg_loss= 0.07741
+05/17/2022 13:42:54 - INFO: Time for epoch : 17.480781078338623

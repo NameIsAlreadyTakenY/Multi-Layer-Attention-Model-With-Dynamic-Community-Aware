@@ -1,0 +1,1504 @@
+05/21/2022 17:29:37 - INFO: dict_items([('base_model', 'DyMADC'), ('model', 'default'), ('test_subset', 0.1), ('min_time', 1), ('max_time', 9), ('dataset', 'fb-forum'), ('dataname', 'fb-forum_8_by_edgesNumber_0.1'), ('time_steps', 9), ('GPU_ID', 0), ('epochs', 30), ('batch_size', 256), ('featureless', 'True'), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', 'False'), ('structural_head_config', '16,8,8'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '64'), ('position_ffn', 'True'), ('optimizer', 'adam'), ('seed', 7), ('save_dir', '/output'), ('log_dir', '/log'), ('csv_dir', '/csv'), ('model_dir', '/model'), ('window', -1)])
+05/21/2022 17:29:42 - INFO: # train: 30348, # test: 3372
+05/21/2022 17:29:55 - WARNING: From D:\Anaconda3\envs\tf_1\lib\site-packages\tensorflow\python\ops\sparse_grad.py:281: calling sparse_reduce_sum (from tensorflow.python.ops.sparse_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+05/21/2022 17:30:27 - INFO: Mini batch Iter: 0 train_loss= 13.30307 graph_loss= 13.22558 reg_loss= 0.07749
+05/21/2022 17:30:28 - INFO: Mini batch Iter: 1 train_loss= 12.40874 graph_loss= 12.33163 reg_loss= 0.07711
+05/21/2022 17:30:29 - INFO: Mini batch Iter: 2 train_loss= 11.87758 graph_loss= 11.80083 reg_loss= 0.07675
+05/21/2022 17:30:29 - INFO: Mini batch Iter: 3 train_loss= 11.60975 graph_loss= 11.53334 reg_loss= 0.07640
+05/21/2022 17:30:29 - INFO: Time for epoch : 20.01027512550354
+05/21/2022 17:30:35 - INFO: Test results at epoch 0: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35CE2F0>, {'operator_hadamard': [0.7175373760464028, 0.7175373760464028]}) best is : operator_hadamard 0.7175373760464028
+05/21/2022 17:30:36 - INFO: Mini batch Iter: 0 train_loss= 11.43883 graph_loss= 11.36276 reg_loss= 0.07607
+05/21/2022 17:30:37 - INFO: Mini batch Iter: 1 train_loss= 11.29694 graph_loss= 11.22120 reg_loss= 0.07573
+05/21/2022 17:30:38 - INFO: Mini batch Iter: 2 train_loss= 11.25310 graph_loss= 11.17770 reg_loss= 0.07540
+05/21/2022 17:30:39 - INFO: Mini batch Iter: 3 train_loss= 11.20779 graph_loss= 11.13273 reg_loss= 0.07506
+05/21/2022 17:30:39 - INFO: Time for epoch : 1.2689876556396484
+05/21/2022 17:30:41 - INFO: Test results at epoch 1: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017A9C50FE18>, {'operator_hadamard': [0.7537920003405337, 0.7537920003405337]}) best is : operator_hadamard 0.7537920003405337
+05/21/2022 17:30:42 - INFO: Mini batch Iter: 0 train_loss= 11.16798 graph_loss= 11.09326 reg_loss= 0.07472
+05/21/2022 17:30:43 - INFO: Mini batch Iter: 1 train_loss= 11.16118 graph_loss= 11.08679 reg_loss= 0.07439
+05/21/2022 17:30:44 - INFO: Mini batch Iter: 2 train_loss= 11.16470 graph_loss= 11.09064 reg_loss= 0.07405
+05/21/2022 17:30:44 - INFO: Mini batch Iter: 3 train_loss= 11.16043 graph_loss= 11.08671 reg_loss= 0.07371
+05/21/2022 17:30:44 - INFO: Time for epoch : 1.2622184753417969
+05/21/2022 17:30:46 - INFO: Test results at epoch 2: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35EBF28>, {'operator_hadamard': [0.7648177493389845, 0.7648177493389845]}) best is : operator_hadamard 0.7648177493389845
+05/21/2022 17:30:47 - INFO: Mini batch Iter: 0 train_loss= 11.13618 graph_loss= 11.06279 reg_loss= 0.07338
+05/21/2022 17:30:48 - INFO: Mini batch Iter: 1 train_loss= 11.13046 graph_loss= 11.05741 reg_loss= 0.07305
+05/21/2022 17:30:49 - INFO: Mini batch Iter: 2 train_loss= 11.13498 graph_loss= 11.06225 reg_loss= 0.07272
+05/21/2022 17:30:50 - INFO: Mini batch Iter: 3 train_loss= 11.08541 graph_loss= 11.01301 reg_loss= 0.07240
+05/21/2022 17:30:50 - INFO: Time for epoch : 1.2991292476654053
+05/21/2022 17:30:52 - INFO: Test results at epoch 3: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35F0EA0>, {'operator_hadamard': [0.7728020003546054, 0.7728020003546054]}) best is : operator_hadamard 0.7728020003546054
+05/21/2022 17:30:53 - INFO: Mini batch Iter: 0 train_loss= 11.10980 graph_loss= 11.03771 reg_loss= 0.07209
+05/21/2022 17:30:54 - INFO: Mini batch Iter: 1 train_loss= 11.14037 graph_loss= 11.06859 reg_loss= 0.07179
+05/21/2022 17:30:55 - INFO: Mini batch Iter: 2 train_loss= 11.11298 graph_loss= 11.04149 reg_loss= 0.07149
+05/21/2022 17:30:56 - INFO: Mini batch Iter: 3 train_loss= 11.06047 graph_loss= 10.98926 reg_loss= 0.07121
+05/21/2022 17:30:56 - INFO: Time for epoch : 1.3247718811035156
+05/21/2022 17:30:58 - INFO: Test results at epoch 4: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35F07B8>, {'operator_hadamard': [0.7834336553629146, 0.7834336553629146]}) best is : operator_hadamard 0.7834336553629146
+05/21/2022 17:30:59 - INFO: Mini batch Iter: 0 train_loss= 11.07634 graph_loss= 11.00541 reg_loss= 0.07094
+05/21/2022 17:31:00 - INFO: Mini batch Iter: 1 train_loss= 11.05790 graph_loss= 10.98723 reg_loss= 0.07067
+05/21/2022 17:31:01 - INFO: Mini batch Iter: 2 train_loss= 11.09420 graph_loss= 11.02377 reg_loss= 0.07043
+05/21/2022 17:31:01 - INFO: Mini batch Iter: 3 train_loss= 11.00498 graph_loss= 10.93478 reg_loss= 0.07019
+05/21/2022 17:31:01 - INFO: Time for epoch : 1.3068270683288574
+05/21/2022 17:31:03 - INFO: Test results at epoch 5: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35CE158>, {'operator_hadamard': [0.7920530652262932, 0.7920530652262932]}) best is : operator_hadamard 0.7920530652262932
+05/21/2022 17:31:04 - INFO: Mini batch Iter: 0 train_loss= 11.05556 graph_loss= 10.98558 reg_loss= 0.06998
+05/21/2022 17:31:05 - INFO: Mini batch Iter: 1 train_loss= 10.99099 graph_loss= 10.92120 reg_loss= 0.06979
+05/21/2022 17:31:06 - INFO: Mini batch Iter: 2 train_loss= 11.04652 graph_loss= 10.97690 reg_loss= 0.06962
+05/21/2022 17:31:07 - INFO: Mini batch Iter: 3 train_loss= 10.98137 graph_loss= 10.91191 reg_loss= 0.06946
+05/21/2022 17:31:07 - INFO: Time for epoch : 1.252610445022583
+05/21/2022 17:31:09 - INFO: Test results at epoch 6: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35CE840>, {'operator_hadamard': [0.8004007164577732, 0.8004007164577732]}) best is : operator_hadamard 0.8004007164577732
+05/21/2022 17:31:10 - INFO: Mini batch Iter: 0 train_loss= 10.92821 graph_loss= 10.85890 reg_loss= 0.06932
+05/21/2022 17:31:11 - INFO: Mini batch Iter: 1 train_loss= 10.99375 graph_loss= 10.92456 reg_loss= 0.06919
+05/21/2022 17:31:12 - INFO: Mini batch Iter: 2 train_loss= 10.88649 graph_loss= 10.81742 reg_loss= 0.06907
+05/21/2022 17:31:13 - INFO: Mini batch Iter: 3 train_loss= 10.83237 graph_loss= 10.76340 reg_loss= 0.06898
+05/21/2022 17:31:13 - INFO: Time for epoch : 1.2943599224090576
+05/21/2022 17:31:15 - INFO: Test results at epoch 7: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35CEE18>, {'operator_hadamard': [0.803802008797592, 0.803802008797592]}) best is : operator_hadamard 0.803802008797592
+05/21/2022 17:31:16 - INFO: Mini batch Iter: 0 train_loss= 10.87484 graph_loss= 10.80593 reg_loss= 0.06891
+05/21/2022 17:31:17 - INFO: Mini batch Iter: 1 train_loss= 10.73638 graph_loss= 10.66753 reg_loss= 0.06884
+05/21/2022 17:31:18 - INFO: Mini batch Iter: 2 train_loss= 10.81432 graph_loss= 10.74553 reg_loss= 0.06880
+05/21/2022 17:31:19 - INFO: Mini batch Iter: 3 train_loss= 10.75614 graph_loss= 10.68738 reg_loss= 0.06877
+05/21/2022 17:31:19 - INFO: Time for epoch : 1.285646677017212
+05/21/2022 17:31:21 - INFO: Test results at epoch 8: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35F0730>, {'operator_hadamard': [0.8053522642682955, 0.8053522642682955]}) best is : operator_hadamard 0.8053522642682955
+05/21/2022 17:31:22 - INFO: Mini batch Iter: 0 train_loss= 10.97767 graph_loss= 10.90892 reg_loss= 0.06876
+05/21/2022 17:31:23 - INFO: Mini batch Iter: 1 train_loss= 10.56373 graph_loss= 10.49498 reg_loss= 0.06876
+05/21/2022 17:31:24 - INFO: Mini batch Iter: 2 train_loss= 10.55448 graph_loss= 10.48572 reg_loss= 0.06876
+05/21/2022 17:31:25 - INFO: Mini batch Iter: 3 train_loss= 10.57212 graph_loss= 10.50336 reg_loss= 0.06875
+05/21/2022 17:31:25 - INFO: Time for epoch : 1.2319705486297607
+05/21/2022 17:31:27 - INFO: Test results at epoch 9: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35F0BF8>, {'operator_hadamard': [0.8088115141933641, 0.8088115141933641]}) best is : operator_hadamard 0.8088115141933641
+05/21/2022 17:31:28 - INFO: Mini batch Iter: 0 train_loss= 10.76617 graph_loss= 10.69742 reg_loss= 0.06876
+05/21/2022 17:31:29 - INFO: Mini batch Iter: 1 train_loss= 10.34048 graph_loss= 10.27171 reg_loss= 0.06876
+05/21/2022 17:31:30 - INFO: Mini batch Iter: 2 train_loss= 10.34090 graph_loss= 10.27213 reg_loss= 0.06877
+05/21/2022 17:31:31 - INFO: Mini batch Iter: 3 train_loss= 10.66775 graph_loss= 10.59897 reg_loss= 0.06878
+05/21/2022 17:31:31 - INFO: Time for epoch : 1.3030750751495361
+05/21/2022 17:31:33 - INFO: Test results at epoch 10: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35F08C8>, {'operator_hadamard': [0.8118288265374327, 0.8118288265374327]}) best is : operator_hadamard 0.8118288265374327
+05/21/2022 17:31:34 - INFO: Mini batch Iter: 0 train_loss= 10.89365 graph_loss= 10.82488 reg_loss= 0.06877
+05/21/2022 17:31:35 - INFO: Mini batch Iter: 1 train_loss= 10.51519 graph_loss= 10.44641 reg_loss= 0.06878
+05/21/2022 17:31:36 - INFO: Mini batch Iter: 2 train_loss= 10.67552 graph_loss= 10.60673 reg_loss= 0.06879
+05/21/2022 17:31:37 - INFO: Mini batch Iter: 3 train_loss= 10.56714 graph_loss= 10.49834 reg_loss= 0.06880
+05/21/2022 17:31:37 - INFO: Time for epoch : 1.3235530853271484
+05/21/2022 17:31:39 - INFO: Test results at epoch 11: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35F0950>, {'operator_hadamard': [0.8142152894748322, 0.8142152894748322]}) best is : operator_hadamard 0.8142152894748322
+05/21/2022 17:31:40 - INFO: Mini batch Iter: 0 train_loss= 10.48956 graph_loss= 10.42075 reg_loss= 0.06881
+05/21/2022 17:31:41 - INFO: Mini batch Iter: 1 train_loss= 10.59565 graph_loss= 10.52686 reg_loss= 0.06879
+05/21/2022 17:31:42 - INFO: Mini batch Iter: 2 train_loss= 10.71566 graph_loss= 10.64688 reg_loss= 0.06878
+05/21/2022 17:31:43 - INFO: Mini batch Iter: 3 train_loss= 10.41881 graph_loss= 10.35006 reg_loss= 0.06875
+05/21/2022 17:31:43 - INFO: Time for epoch : 1.2825031280517578
+05/21/2022 17:31:45 - INFO: Test results at epoch 12: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35CE048>, {'operator_hadamard': [0.817229611594472, 0.817229611594472]}) best is : operator_hadamard 0.817229611594472
+05/21/2022 17:31:46 - INFO: Mini batch Iter: 0 train_loss= 10.55896 graph_loss= 10.49024 reg_loss= 0.06871
+05/21/2022 17:31:47 - INFO: Mini batch Iter: 1 train_loss= 10.68978 graph_loss= 10.62111 reg_loss= 0.06868
+05/21/2022 17:31:48 - INFO: Mini batch Iter: 2 train_loss= 10.59838 graph_loss= 10.52974 reg_loss= 0.06864
+05/21/2022 17:31:49 - INFO: Mini batch Iter: 3 train_loss= 10.67696 graph_loss= 10.60835 reg_loss= 0.06861
+05/21/2022 17:31:49 - INFO: Time for epoch : 1.2903804779052734
+05/21/2022 17:31:52 - INFO: Test results at epoch 13: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35F0048>, {'operator_hadamard': [0.8222840583044514, 0.8222840583044514]}) best is : operator_hadamard 0.8222840583044514
+05/21/2022 17:31:53 - INFO: Mini batch Iter: 0 train_loss= 10.55205 graph_loss= 10.48346 reg_loss= 0.06858
+05/21/2022 17:31:54 - INFO: Mini batch Iter: 1 train_loss= 10.47543 graph_loss= 10.40688 reg_loss= 0.06855
+05/21/2022 17:31:55 - INFO: Mini batch Iter: 2 train_loss= 10.68156 graph_loss= 10.61304 reg_loss= 0.06852
+05/21/2022 17:31:55 - INFO: Mini batch Iter: 3 train_loss= 10.57274 graph_loss= 10.50426 reg_loss= 0.06848
+05/21/2022 17:31:55 - INFO: Time for epoch : 1.3047962188720703
+05/21/2022 17:31:58 - INFO: Test results at epoch 14: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017A9C50F730>, {'operator_hadamard': [0.8230695199036374, 0.8230695199036374]}) best is : operator_hadamard 0.8230695199036374
+05/21/2022 17:31:59 - INFO: Mini batch Iter: 0 train_loss= 10.10087 graph_loss= 10.03244 reg_loss= 0.06843
+05/21/2022 17:32:00 - INFO: Mini batch Iter: 1 train_loss= 10.47345 graph_loss= 10.40506 reg_loss= 0.06838
+05/21/2022 17:32:01 - INFO: Mini batch Iter: 2 train_loss= 10.22431 graph_loss= 10.15595 reg_loss= 0.06835
+05/21/2022 17:32:01 - INFO: Mini batch Iter: 3 train_loss= 10.49153 graph_loss= 10.42319 reg_loss= 0.06833
+05/21/2022 17:32:01 - INFO: Time for epoch : 1.3090956211090088
+05/21/2022 17:32:04 - INFO: Test results at epoch 15: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35CE598>, {'operator_hadamard': [0.8232949300568918, 0.8232949300568918]}) best is : operator_hadamard 0.8232949300568918
+05/21/2022 17:32:05 - INFO: Mini batch Iter: 0 train_loss= 10.25568 graph_loss= 10.18737 reg_loss= 0.06831
+05/21/2022 17:32:06 - INFO: Mini batch Iter: 1 train_loss= 10.58348 graph_loss= 10.51517 reg_loss= 0.06831
+05/21/2022 17:32:07 - INFO: Mini batch Iter: 2 train_loss= 10.89156 graph_loss= 10.82324 reg_loss= 0.06831
+05/21/2022 17:32:07 - INFO: Mini batch Iter: 3 train_loss= 10.48025 graph_loss= 10.41193 reg_loss= 0.06833
+05/21/2022 17:32:07 - INFO: Time for epoch : 1.328756332397461
+05/21/2022 17:32:10 - INFO: Test results at epoch 16: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017A9C50FB70>, {'operator_hadamard': [0.8250844914296649, 0.8250844914296649]}) best is : operator_hadamard 0.8250844914296649
+05/21/2022 17:32:11 - INFO: Mini batch Iter: 0 train_loss= 10.29792 graph_loss= 10.22957 reg_loss= 0.06834
+05/21/2022 17:32:12 - INFO: Mini batch Iter: 1 train_loss= 10.04720 graph_loss= 9.97885 reg_loss= 0.06836
+05/21/2022 17:32:13 - INFO: Mini batch Iter: 2 train_loss= 10.08444 graph_loss= 10.01607 reg_loss= 0.06837
+05/21/2022 17:32:13 - INFO: Mini batch Iter: 3 train_loss= 10.29148 graph_loss= 10.22310 reg_loss= 0.06838
+05/21/2022 17:32:13 - INFO: Time for epoch : 1.2451727390289307
+05/21/2022 17:32:16 - INFO: Test results at epoch 17: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35EB158>, {'operator_hadamard': [0.8259088259464236, 0.8259088259464236]}) best is : operator_hadamard 0.8259088259464236
+05/21/2022 17:32:17 - INFO: Mini batch Iter: 0 train_loss= 10.26713 graph_loss= 10.19874 reg_loss= 0.06839
+05/21/2022 17:32:18 - INFO: Mini batch Iter: 1 train_loss= 10.15918 graph_loss= 10.09078 reg_loss= 0.06840
+05/21/2022 17:32:19 - INFO: Mini batch Iter: 2 train_loss= 10.25896 graph_loss= 10.19053 reg_loss= 0.06842
+05/21/2022 17:32:19 - INFO: Mini batch Iter: 3 train_loss= 10.31754 graph_loss= 10.24910 reg_loss= 0.06844
+05/21/2022 17:32:19 - INFO: Time for epoch : 1.304100513458252
+05/21/2022 17:32:22 - INFO: Test results at epoch 18: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35EB6A8>, {'operator_hadamard': [0.8271167886678233, 0.8271167886678233]}) best is : operator_hadamard 0.8271167886678233
+05/21/2022 17:32:23 - INFO: Mini batch Iter: 0 train_loss= 10.14813 graph_loss= 10.07968 reg_loss= 0.06845
+05/21/2022 17:32:24 - INFO: Mini batch Iter: 1 train_loss= 10.23661 graph_loss= 10.16814 reg_loss= 0.06847
+05/21/2022 17:32:25 - INFO: Mini batch Iter: 2 train_loss= 10.75704 graph_loss= 10.68855 reg_loss= 0.06849
+05/21/2022 17:32:25 - INFO: Mini batch Iter: 3 train_loss= 10.34654 graph_loss= 10.27803 reg_loss= 0.06851
+05/21/2022 17:32:25 - INFO: Time for epoch : 1.3263933658599854
+05/21/2022 17:32:28 - INFO: Test results at epoch 19: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35D7EA0>, {'operator_hadamard': [0.8289921870712545, 0.8289921870712545]}) best is : operator_hadamard 0.8289921870712545
+05/21/2022 17:32:29 - INFO: Mini batch Iter: 0 train_loss= 10.31541 graph_loss= 10.24688 reg_loss= 0.06853
+05/21/2022 17:32:30 - INFO: Mini batch Iter: 1 train_loss= 10.45128 graph_loss= 10.38273 reg_loss= 0.06855
+05/21/2022 17:32:31 - INFO: Mini batch Iter: 2 train_loss= 10.25390 graph_loss= 10.18535 reg_loss= 0.06855
+05/21/2022 17:32:31 - INFO: Mini batch Iter: 3 train_loss= 10.55494 graph_loss= 10.48640 reg_loss= 0.06855
+05/21/2022 17:32:31 - INFO: Time for epoch : 1.2940406799316406
+05/21/2022 17:32:34 - INFO: Test results at epoch 20: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35F06A8>, {'operator_hadamard': [0.8263498840496504, 0.8263498840496504]}) best is : operator_hadamard 0.8263498840496504
+05/21/2022 17:32:35 - INFO: Mini batch Iter: 0 train_loss= 10.31628 graph_loss= 10.24775 reg_loss= 0.06852
+05/21/2022 17:32:36 - INFO: Mini batch Iter: 1 train_loss= 10.29733 graph_loss= 10.22884 reg_loss= 0.06849
+05/21/2022 17:32:37 - INFO: Mini batch Iter: 2 train_loss= 10.61271 graph_loss= 10.54425 reg_loss= 0.06847
+05/21/2022 17:32:37 - INFO: Mini batch Iter: 3 train_loss= 10.07290 graph_loss= 10.00446 reg_loss= 0.06844
+05/21/2022 17:32:37 - INFO: Time for epoch : 1.2737455368041992
+05/21/2022 17:32:40 - INFO: Test results at epoch 21: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35EB378>, {'operator_hadamard': [0.8233090017012618, 0.8233090017012618]}) best is : operator_hadamard 0.8233090017012618
+05/21/2022 17:32:41 - INFO: Mini batch Iter: 0 train_loss= 10.56778 graph_loss= 10.49938 reg_loss= 0.06841
+05/21/2022 17:32:42 - INFO: Mini batch Iter: 1 train_loss= 10.29204 graph_loss= 10.22365 reg_loss= 0.06838
+05/21/2022 17:32:43 - INFO: Mini batch Iter: 2 train_loss= 10.26443 graph_loss= 10.19607 reg_loss= 0.06836
+05/21/2022 17:32:43 - INFO: Mini batch Iter: 3 train_loss= 10.35994 graph_loss= 10.29158 reg_loss= 0.06835
+05/21/2022 17:32:43 - INFO: Time for epoch : 1.3492882251739502
+05/21/2022 17:32:46 - INFO: Test results at epoch 22: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35EB510>, {'operator_hadamard': [0.8272308569349989, 0.8272308569349989]}) best is : operator_hadamard 0.8272308569349989
+05/21/2022 17:32:47 - INFO: Mini batch Iter: 0 train_loss= 10.30137 graph_loss= 10.23301 reg_loss= 0.06836
+05/21/2022 17:32:48 - INFO: Mini batch Iter: 1 train_loss= 10.61190 graph_loss= 10.54353 reg_loss= 0.06837
+05/21/2022 17:32:49 - INFO: Mini batch Iter: 2 train_loss= 10.10868 graph_loss= 10.04031 reg_loss= 0.06837
+05/21/2022 17:32:49 - INFO: Mini batch Iter: 3 train_loss= 10.18129 graph_loss= 10.11292 reg_loss= 0.06837
+05/21/2022 17:32:49 - INFO: Time for epoch : 1.3025789260864258
+05/21/2022 17:32:52 - INFO: Test results at epoch 23: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35EB488>, {'operator_hadamard': [0.83288888924068, 0.83288888924068]}) best is : operator_hadamard 0.83288888924068
+05/21/2022 17:32:53 - INFO: Mini batch Iter: 0 train_loss= 10.19773 graph_loss= 10.12937 reg_loss= 0.06836
+05/21/2022 17:32:54 - INFO: Mini batch Iter: 1 train_loss= 10.51610 graph_loss= 10.44776 reg_loss= 0.06833
+05/21/2022 17:32:55 - INFO: Mini batch Iter: 2 train_loss= 9.86083 graph_loss= 9.79252 reg_loss= 0.06831
+05/21/2022 17:32:55 - INFO: Mini batch Iter: 3 train_loss= 10.19684 graph_loss= 10.12856 reg_loss= 0.06828
+05/21/2022 17:32:55 - INFO: Time for epoch : 1.306504487991333
+05/21/2022 17:32:58 - INFO: Test results at epoch 24: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35CE0D0>, {'operator_hadamard': [0.8278825499648912, 0.8278825499648912]}) best is : operator_hadamard 0.8278825499648912
+05/21/2022 17:32:59 - INFO: Mini batch Iter: 0 train_loss= 10.08765 graph_loss= 10.01939 reg_loss= 0.06826
+05/21/2022 17:33:00 - INFO: Mini batch Iter: 1 train_loss= 10.09292 graph_loss= 10.02466 reg_loss= 0.06825
+05/21/2022 17:33:01 - INFO: Mini batch Iter: 2 train_loss= 10.18087 graph_loss= 10.11262 reg_loss= 0.06825
+05/21/2022 17:33:01 - INFO: Mini batch Iter: 3 train_loss= 9.94250 graph_loss= 9.87423 reg_loss= 0.06827
+05/21/2022 17:33:01 - INFO: Time for epoch : 1.311277151107788
+05/21/2022 17:33:04 - INFO: Test results at epoch 25: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35F0158>, {'operator_hadamard': [0.8256511389588953, 0.8256511389588953]}) best is : operator_hadamard 0.8256511389588953
+05/21/2022 17:33:05 - INFO: Mini batch Iter: 0 train_loss= 10.17833 graph_loss= 10.11005 reg_loss= 0.06828
+05/21/2022 17:33:06 - INFO: Mini batch Iter: 1 train_loss= 9.83568 graph_loss= 9.76739 reg_loss= 0.06829
+05/21/2022 17:33:07 - INFO: Mini batch Iter: 2 train_loss= 10.28135 graph_loss= 10.21305 reg_loss= 0.06830
+05/21/2022 17:33:07 - INFO: Mini batch Iter: 3 train_loss= 10.00669 graph_loss= 9.93837 reg_loss= 0.06832
+05/21/2022 17:33:07 - INFO: Time for epoch : 1.2696740627288818
+05/21/2022 17:33:10 - INFO: Test results at epoch 26: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35CEC80>, {'operator_hadamard': [0.8277695370710434, 0.8277695370710434]}) best is : operator_hadamard 0.8277695370710434
+05/21/2022 17:33:11 - INFO: Mini batch Iter: 0 train_loss= 10.07157 graph_loss= 10.00323 reg_loss= 0.06834
+05/21/2022 17:33:12 - INFO: Mini batch Iter: 1 train_loss= 10.28982 graph_loss= 10.22147 reg_loss= 0.06835
+05/21/2022 17:33:13 - INFO: Mini batch Iter: 2 train_loss= 9.97334 graph_loss= 9.90499 reg_loss= 0.06836
+05/21/2022 17:33:13 - INFO: Mini batch Iter: 3 train_loss= 9.85754 graph_loss= 9.78918 reg_loss= 0.06836
+05/21/2022 17:33:13 - INFO: Time for epoch : 1.272245168685913
+05/21/2022 17:33:16 - INFO: Test results at epoch 27: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35CE158>, {'operator_hadamard': [0.8289233239616182, 0.8289233239616182]}) best is : operator_hadamard 0.8289233239616182
+05/21/2022 17:33:17 - INFO: Mini batch Iter: 0 train_loss= 10.50830 graph_loss= 10.43994 reg_loss= 0.06836
+05/21/2022 17:33:18 - INFO: Mini batch Iter: 1 train_loss= 10.32494 graph_loss= 10.25657 reg_loss= 0.06836
+05/21/2022 17:33:19 - INFO: Mini batch Iter: 2 train_loss= 10.30542 graph_loss= 10.23705 reg_loss= 0.06837
+05/21/2022 17:33:19 - INFO: Mini batch Iter: 3 train_loss= 10.18534 graph_loss= 10.11696 reg_loss= 0.06838
+05/21/2022 17:33:19 - INFO: Time for epoch : 1.3527555465698242
+05/21/2022 17:33:22 - INFO: Test results at epoch 28: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35F0A60>, {'operator_hadamard': [0.8315829526953532, 0.8315829526953532]}) best is : operator_hadamard 0.8315829526953532
+05/21/2022 17:33:23 - INFO: Mini batch Iter: 0 train_loss= 9.60430 graph_loss= 9.53591 reg_loss= 0.06838
+05/21/2022 17:33:24 - INFO: Mini batch Iter: 1 train_loss= 9.75310 graph_loss= 9.68471 reg_loss= 0.06839
+05/21/2022 17:33:25 - INFO: Mini batch Iter: 2 train_loss= 10.70378 graph_loss= 10.63539 reg_loss= 0.06839
+05/21/2022 17:33:25 - INFO: Mini batch Iter: 3 train_loss= 10.18226 graph_loss= 10.11388 reg_loss= 0.06839
+05/21/2022 17:33:25 - INFO: Time for epoch : 1.2355198860168457
+05/21/2022 17:33:28 - INFO: Test results at epoch 29: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35D7730>, {'operator_hadamard': [0.8291636852370158, 0.8291636852370158]}) best is : operator_hadamard 0.8291636852370158
+05/21/2022 17:33:28 - INFO: Best epoch 23
+05/21/2022 17:33:30 - INFO: Best epoch test results defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000017AA35D7A60>, {'operator_hadamard': [0.83288888924068, 0.83288888924068]})
+
+05/21/2022 17:33:37 - INFO: dict_items([('base_model', 'DyMADC'), ('model', 'default'), ('test_subset', 0.2), ('min_time', 1), ('max_time', 9), ('dataset', 'fb-forum'), ('dataname', 'fb-forum_8_by_edgesNumber_0.2'), ('time_steps', 9), ('GPU_ID', 0), ('epochs', 30), ('batch_size', 256), ('featureless', 'True'), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', 'False'), ('structural_head_config', '16,8,8'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '64'), ('position_ffn', 'True'), ('optimizer', 'adam'), ('seed', 7), ('save_dir', '/output'), ('log_dir', '/log'), ('csv_dir', '/csv'), ('model_dir', '/model'), ('window', -1)])
+05/21/2022 17:33:42 - INFO: # train: 26976, # test: 6744
+05/21/2022 17:33:55 - WARNING: From D:\Anaconda3\envs\tf_1\lib\site-packages\tensorflow\python\ops\sparse_grad.py:281: calling sparse_reduce_sum (from tensorflow.python.ops.sparse_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+05/21/2022 17:34:27 - INFO: Mini batch Iter: 0 train_loss= 13.25727 graph_loss= 13.17978 reg_loss= 0.07749
+05/21/2022 17:34:28 - INFO: Mini batch Iter: 1 train_loss= 12.42554 graph_loss= 12.34853 reg_loss= 0.07701
+05/21/2022 17:34:29 - INFO: Mini batch Iter: 2 train_loss= 11.89768 graph_loss= 11.82113 reg_loss= 0.07655
+05/21/2022 17:34:29 - INFO: Mini batch Iter: 3 train_loss= 11.58182 graph_loss= 11.50569 reg_loss= 0.07613
+05/21/2022 17:34:29 - INFO: Time for epoch : 19.982747077941895
+05/21/2022 17:34:35 - INFO: Test results at epoch 0: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB33AA620>, {'operator_hadamard': [0.7208947824453422, 0.7208947824453422]}) best is : operator_hadamard 0.7208947824453422
+05/21/2022 17:34:36 - INFO: Mini batch Iter: 0 train_loss= 11.39828 graph_loss= 11.32254 reg_loss= 0.07574
+05/21/2022 17:34:37 - INFO: Mini batch Iter: 1 train_loss= 11.30791 graph_loss= 11.23255 reg_loss= 0.07535
+05/21/2022 17:34:38 - INFO: Mini batch Iter: 2 train_loss= 11.23217 graph_loss= 11.15721 reg_loss= 0.07497
+05/21/2022 17:34:38 - INFO: Mini batch Iter: 3 train_loss= 11.22460 graph_loss= 11.15003 reg_loss= 0.07457
+05/21/2022 17:34:38 - INFO: Time for epoch : 1.1919820308685303
+05/21/2022 17:34:40 - INFO: Test results at epoch 1: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB339C7B8>, {'operator_hadamard': [0.7582109364116463, 0.7582109364116463]}) best is : operator_hadamard 0.7582109364116463
+05/21/2022 17:34:41 - INFO: Mini batch Iter: 0 train_loss= 11.17635 graph_loss= 11.10217 reg_loss= 0.07418
+05/21/2022 17:34:42 - INFO: Mini batch Iter: 1 train_loss= 11.17206 graph_loss= 11.09827 reg_loss= 0.07379
+05/21/2022 17:34:43 - INFO: Mini batch Iter: 2 train_loss= 11.15965 graph_loss= 11.08625 reg_loss= 0.07339
+05/21/2022 17:34:44 - INFO: Mini batch Iter: 3 train_loss= 11.14963 graph_loss= 11.07662 reg_loss= 0.07300
+05/21/2022 17:34:44 - INFO: Time for epoch : 1.1898999214172363
+05/21/2022 17:34:46 - INFO: Test results at epoch 2: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB3367D90>, {'operator_hadamard': [0.7725498320901034, 0.7725498320901034]}) best is : operator_hadamard 0.7725498320901034
+05/21/2022 17:34:47 - INFO: Mini batch Iter: 0 train_loss= 11.14931 graph_loss= 11.07670 reg_loss= 0.07262
+05/21/2022 17:34:48 - INFO: Mini batch Iter: 1 train_loss= 11.13951 graph_loss= 11.06728 reg_loss= 0.07224
+05/21/2022 17:34:49 - INFO: Mini batch Iter: 2 train_loss= 11.12136 graph_loss= 11.04950 reg_loss= 0.07186
+05/21/2022 17:34:49 - INFO: Mini batch Iter: 3 train_loss= 11.11006 graph_loss= 11.03856 reg_loss= 0.07149
+05/21/2022 17:34:49 - INFO: Time for epoch : 1.2658214569091797
+05/21/2022 17:34:51 - INFO: Test results at epoch 3: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB33AA6A8>, {'operator_hadamard': [0.7789981411357787, 0.7789981411357787]}) best is : operator_hadamard 0.7789981411357787
+05/21/2022 17:34:52 - INFO: Mini batch Iter: 0 train_loss= 11.13521 graph_loss= 11.06407 reg_loss= 0.07113
+05/21/2022 17:34:53 - INFO: Mini batch Iter: 1 train_loss= 11.07169 graph_loss= 11.00091 reg_loss= 0.07078
+05/21/2022 17:34:54 - INFO: Mini batch Iter: 2 train_loss= 11.08775 graph_loss= 11.01731 reg_loss= 0.07044
+05/21/2022 17:34:55 - INFO: Mini batch Iter: 3 train_loss= 11.08030 graph_loss= 11.01019 reg_loss= 0.07012
+05/21/2022 17:34:55 - INFO: Time for epoch : 1.3249931335449219
+05/21/2022 17:34:57 - INFO: Test results at epoch 4: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB33AA400>, {'operator_hadamard': [0.7819884315252678, 0.7819884315252678]}) best is : operator_hadamard 0.7819884315252678
+05/21/2022 17:34:58 - INFO: Mini batch Iter: 0 train_loss= 11.07831 graph_loss= 11.00851 reg_loss= 0.06980
+05/21/2022 17:34:59 - INFO: Mini batch Iter: 1 train_loss= 11.07764 graph_loss= 11.00814 reg_loss= 0.06951
+05/21/2022 17:35:00 - INFO: Mini batch Iter: 2 train_loss= 11.00305 graph_loss= 10.93382 reg_loss= 0.06923
+05/21/2022 17:35:00 - INFO: Mini batch Iter: 3 train_loss= 11.03097 graph_loss= 10.96200 reg_loss= 0.06897
+05/21/2022 17:35:00 - INFO: Time for epoch : 1.2357017993927002
+05/21/2022 17:35:03 - INFO: Test results at epoch 5: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB339C7B8>, {'operator_hadamard': [0.7870785410589476, 0.7870785410589476]}) best is : operator_hadamard 0.7870785410589476
+05/21/2022 17:35:04 - INFO: Mini batch Iter: 0 train_loss= 11.01420 graph_loss= 10.94547 reg_loss= 0.06873
+05/21/2022 17:35:04 - INFO: Mini batch Iter: 1 train_loss= 10.99535 graph_loss= 10.92684 reg_loss= 0.06852
+05/21/2022 17:35:05 - INFO: Mini batch Iter: 2 train_loss= 10.97948 graph_loss= 10.91116 reg_loss= 0.06832
+05/21/2022 17:35:06 - INFO: Mini batch Iter: 3 train_loss= 10.94123 graph_loss= 10.87309 reg_loss= 0.06814
+05/21/2022 17:35:06 - INFO: Time for epoch : 1.2803244590759277
+05/21/2022 17:35:08 - INFO: Test results at epoch 6: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB339C950>, {'operator_hadamard': [0.7902257742570523, 0.7902257742570523]}) best is : operator_hadamard 0.7902257742570523
+05/21/2022 17:35:09 - INFO: Mini batch Iter: 0 train_loss= 10.94399 graph_loss= 10.87601 reg_loss= 0.06798
+05/21/2022 17:35:10 - INFO: Mini batch Iter: 1 train_loss= 10.80301 graph_loss= 10.73518 reg_loss= 0.06783
+05/21/2022 17:35:11 - INFO: Mini batch Iter: 2 train_loss= 10.79012 graph_loss= 10.72242 reg_loss= 0.06770
+05/21/2022 17:35:12 - INFO: Mini batch Iter: 3 train_loss= 10.67411 graph_loss= 10.60652 reg_loss= 0.06759
+05/21/2022 17:35:12 - INFO: Time for epoch : 1.2370569705963135
+05/21/2022 17:35:14 - INFO: Test results at epoch 7: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB339C730>, {'operator_hadamard': [0.7905071191966779, 0.7905071191966779]}) best is : operator_hadamard 0.7905071191966779
+05/21/2022 17:35:15 - INFO: Mini batch Iter: 0 train_loss= 10.72858 graph_loss= 10.66107 reg_loss= 0.06751
+05/21/2022 17:35:16 - INFO: Mini batch Iter: 1 train_loss= 10.64946 graph_loss= 10.58202 reg_loss= 0.06744
+05/21/2022 17:35:17 - INFO: Mini batch Iter: 2 train_loss= 10.70319 graph_loss= 10.63580 reg_loss= 0.06739
+05/21/2022 17:35:18 - INFO: Mini batch Iter: 3 train_loss= 10.25015 graph_loss= 10.18278 reg_loss= 0.06737
+05/21/2022 17:35:18 - INFO: Time for epoch : 1.2777578830718994
+05/21/2022 17:35:20 - INFO: Test results at epoch 8: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB33AA8C8>, {'operator_hadamard': [0.7951991770902372, 0.7951991770902372]}) best is : operator_hadamard 0.7951991770902372
+05/21/2022 17:35:21 - INFO: Mini batch Iter: 0 train_loss= 10.86047 graph_loss= 10.79310 reg_loss= 0.06737
+05/21/2022 17:35:22 - INFO: Mini batch Iter: 1 train_loss= 10.49736 graph_loss= 10.42997 reg_loss= 0.06739
+05/21/2022 17:35:23 - INFO: Mini batch Iter: 2 train_loss= 10.50375 graph_loss= 10.43635 reg_loss= 0.06740
+05/21/2022 17:35:23 - INFO: Mini batch Iter: 3 train_loss= 10.72140 graph_loss= 10.65397 reg_loss= 0.06743
+05/21/2022 17:35:23 - INFO: Time for epoch : 1.2354226112365723
+05/21/2022 17:35:26 - INFO: Test results at epoch 9: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB33AA158>, {'operator_hadamard': [0.7962545724049425, 0.7962545724049425]}) best is : operator_hadamard 0.7962545724049425
+05/21/2022 17:35:27 - INFO: Mini batch Iter: 0 train_loss= 10.66777 graph_loss= 10.60030 reg_loss= 0.06747
+05/21/2022 17:35:28 - INFO: Mini batch Iter: 1 train_loss= 10.52427 graph_loss= 10.45679 reg_loss= 0.06749
+05/21/2022 17:35:29 - INFO: Mini batch Iter: 2 train_loss= 10.49027 graph_loss= 10.42278 reg_loss= 0.06749
+05/21/2022 17:35:29 - INFO: Mini batch Iter: 3 train_loss= 10.51221 graph_loss= 10.44471 reg_loss= 0.06750
+05/21/2022 17:35:29 - INFO: Time for epoch : 1.2977662086486816
+05/21/2022 17:35:32 - INFO: Test results at epoch 10: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB33AA510>, {'operator_hadamard': [0.7960391003505246, 0.7960391003505246]}) best is : operator_hadamard 0.7960391003505246
+05/21/2022 17:35:33 - INFO: Mini batch Iter: 0 train_loss= 10.74261 graph_loss= 10.67512 reg_loss= 0.06750
+05/21/2022 17:35:34 - INFO: Mini batch Iter: 1 train_loss= 10.77596 graph_loss= 10.70847 reg_loss= 0.06749
+05/21/2022 17:35:35 - INFO: Mini batch Iter: 2 train_loss= 10.62323 graph_loss= 10.55574 reg_loss= 0.06749
+05/21/2022 17:35:35 - INFO: Mini batch Iter: 3 train_loss= 10.14099 graph_loss= 10.07350 reg_loss= 0.06748
+05/21/2022 17:35:35 - INFO: Time for epoch : 1.244661808013916
+05/21/2022 17:35:38 - INFO: Test results at epoch 11: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB33AA730>, {'operator_hadamard': [0.7942492091735864, 0.7942492091735864]}) best is : operator_hadamard 0.7942492091735864
+05/21/2022 17:35:39 - INFO: Mini batch Iter: 0 train_loss= 10.52588 graph_loss= 10.45841 reg_loss= 0.06747
+05/21/2022 17:35:40 - INFO: Mini batch Iter: 1 train_loss= 10.37899 graph_loss= 10.31155 reg_loss= 0.06745
+05/21/2022 17:35:41 - INFO: Mini batch Iter: 2 train_loss= 10.42699 graph_loss= 10.35955 reg_loss= 0.06744
+05/21/2022 17:35:41 - INFO: Mini batch Iter: 3 train_loss= 10.23565 graph_loss= 10.16824 reg_loss= 0.06741
+05/21/2022 17:35:41 - INFO: Time for epoch : 1.2031617164611816
+05/21/2022 17:35:43 - INFO: Test results at epoch 12: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB339C0D0>, {'operator_hadamard': [0.790098865614389, 0.790098865614389]}) best is : operator_hadamard 0.790098865614389
+05/21/2022 17:35:44 - INFO: Mini batch Iter: 0 train_loss= 10.33614 graph_loss= 10.26878 reg_loss= 0.06737
+05/21/2022 17:35:45 - INFO: Mini batch Iter: 1 train_loss= 10.20379 graph_loss= 10.13647 reg_loss= 0.06732
+05/21/2022 17:35:46 - INFO: Mini batch Iter: 2 train_loss= 10.65399 graph_loss= 10.58672 reg_loss= 0.06727
+05/21/2022 17:35:47 - INFO: Mini batch Iter: 3 train_loss= 10.42025 graph_loss= 10.35303 reg_loss= 0.06722
+05/21/2022 17:35:47 - INFO: Time for epoch : 1.1667556762695312
+05/21/2022 17:35:49 - INFO: Test results at epoch 13: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB33AAD08>, {'operator_hadamard': [0.7854275414093315, 0.7854275414093315]}) best is : operator_hadamard 0.7854275414093315
+05/21/2022 17:35:50 - INFO: Mini batch Iter: 0 train_loss= 10.67488 graph_loss= 10.60768 reg_loss= 0.06720
+05/21/2022 17:35:51 - INFO: Mini batch Iter: 1 train_loss= 10.26587 graph_loss= 10.19870 reg_loss= 0.06717
+05/21/2022 17:35:52 - INFO: Mini batch Iter: 2 train_loss= 10.33775 graph_loss= 10.27060 reg_loss= 0.06715
+05/21/2022 17:35:53 - INFO: Mini batch Iter: 3 train_loss= 10.82876 graph_loss= 10.76163 reg_loss= 0.06713
+05/21/2022 17:35:53 - INFO: Time for epoch : 1.2528648376464844
+05/21/2022 17:35:55 - INFO: Test results at epoch 14: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB339C158>, {'operator_hadamard': [0.7888702351653206, 0.7888702351653206]}) best is : operator_hadamard 0.7888702351653206
+05/21/2022 17:35:56 - INFO: Mini batch Iter: 0 train_loss= 10.30677 graph_loss= 10.23967 reg_loss= 0.06710
+05/21/2022 17:35:57 - INFO: Mini batch Iter: 1 train_loss= 10.23438 graph_loss= 10.16731 reg_loss= 0.06707
+05/21/2022 17:35:58 - INFO: Mini batch Iter: 2 train_loss= 10.32485 graph_loss= 10.25782 reg_loss= 0.06703
+05/21/2022 17:35:59 - INFO: Mini batch Iter: 3 train_loss= 10.52176 graph_loss= 10.45475 reg_loss= 0.06700
+05/21/2022 17:35:59 - INFO: Time for epoch : 1.321014404296875
+05/21/2022 17:36:01 - INFO: Test results at epoch 15: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB33AAD90>, {'operator_hadamard': [0.7901694217187388, 0.7901694217187388]}) best is : operator_hadamard 0.7901694217187388
+05/21/2022 17:36:02 - INFO: Mini batch Iter: 0 train_loss= 10.65319 graph_loss= 10.58622 reg_loss= 0.06697
+05/21/2022 17:36:03 - INFO: Mini batch Iter: 1 train_loss= 10.75048 graph_loss= 10.68353 reg_loss= 0.06695
+05/21/2022 17:36:04 - INFO: Mini batch Iter: 2 train_loss= 10.39919 graph_loss= 10.33226 reg_loss= 0.06693
+05/21/2022 17:36:05 - INFO: Mini batch Iter: 3 train_loss= 10.66607 graph_loss= 10.59916 reg_loss= 0.06692
+05/21/2022 17:36:05 - INFO: Time for epoch : 1.2863926887512207
+05/21/2022 17:36:07 - INFO: Test results at epoch 16: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB339C730>, {'operator_hadamard': [0.7902676373990535, 0.7902676373990535]}) best is : operator_hadamard 0.7902676373990535
+05/21/2022 17:36:08 - INFO: Mini batch Iter: 0 train_loss= 10.52151 graph_loss= 10.45461 reg_loss= 0.06689
+05/21/2022 17:36:09 - INFO: Mini batch Iter: 1 train_loss= 10.20810 graph_loss= 10.14124 reg_loss= 0.06686
+05/21/2022 17:36:10 - INFO: Mini batch Iter: 2 train_loss= 10.44080 graph_loss= 10.37398 reg_loss= 0.06682
+05/21/2022 17:36:11 - INFO: Mini batch Iter: 3 train_loss= 10.36898 graph_loss= 10.30219 reg_loss= 0.06679
+05/21/2022 17:36:11 - INFO: Time for epoch : 1.2451496124267578
+05/21/2022 17:36:13 - INFO: Test results at epoch 17: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB339C378>, {'operator_hadamard': [0.7870480231802198, 0.7870480231802198]}) best is : operator_hadamard 0.7870480231802198
+05/21/2022 17:36:14 - INFO: Mini batch Iter: 0 train_loss= 10.15215 graph_loss= 10.08540 reg_loss= 0.06676
+05/21/2022 17:36:15 - INFO: Mini batch Iter: 1 train_loss= 10.08989 graph_loss= 10.02317 reg_loss= 0.06673
+05/21/2022 17:36:16 - INFO: Mini batch Iter: 2 train_loss= 9.95333 graph_loss= 9.88663 reg_loss= 0.06670
+05/21/2022 17:36:16 - INFO: Mini batch Iter: 3 train_loss= 10.35330 graph_loss= 10.28663 reg_loss= 0.06667
+05/21/2022 17:36:16 - INFO: Time for epoch : 1.2438983917236328
+05/21/2022 17:36:19 - INFO: Test results at epoch 18: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FD9B16D840>, {'operator_hadamard': [0.7874726350490889, 0.7874726350490889]}) best is : operator_hadamard 0.7874726350490889
+05/21/2022 17:36:20 - INFO: Mini batch Iter: 0 train_loss= 10.48341 graph_loss= 10.41675 reg_loss= 0.06666
+05/21/2022 17:36:21 - INFO: Mini batch Iter: 1 train_loss= 10.91060 graph_loss= 10.84394 reg_loss= 0.06666
+05/21/2022 17:36:22 - INFO: Mini batch Iter: 2 train_loss= 10.74325 graph_loss= 10.67658 reg_loss= 0.06667
+05/21/2022 17:36:23 - INFO: Mini batch Iter: 3 train_loss= 10.27695 graph_loss= 10.21027 reg_loss= 0.06668
+05/21/2022 17:36:23 - INFO: Time for epoch : 1.2418296337127686
+05/21/2022 17:36:25 - INFO: Test results at epoch 19: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB33671E0>, {'operator_hadamard': [0.7922856431233984, 0.7922856431233984]}) best is : operator_hadamard 0.7922856431233984
+05/21/2022 17:36:26 - INFO: Mini batch Iter: 0 train_loss= 10.27089 graph_loss= 10.20418 reg_loss= 0.06670
+05/21/2022 17:36:27 - INFO: Mini batch Iter: 1 train_loss= 10.44361 graph_loss= 10.37689 reg_loss= 0.06673
+05/21/2022 17:36:28 - INFO: Mini batch Iter: 2 train_loss= 10.46392 graph_loss= 10.39718 reg_loss= 0.06674
+05/21/2022 17:36:28 - INFO: Mini batch Iter: 3 train_loss= 10.03430 graph_loss= 9.96756 reg_loss= 0.06674
+05/21/2022 17:36:28 - INFO: Time for epoch : 1.2300827503204346
+05/21/2022 17:36:31 - INFO: Test results at epoch 20: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FD9B188950>, {'operator_hadamard': [0.8026483758156278, 0.8026483758156278]}) best is : operator_hadamard 0.8026483758156278
+05/21/2022 17:36:32 - INFO: Mini batch Iter: 0 train_loss= 10.13828 graph_loss= 10.07154 reg_loss= 0.06674
+05/21/2022 17:36:33 - INFO: Mini batch Iter: 1 train_loss= 10.21167 graph_loss= 10.14495 reg_loss= 0.06673
+05/21/2022 17:36:34 - INFO: Mini batch Iter: 2 train_loss= 10.26089 graph_loss= 10.19418 reg_loss= 0.06671
+05/21/2022 17:36:34 - INFO: Mini batch Iter: 3 train_loss= 10.07340 graph_loss= 10.00673 reg_loss= 0.06668
+05/21/2022 17:36:34 - INFO: Time for epoch : 1.257476806640625
+05/21/2022 17:36:37 - INFO: Test results at epoch 21: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FD9B188268>, {'operator_hadamard': [0.7999220167058562, 0.7999220167058562]}) best is : operator_hadamard 0.7999220167058562
+05/21/2022 17:36:38 - INFO: Mini batch Iter: 0 train_loss= 10.30343 graph_loss= 10.23677 reg_loss= 0.06666
+05/21/2022 17:36:39 - INFO: Mini batch Iter: 1 train_loss= 10.34871 graph_loss= 10.28207 reg_loss= 0.06664
+05/21/2022 17:36:40 - INFO: Mini batch Iter: 2 train_loss= 9.81807 graph_loss= 9.75144 reg_loss= 0.06662
+05/21/2022 17:36:40 - INFO: Mini batch Iter: 3 train_loss= 10.15565 graph_loss= 10.08904 reg_loss= 0.06662
+05/21/2022 17:36:40 - INFO: Time for epoch : 1.2335257530212402
+05/21/2022 17:36:42 - INFO: Test results at epoch 22: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB33676A8>, {'operator_hadamard': [0.802813387832812, 0.802813387832812]}) best is : operator_hadamard 0.802813387832812
+05/21/2022 17:36:44 - INFO: Mini batch Iter: 0 train_loss= 10.10894 graph_loss= 10.04231 reg_loss= 0.06663
+05/21/2022 17:36:44 - INFO: Mini batch Iter: 1 train_loss= 10.89411 graph_loss= 10.82746 reg_loss= 0.06665
+05/21/2022 17:36:45 - INFO: Mini batch Iter: 2 train_loss= 10.53149 graph_loss= 10.46482 reg_loss= 0.06667
+05/21/2022 17:36:46 - INFO: Mini batch Iter: 3 train_loss= 10.40688 graph_loss= 10.34018 reg_loss= 0.06670
+05/21/2022 17:36:46 - INFO: Time for epoch : 1.2839462757110596
+05/21/2022 17:36:48 - INFO: Test results at epoch 23: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB33678C8>, {'operator_hadamard': [0.8102828365339289, 0.8102828365339289]}) best is : operator_hadamard 0.8102828365339289
+05/21/2022 17:36:49 - INFO: Mini batch Iter: 0 train_loss= 10.42870 graph_loss= 10.36197 reg_loss= 0.06673
+05/21/2022 17:36:50 - INFO: Mini batch Iter: 1 train_loss= 10.19757 graph_loss= 10.13084 reg_loss= 0.06673
+05/21/2022 17:36:51 - INFO: Mini batch Iter: 2 train_loss= 10.28184 graph_loss= 10.21511 reg_loss= 0.06673
+05/21/2022 17:36:52 - INFO: Mini batch Iter: 3 train_loss= 10.16946 graph_loss= 10.10274 reg_loss= 0.06672
+05/21/2022 17:36:52 - INFO: Time for epoch : 1.3229179382324219
+05/21/2022 17:36:54 - INFO: Test results at epoch 24: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB3367A60>, {'operator_hadamard': [0.8082495938571644, 0.8082495938571644]}) best is : operator_hadamard 0.8082495938571644
+05/21/2022 17:36:55 - INFO: Mini batch Iter: 0 train_loss= 9.90139 graph_loss= 9.83468 reg_loss= 0.06670
+05/21/2022 17:36:56 - INFO: Mini batch Iter: 1 train_loss= 10.33428 graph_loss= 10.26760 reg_loss= 0.06668
+05/21/2022 17:36:57 - INFO: Mini batch Iter: 2 train_loss= 9.93398 graph_loss= 9.86733 reg_loss= 0.06664
+05/21/2022 17:36:58 - INFO: Mini batch Iter: 3 train_loss= 10.54230 graph_loss= 10.47570 reg_loss= 0.06661
+05/21/2022 17:36:58 - INFO: Time for epoch : 1.276839256286621
+05/21/2022 17:37:00 - INFO: Test results at epoch 25: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB3367048>, {'operator_hadamard': [0.7987514757637033, 0.7987514757637033]}) best is : operator_hadamard 0.7987514757637033
+05/21/2022 17:37:01 - INFO: Mini batch Iter: 0 train_loss= 10.92174 graph_loss= 10.85515 reg_loss= 0.06658
+05/21/2022 17:37:02 - INFO: Mini batch Iter: 1 train_loss= 10.64874 graph_loss= 10.58218 reg_loss= 0.06656
+05/21/2022 17:37:03 - INFO: Mini batch Iter: 2 train_loss= 10.13113 graph_loss= 10.06459 reg_loss= 0.06655
+05/21/2022 17:37:04 - INFO: Mini batch Iter: 3 train_loss= 10.49214 graph_loss= 10.42559 reg_loss= 0.06654
+05/21/2022 17:37:04 - INFO: Time for epoch : 1.2635188102722168
+05/21/2022 17:37:06 - INFO: Test results at epoch 26: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB3367488>, {'operator_hadamard': [0.7977041936314552, 0.7977041936314552]}) best is : operator_hadamard 0.7977041936314552
+05/21/2022 17:37:07 - INFO: Mini batch Iter: 0 train_loss= 10.23514 graph_loss= 10.16859 reg_loss= 0.06655
+05/21/2022 17:37:08 - INFO: Mini batch Iter: 1 train_loss= 10.34574 graph_loss= 10.27918 reg_loss= 0.06656
+05/21/2022 17:37:09 - INFO: Mini batch Iter: 2 train_loss= 10.14955 graph_loss= 10.08298 reg_loss= 0.06658
+05/21/2022 17:37:09 - INFO: Mini batch Iter: 3 train_loss= 10.03906 graph_loss= 9.97247 reg_loss= 0.06658
+05/21/2022 17:37:09 - INFO: Time for epoch : 1.2666285037994385
+05/21/2022 17:37:12 - INFO: Test results at epoch 27: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FDB33679D8>, {'operator_hadamard': [0.7984858514892724, 0.7984858514892724]}) best is : operator_hadamard 0.7984858514892724
+05/21/2022 17:37:13 - INFO: Mini batch Iter: 0 train_loss= 10.42245 graph_loss= 10.35586 reg_loss= 0.06659
+05/21/2022 17:37:14 - INFO: Mini batch Iter: 1 train_loss= 10.23240 graph_loss= 10.16581 reg_loss= 0.06659
+05/21/2022 17:37:15 - INFO: Mini batch Iter: 2 train_loss= 10.18506 graph_loss= 10.11847 reg_loss= 0.06659
+05/21/2022 17:37:15 - INFO: Mini batch Iter: 3 train_loss= 9.90833 graph_loss= 9.84175 reg_loss= 0.06658
+05/21/2022 17:37:15 - INFO: Time for epoch : 1.2964262962341309
+05/21/2022 17:37:18 - INFO: Test results at epoch 28: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FD32A099D8>, {'operator_hadamard': [0.7948700765075305, 0.7948700765075305]}) best is : operator_hadamard 0.7948700765075305
+05/21/2022 17:37:19 - INFO: Mini batch Iter: 0 train_loss= 10.12692 graph_loss= 10.06036 reg_loss= 0.06657
+05/21/2022 17:37:20 - INFO: Mini batch Iter: 1 train_loss= 10.37718 graph_loss= 10.31062 reg_loss= 0.06656
+05/21/2022 17:37:21 - INFO: Mini batch Iter: 2 train_loss= 10.46984 graph_loss= 10.40328 reg_loss= 0.06656
+05/21/2022 17:37:21 - INFO: Mini batch Iter: 3 train_loss= 10.19612 graph_loss= 10.12955 reg_loss= 0.06656
+05/21/2022 17:37:21 - INFO: Time for epoch : 1.3049051761627197
+05/21/2022 17:37:24 - INFO: Test results at epoch 29: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FD32A09488>, {'operator_hadamard': [0.7940528657607342, 0.7940528657607342]}) best is : operator_hadamard 0.7940528657607342
+05/21/2022 17:37:24 - INFO: Best epoch 23
+05/21/2022 17:37:26 - INFO: Best epoch test results defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001FD32A099D8>, {'operator_hadamard': [0.8102828365339289, 0.8102828365339289]})
+
+05/21/2022 17:37:33 - INFO: dict_items([('base_model', 'DyMADC'), ('model', 'default'), ('test_subset', 0.3), ('min_time', 1), ('max_time', 9), ('dataset', 'fb-forum'), ('dataname', 'fb-forum_8_by_edgesNumber_0.3'), ('time_steps', 9), ('GPU_ID', 0), ('epochs', 30), ('batch_size', 256), ('featureless', 'True'), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', 'False'), ('structural_head_config', '16,8,8'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '64'), ('position_ffn', 'True'), ('optimizer', 'adam'), ('seed', 7), ('save_dir', '/output'), ('log_dir', '/log'), ('csv_dir', '/csv'), ('model_dir', '/model'), ('window', -1)])
+05/21/2022 17:37:37 - INFO: # train: 23604, # test: 10116
+05/21/2022 17:37:51 - WARNING: From D:\Anaconda3\envs\tf_1\lib\site-packages\tensorflow\python\ops\sparse_grad.py:281: calling sparse_reduce_sum (from tensorflow.python.ops.sparse_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+05/21/2022 17:38:22 - INFO: Mini batch Iter: 0 train_loss= 13.27101 graph_loss= 13.19351 reg_loss= 0.07749
+05/21/2022 17:38:23 - INFO: Mini batch Iter: 1 train_loss= 12.41404 graph_loss= 12.33706 reg_loss= 0.07697
+05/21/2022 17:38:24 - INFO: Mini batch Iter: 2 train_loss= 11.89178 graph_loss= 11.81530 reg_loss= 0.07648
+05/21/2022 17:38:25 - INFO: Mini batch Iter: 3 train_loss= 11.58621 graph_loss= 11.51020 reg_loss= 0.07601
+05/21/2022 17:38:25 - INFO: Time for epoch : 19.961692094802856
+05/21/2022 17:38:30 - INFO: Test results at epoch 0: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029A9AC64D08>, {'operator_hadamard': [0.7214197915880022, 0.7214197915880022]}) best is : operator_hadamard 0.7214197915880022
+05/21/2022 17:38:31 - INFO: Mini batch Iter: 0 train_loss= 11.43743 graph_loss= 11.36187 reg_loss= 0.07556
+05/21/2022 17:38:32 - INFO: Mini batch Iter: 1 train_loss= 11.31962 graph_loss= 11.24450 reg_loss= 0.07512
+05/21/2022 17:38:33 - INFO: Mini batch Iter: 2 train_loss= 11.24214 graph_loss= 11.16746 reg_loss= 0.07468
+05/21/2022 17:38:34 - INFO: Mini batch Iter: 3 train_loss= 11.21307 graph_loss= 11.13884 reg_loss= 0.07423
+05/21/2022 17:38:34 - INFO: Time for epoch : 1.2677428722381592
+05/21/2022 17:38:36 - INFO: Test results at epoch 1: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CDE840>, {'operator_hadamard': [0.7572813284054436, 0.7572813284054436]}) best is : operator_hadamard 0.7572813284054436
+05/21/2022 17:38:37 - INFO: Mini batch Iter: 0 train_loss= 11.18915 graph_loss= 11.11537 reg_loss= 0.07378
+05/21/2022 17:38:38 - INFO: Mini batch Iter: 1 train_loss= 11.17258 graph_loss= 11.09925 reg_loss= 0.07333
+05/21/2022 17:38:39 - INFO: Mini batch Iter: 2 train_loss= 11.16612 graph_loss= 11.09322 reg_loss= 0.07289
+05/21/2022 17:38:39 - INFO: Mini batch Iter: 3 train_loss= 11.14311 graph_loss= 11.07066 reg_loss= 0.07245
+05/21/2022 17:38:39 - INFO: Time for epoch : 1.271578311920166
+05/21/2022 17:38:41 - INFO: Test results at epoch 2: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029A9AC64E18>, {'operator_hadamard': [0.7699930851548686, 0.7699930851548686]}) best is : operator_hadamard 0.7699930851548686
+05/21/2022 17:38:42 - INFO: Mini batch Iter: 0 train_loss= 11.14731 graph_loss= 11.07529 reg_loss= 0.07202
+05/21/2022 17:38:43 - INFO: Mini batch Iter: 1 train_loss= 11.12945 graph_loss= 11.05786 reg_loss= 0.07159
+05/21/2022 17:38:44 - INFO: Mini batch Iter: 2 train_loss= 11.13769 graph_loss= 11.06653 reg_loss= 0.07117
+05/21/2022 17:38:45 - INFO: Mini batch Iter: 3 train_loss= 11.09674 graph_loss= 11.02599 reg_loss= 0.07075
+05/21/2022 17:38:45 - INFO: Time for epoch : 1.241964340209961
+05/21/2022 17:38:47 - INFO: Test results at epoch 3: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CE60D0>, {'operator_hadamard': [0.7652282504755825, 0.7652282504755825]}) best is : operator_hadamard 0.7652282504755825
+05/21/2022 17:38:48 - INFO: Mini batch Iter: 0 train_loss= 11.10652 graph_loss= 11.03618 reg_loss= 0.07035
+05/21/2022 17:38:49 - INFO: Mini batch Iter: 1 train_loss= 11.07339 graph_loss= 11.00344 reg_loss= 0.06996
+05/21/2022 17:38:49 - INFO: Mini batch Iter: 2 train_loss= 11.08059 graph_loss= 11.01101 reg_loss= 0.06959
+05/21/2022 17:38:50 - INFO: Mini batch Iter: 3 train_loss= 11.06982 graph_loss= 11.00060 reg_loss= 0.06923
+05/21/2022 17:38:50 - INFO: Time for epoch : 1.2285361289978027
+05/21/2022 17:38:52 - INFO: Test results at epoch 4: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CE66A8>, {'operator_hadamard': [0.7633861842797529, 0.7633861842797529]}) best is : operator_hadamard 0.7633861842797529
+05/21/2022 17:38:53 - INFO: Mini batch Iter: 0 train_loss= 11.09887 graph_loss= 11.02998 reg_loss= 0.06889
+05/21/2022 17:38:54 - INFO: Mini batch Iter: 1 train_loss= 11.02870 graph_loss= 10.96014 reg_loss= 0.06856
+05/21/2022 17:38:55 - INFO: Mini batch Iter: 2 train_loss= 11.07861 graph_loss= 11.01036 reg_loss= 0.06825
+05/21/2022 17:38:56 - INFO: Mini batch Iter: 3 train_loss= 11.02406 graph_loss= 10.95610 reg_loss= 0.06796
+05/21/2022 17:38:56 - INFO: Time for epoch : 1.2714247703552246
+05/21/2022 17:38:58 - INFO: Test results at epoch 5: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CEE158>, {'operator_hadamard': [0.7682285107228276, 0.7682285107228276]}) best is : operator_hadamard 0.7682285107228276
+05/21/2022 17:38:59 - INFO: Mini batch Iter: 0 train_loss= 10.89101 graph_loss= 10.82332 reg_loss= 0.06769
+05/21/2022 17:38:59 - INFO: Mini batch Iter: 1 train_loss= 11.01423 graph_loss= 10.94679 reg_loss= 0.06744
+05/21/2022 17:39:00 - INFO: Mini batch Iter: 2 train_loss= 10.96517 graph_loss= 10.89795 reg_loss= 0.06721
+05/21/2022 17:39:01 - INFO: Mini batch Iter: 3 train_loss= 10.92414 graph_loss= 10.85714 reg_loss= 0.06700
+05/21/2022 17:39:01 - INFO: Time for epoch : 1.228626012802124
+05/21/2022 17:39:03 - INFO: Test results at epoch 6: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CEE840>, {'operator_hadamard': [0.7740586470567358, 0.7740586470567358]}) best is : operator_hadamard 0.7740586470567358
+05/21/2022 17:39:04 - INFO: Mini batch Iter: 0 train_loss= 10.96567 graph_loss= 10.89886 reg_loss= 0.06682
+05/21/2022 17:39:05 - INFO: Mini batch Iter: 1 train_loss= 10.86745 graph_loss= 10.80080 reg_loss= 0.06665
+05/21/2022 17:39:06 - INFO: Mini batch Iter: 2 train_loss= 10.71808 graph_loss= 10.65158 reg_loss= 0.06650
+05/21/2022 17:39:07 - INFO: Mini batch Iter: 3 train_loss= 10.78557 graph_loss= 10.71919 reg_loss= 0.06638
+05/21/2022 17:39:07 - INFO: Time for epoch : 1.2742342948913574
+05/21/2022 17:39:09 - INFO: Test results at epoch 7: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CEEF28>, {'operator_hadamard': [0.779963123692412, 0.779963123692412]}) best is : operator_hadamard 0.779963123692412
+05/21/2022 17:39:10 - INFO: Mini batch Iter: 0 train_loss= 10.92977 graph_loss= 10.86349 reg_loss= 0.06628
+05/21/2022 17:39:11 - INFO: Mini batch Iter: 1 train_loss= 10.74468 graph_loss= 10.67850 reg_loss= 0.06619
+05/21/2022 17:39:12 - INFO: Mini batch Iter: 2 train_loss= 10.50883 graph_loss= 10.44271 reg_loss= 0.06612
+05/21/2022 17:39:12 - INFO: Mini batch Iter: 3 train_loss= 10.45835 graph_loss= 10.39229 reg_loss= 0.06606
+05/21/2022 17:39:12 - INFO: Time for epoch : 1.1546308994293213
+05/21/2022 17:39:14 - INFO: Test results at epoch 8: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CEE488>, {'operator_hadamard': [0.7825980830746104, 0.7825980830746104]}) best is : operator_hadamard 0.7825980830746104
+05/21/2022 17:39:15 - INFO: Mini batch Iter: 0 train_loss= 10.72700 graph_loss= 10.66097 reg_loss= 0.06603
+05/21/2022 17:39:16 - INFO: Mini batch Iter: 1 train_loss= 10.72990 graph_loss= 10.66389 reg_loss= 0.06601
+05/21/2022 17:39:17 - INFO: Mini batch Iter: 2 train_loss= 10.31807 graph_loss= 10.25206 reg_loss= 0.06600
+05/21/2022 17:39:18 - INFO: Mini batch Iter: 3 train_loss= 10.42284 graph_loss= 10.35684 reg_loss= 0.06600
+05/21/2022 17:39:18 - INFO: Time for epoch : 1.2996759414672852
+05/21/2022 17:39:20 - INFO: Test results at epoch 9: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CE6730>, {'operator_hadamard': [0.7817347192886752, 0.7817347192886752]}) best is : operator_hadamard 0.7817347192886752
+05/21/2022 17:39:21 - INFO: Mini batch Iter: 0 train_loss= 10.94704 graph_loss= 10.88103 reg_loss= 0.06602
+05/21/2022 17:39:22 - INFO: Mini batch Iter: 1 train_loss= 10.58910 graph_loss= 10.52306 reg_loss= 0.06605
+05/21/2022 17:39:23 - INFO: Mini batch Iter: 2 train_loss= 10.16094 graph_loss= 10.09486 reg_loss= 0.06608
+05/21/2022 17:39:24 - INFO: Mini batch Iter: 3 train_loss= 10.80965 graph_loss= 10.74354 reg_loss= 0.06611
+05/21/2022 17:39:24 - INFO: Time for epoch : 1.2314047813415527
+05/21/2022 17:39:26 - INFO: Test results at epoch 10: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CE6BF8>, {'operator_hadamard': [0.7812852084268511, 0.7812852084268511]}) best is : operator_hadamard 0.7812852084268511
+05/21/2022 17:39:27 - INFO: Mini batch Iter: 0 train_loss= 10.42959 graph_loss= 10.36349 reg_loss= 0.06610
+05/21/2022 17:39:28 - INFO: Mini batch Iter: 1 train_loss= 10.46302 graph_loss= 10.39693 reg_loss= 0.06609
+05/21/2022 17:39:29 - INFO: Mini batch Iter: 2 train_loss= 10.66274 graph_loss= 10.59668 reg_loss= 0.06606
+05/21/2022 17:39:29 - INFO: Mini batch Iter: 3 train_loss= 10.12610 graph_loss= 10.06007 reg_loss= 0.06603
+05/21/2022 17:39:29 - INFO: Time for epoch : 1.257735013961792
+05/21/2022 17:39:32 - INFO: Test results at epoch 11: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CE62F0>, {'operator_hadamard': [0.7778704796210537, 0.7778704796210537]}) best is : operator_hadamard 0.7778704796210537
+05/21/2022 17:39:33 - INFO: Mini batch Iter: 0 train_loss= 10.61433 graph_loss= 10.54834 reg_loss= 0.06599
+05/21/2022 17:39:34 - INFO: Mini batch Iter: 1 train_loss= 10.42440 graph_loss= 10.35844 reg_loss= 0.06596
+05/21/2022 17:39:34 - INFO: Mini batch Iter: 2 train_loss= 10.24733 graph_loss= 10.18139 reg_loss= 0.06594
+05/21/2022 17:39:35 - INFO: Mini batch Iter: 3 train_loss= 10.38898 graph_loss= 10.32307 reg_loss= 0.06591
+05/21/2022 17:39:35 - INFO: Time for epoch : 1.2273359298706055
+05/21/2022 17:39:37 - INFO: Test results at epoch 12: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CEE9D8>, {'operator_hadamard': [0.7751386555341198, 0.7751386555341198]}) best is : operator_hadamard 0.7751386555341198
+05/21/2022 17:39:38 - INFO: Mini batch Iter: 0 train_loss= 10.17722 graph_loss= 10.11133 reg_loss= 0.06589
+05/21/2022 17:39:39 - INFO: Mini batch Iter: 1 train_loss= 10.43849 graph_loss= 10.37263 reg_loss= 0.06586
+05/21/2022 17:39:40 - INFO: Mini batch Iter: 2 train_loss= 10.40525 graph_loss= 10.33941 reg_loss= 0.06584
+05/21/2022 17:39:41 - INFO: Mini batch Iter: 3 train_loss= 10.32619 graph_loss= 10.26037 reg_loss= 0.06582
+05/21/2022 17:39:41 - INFO: Time for epoch : 1.2373244762420654
+05/21/2022 17:39:43 - INFO: Test results at epoch 13: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CE6B70>, {'operator_hadamard': [0.7745431318180048, 0.7745431318180048]}) best is : operator_hadamard 0.7745431318180048
+05/21/2022 17:39:44 - INFO: Mini batch Iter: 0 train_loss= 10.14700 graph_loss= 10.08118 reg_loss= 0.06581
+05/21/2022 17:39:45 - INFO: Mini batch Iter: 1 train_loss= 10.39477 graph_loss= 10.32896 reg_loss= 0.06581
+05/21/2022 17:39:46 - INFO: Mini batch Iter: 2 train_loss= 10.45349 graph_loss= 10.38768 reg_loss= 0.06581
+05/21/2022 17:39:46 - INFO: Mini batch Iter: 3 train_loss= 10.53914 graph_loss= 10.47333 reg_loss= 0.06581
+05/21/2022 17:39:46 - INFO: Time for epoch : 1.1757245063781738
+05/21/2022 17:39:49 - INFO: Test results at epoch 14: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CEEC80>, {'operator_hadamard': [0.7792140187271698, 0.7792140187271698]}) best is : operator_hadamard 0.7792140187271698
+05/21/2022 17:39:50 - INFO: Mini batch Iter: 0 train_loss= 10.27003 graph_loss= 10.20424 reg_loss= 0.06579
+05/21/2022 17:39:51 - INFO: Mini batch Iter: 1 train_loss= 10.46486 graph_loss= 10.39909 reg_loss= 0.06577
+05/21/2022 17:39:52 - INFO: Mini batch Iter: 2 train_loss= 10.43123 graph_loss= 10.36549 reg_loss= 0.06574
+05/21/2022 17:39:52 - INFO: Mini batch Iter: 3 train_loss= 10.12807 graph_loss= 10.06236 reg_loss= 0.06571
+05/21/2022 17:39:52 - INFO: Time for epoch : 1.2426540851593018
+05/21/2022 17:39:54 - INFO: Test results at epoch 15: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CE6E18>, {'operator_hadamard': [0.7757513290668108, 0.7757513290668108]}) best is : operator_hadamard 0.7757513290668108
+05/21/2022 17:39:55 - INFO: Mini batch Iter: 0 train_loss= 10.14748 graph_loss= 10.08180 reg_loss= 0.06568
+05/21/2022 17:39:56 - INFO: Mini batch Iter: 1 train_loss= 10.18822 graph_loss= 10.12256 reg_loss= 0.06566
+05/21/2022 17:39:57 - INFO: Mini batch Iter: 2 train_loss= 10.20852 graph_loss= 10.14288 reg_loss= 0.06565
+05/21/2022 17:39:58 - INFO: Mini batch Iter: 3 train_loss= 10.77860 graph_loss= 10.71296 reg_loss= 0.06564
+05/21/2022 17:39:58 - INFO: Time for epoch : 1.2145633697509766
+05/21/2022 17:40:00 - INFO: Test results at epoch 16: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CEE840>, {'operator_hadamard': [0.7734395142483999, 0.7734395142483999]}) best is : operator_hadamard 0.7734395142483999
+05/21/2022 17:40:01 - INFO: Mini batch Iter: 0 train_loss= 10.27195 graph_loss= 10.20632 reg_loss= 0.06563
+05/21/2022 17:40:02 - INFO: Mini batch Iter: 1 train_loss= 10.26540 graph_loss= 10.19977 reg_loss= 0.06563
+05/21/2022 17:40:03 - INFO: Mini batch Iter: 2 train_loss= 10.49943 graph_loss= 10.43380 reg_loss= 0.06563
+05/21/2022 17:40:04 - INFO: Mini batch Iter: 3 train_loss= 10.27464 graph_loss= 10.20900 reg_loss= 0.06564
+05/21/2022 17:40:04 - INFO: Time for epoch : 1.2751710414886475
+05/21/2022 17:40:06 - INFO: Test results at epoch 17: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CEE268>, {'operator_hadamard': [0.7764848819334316, 0.7764848819334316]}) best is : operator_hadamard 0.7764848819334316
+05/21/2022 17:40:07 - INFO: Mini batch Iter: 0 train_loss= 10.46624 graph_loss= 10.40060 reg_loss= 0.06564
+05/21/2022 17:40:08 - INFO: Mini batch Iter: 1 train_loss= 10.23101 graph_loss= 10.16537 reg_loss= 0.06564
+05/21/2022 17:40:09 - INFO: Mini batch Iter: 2 train_loss= 10.21915 graph_loss= 10.15351 reg_loss= 0.06564
+05/21/2022 17:40:09 - INFO: Mini batch Iter: 3 train_loss= 10.35706 graph_loss= 10.29143 reg_loss= 0.06563
+05/21/2022 17:40:09 - INFO: Time for epoch : 1.2180452346801758
+05/21/2022 17:40:11 - INFO: Test results at epoch 18: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CDE6A8>, {'operator_hadamard': [0.7798185277745335, 0.7798185277745335]}) best is : operator_hadamard 0.7798185277745335
+05/21/2022 17:40:12 - INFO: Mini batch Iter: 0 train_loss= 10.17949 graph_loss= 10.11387 reg_loss= 0.06562
+05/21/2022 17:40:13 - INFO: Mini batch Iter: 1 train_loss= 10.68790 graph_loss= 10.62229 reg_loss= 0.06562
+05/21/2022 17:40:14 - INFO: Mini batch Iter: 2 train_loss= 10.44783 graph_loss= 10.38221 reg_loss= 0.06562
+05/21/2022 17:40:15 - INFO: Mini batch Iter: 3 train_loss= 10.22422 graph_loss= 10.15862 reg_loss= 0.06560
+05/21/2022 17:40:15 - INFO: Time for epoch : 1.2753562927246094
+05/21/2022 17:40:17 - INFO: Test results at epoch 19: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CDE598>, {'operator_hadamard': [0.7809402870162032, 0.7809402870162032]}) best is : operator_hadamard 0.7809402870162032
+05/21/2022 17:40:18 - INFO: Mini batch Iter: 0 train_loss= 10.35919 graph_loss= 10.29361 reg_loss= 0.06559
+05/21/2022 17:40:19 - INFO: Mini batch Iter: 1 train_loss= 10.33340 graph_loss= 10.26782 reg_loss= 0.06558
+05/21/2022 17:40:20 - INFO: Mini batch Iter: 2 train_loss= 10.29465 graph_loss= 10.22908 reg_loss= 0.06557
+05/21/2022 17:40:21 - INFO: Mini batch Iter: 3 train_loss= 10.24751 graph_loss= 10.18196 reg_loss= 0.06554
+05/21/2022 17:40:21 - INFO: Time for epoch : 1.175705909729004
+05/21/2022 17:40:23 - INFO: Test results at epoch 20: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CEED08>, {'operator_hadamard': [0.7779467596599102, 0.7779467596599102]}) best is : operator_hadamard 0.7779467596599102
+05/21/2022 17:40:24 - INFO: Mini batch Iter: 0 train_loss= 10.12189 graph_loss= 10.05637 reg_loss= 0.06552
+05/21/2022 17:40:25 - INFO: Mini batch Iter: 1 train_loss= 9.98350 graph_loss= 9.91801 reg_loss= 0.06549
+05/21/2022 17:40:26 - INFO: Mini batch Iter: 2 train_loss= 10.36024 graph_loss= 10.29478 reg_loss= 0.06546
+05/21/2022 17:40:26 - INFO: Mini batch Iter: 3 train_loss= 10.38366 graph_loss= 10.31822 reg_loss= 0.06544
+05/21/2022 17:40:26 - INFO: Time for epoch : 1.2228145599365234
+05/21/2022 17:40:28 - INFO: Test results at epoch 21: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CEEAE8>, {'operator_hadamard': [0.7743403242435202, 0.7743403242435202]}) best is : operator_hadamard 0.7743403242435202
+05/21/2022 17:40:29 - INFO: Mini batch Iter: 0 train_loss= 10.26681 graph_loss= 10.20139 reg_loss= 0.06542
+05/21/2022 17:40:30 - INFO: Mini batch Iter: 1 train_loss= 10.76169 graph_loss= 10.69629 reg_loss= 0.06540
+05/21/2022 17:40:31 - INFO: Mini batch Iter: 2 train_loss= 10.22390 graph_loss= 10.15851 reg_loss= 0.06539
+05/21/2022 17:40:32 - INFO: Mini batch Iter: 3 train_loss= 10.00163 graph_loss= 9.93625 reg_loss= 0.06538
+05/21/2022 17:40:32 - INFO: Time for epoch : 1.2255465984344482
+05/21/2022 17:40:34 - INFO: Test results at epoch 22: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CE6158>, {'operator_hadamard': [0.7816018888290063, 0.7816018888290063]}) best is : operator_hadamard 0.7816018888290063
+05/21/2022 17:40:35 - INFO: Mini batch Iter: 0 train_loss= 10.26810 graph_loss= 10.20273 reg_loss= 0.06537
+05/21/2022 17:40:36 - INFO: Mini batch Iter: 1 train_loss= 10.29121 graph_loss= 10.22585 reg_loss= 0.06536
+05/21/2022 17:40:37 - INFO: Mini batch Iter: 2 train_loss= 10.05543 graph_loss= 9.99009 reg_loss= 0.06534
+05/21/2022 17:40:38 - INFO: Mini batch Iter: 3 train_loss= 10.27432 graph_loss= 10.20900 reg_loss= 0.06531
+05/21/2022 17:40:38 - INFO: Time for epoch : 1.2078633308410645
+05/21/2022 17:40:40 - INFO: Test results at epoch 23: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029A9AC649D8>, {'operator_hadamard': [0.7837065084560421, 0.7837065084560421]}) best is : operator_hadamard 0.7837065084560421
+05/21/2022 17:40:41 - INFO: Mini batch Iter: 0 train_loss= 10.22197 graph_loss= 10.15668 reg_loss= 0.06529
+05/21/2022 17:40:42 - INFO: Mini batch Iter: 1 train_loss= 9.81818 graph_loss= 9.75293 reg_loss= 0.06525
+05/21/2022 17:40:43 - INFO: Mini batch Iter: 2 train_loss= 10.06191 graph_loss= 9.99669 reg_loss= 0.06521
+05/21/2022 17:40:43 - INFO: Mini batch Iter: 3 train_loss= 10.34909 graph_loss= 10.28390 reg_loss= 0.06518
+05/21/2022 17:40:43 - INFO: Time for epoch : 1.211561679840088
+05/21/2022 17:40:45 - INFO: Test results at epoch 24: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CED048>, {'operator_hadamard': [0.7779617791858803, 0.7779617791858803]}) best is : operator_hadamard 0.7779617791858803
+05/21/2022 17:40:46 - INFO: Mini batch Iter: 0 train_loss= 10.48826 graph_loss= 10.42309 reg_loss= 0.06516
+05/21/2022 17:40:47 - INFO: Mini batch Iter: 1 train_loss= 10.29554 graph_loss= 10.23038 reg_loss= 0.06515
+05/21/2022 17:40:48 - INFO: Mini batch Iter: 2 train_loss= 10.05775 graph_loss= 9.99262 reg_loss= 0.06513
+05/21/2022 17:40:49 - INFO: Mini batch Iter: 3 train_loss= 9.85560 graph_loss= 9.79049 reg_loss= 0.06511
+05/21/2022 17:40:49 - INFO: Time for epoch : 1.2746050357818604
+05/21/2022 17:40:51 - INFO: Test results at epoch 25: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CEE7B8>, {'operator_hadamard': [0.7756115018728578, 0.7756115018728578]}) best is : operator_hadamard 0.7756115018728578
+05/21/2022 17:40:52 - INFO: Mini batch Iter: 0 train_loss= 10.38813 graph_loss= 10.32304 reg_loss= 0.06509
+05/21/2022 17:40:53 - INFO: Mini batch Iter: 1 train_loss= 10.16355 graph_loss= 10.09850 reg_loss= 0.06506
+05/21/2022 17:40:54 - INFO: Mini batch Iter: 2 train_loss= 9.92939 graph_loss= 9.86436 reg_loss= 0.06503
+05/21/2022 17:40:55 - INFO: Mini batch Iter: 3 train_loss= 10.32512 graph_loss= 10.26012 reg_loss= 0.06501
+05/21/2022 17:40:55 - INFO: Time for epoch : 1.2253460884094238
+05/21/2022 17:40:57 - INFO: Test results at epoch 26: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CEEBF8>, {'operator_hadamard': [0.770435804493889, 0.770435804493889]}) best is : operator_hadamard 0.770435804493889
+05/21/2022 17:40:58 - INFO: Mini batch Iter: 0 train_loss= 10.40412 graph_loss= 10.33913 reg_loss= 0.06499
+05/21/2022 17:40:59 - INFO: Mini batch Iter: 1 train_loss= 10.52030 graph_loss= 10.45531 reg_loss= 0.06499
+05/21/2022 17:41:00 - INFO: Mini batch Iter: 2 train_loss= 10.39849 graph_loss= 10.33351 reg_loss= 0.06498
+05/21/2022 17:41:00 - INFO: Mini batch Iter: 3 train_loss= 10.29473 graph_loss= 10.22977 reg_loss= 0.06496
+05/21/2022 17:41:00 - INFO: Time for epoch : 1.22160005569458
+05/21/2022 17:41:02 - INFO: Test results at epoch 27: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CEEF28>, {'operator_hadamard': [0.7776238447375412, 0.7776238447375412]}) best is : operator_hadamard 0.7776238447375412
+05/21/2022 17:41:04 - INFO: Mini batch Iter: 0 train_loss= 10.46894 graph_loss= 10.40400 reg_loss= 0.06495
+05/21/2022 17:41:04 - INFO: Mini batch Iter: 1 train_loss= 10.04769 graph_loss= 9.98275 reg_loss= 0.06494
+05/21/2022 17:41:05 - INFO: Mini batch Iter: 2 train_loss= 10.45695 graph_loss= 10.39202 reg_loss= 0.06492
+05/21/2022 17:41:06 - INFO: Mini batch Iter: 3 train_loss= 9.83947 graph_loss= 9.77456 reg_loss= 0.06491
+05/21/2022 17:41:06 - INFO: Time for epoch : 1.2376720905303955
+05/21/2022 17:41:08 - INFO: Test results at epoch 28: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CEE1E0>, {'operator_hadamard': [0.7820565983816671, 0.7820565983816671]}) best is : operator_hadamard 0.7820565983816671
+05/21/2022 17:41:09 - INFO: Mini batch Iter: 0 train_loss= 9.88156 graph_loss= 9.81667 reg_loss= 0.06489
+05/21/2022 17:41:10 - INFO: Mini batch Iter: 1 train_loss= 10.19922 graph_loss= 10.13435 reg_loss= 0.06487
+05/21/2022 17:41:11 - INFO: Mini batch Iter: 2 train_loss= 10.14823 graph_loss= 10.08337 reg_loss= 0.06486
+05/21/2022 17:41:11 - INFO: Mini batch Iter: 3 train_loss= 10.38470 graph_loss= 10.31986 reg_loss= 0.06484
+05/21/2022 17:41:11 - INFO: Time for epoch : 1.152648687362671
+05/21/2022 17:41:14 - INFO: Test results at epoch 29: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CDEAE8>, {'operator_hadamard': [0.7746347734019654, 0.7746347734019654]}) best is : operator_hadamard 0.7746347734019654
+05/21/2022 17:41:14 - INFO: Best epoch 23
+05/21/2022 17:41:16 - INFO: Best epoch test results defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000029AA2CDE598>, {'operator_hadamard': [0.7837065084560421, 0.7837065084560421]})
+
+05/21/2022 17:41:23 - INFO: dict_items([('base_model', 'DyMADC'), ('model', 'default'), ('test_subset', 0.4), ('min_time', 1), ('max_time', 9), ('dataset', 'fb-forum'), ('dataname', 'fb-forum_8_by_edgesNumber_0.4'), ('time_steps', 9), ('GPU_ID', 0), ('epochs', 30), ('batch_size', 256), ('featureless', 'True'), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', 'False'), ('structural_head_config', '16,8,8'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '64'), ('position_ffn', 'True'), ('optimizer', 'adam'), ('seed', 7), ('save_dir', '/output'), ('log_dir', '/log'), ('csv_dir', '/csv'), ('model_dir', '/model'), ('window', -1)])
+05/21/2022 17:41:27 - INFO: # train: 20232, # test: 13488
+05/21/2022 17:41:40 - WARNING: From D:\Anaconda3\envs\tf_1\lib\site-packages\tensorflow\python\ops\sparse_grad.py:281: calling sparse_reduce_sum (from tensorflow.python.ops.sparse_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+05/21/2022 17:42:12 - INFO: Mini batch Iter: 0 train_loss= 13.22766 graph_loss= 13.15016 reg_loss= 0.07749
+05/21/2022 17:42:13 - INFO: Mini batch Iter: 1 train_loss= 12.41382 graph_loss= 12.33692 reg_loss= 0.07690
+05/21/2022 17:42:14 - INFO: Mini batch Iter: 2 train_loss= 11.88885 graph_loss= 11.81251 reg_loss= 0.07633
+05/21/2022 17:42:14 - INFO: Mini batch Iter: 3 train_loss= 11.61727 graph_loss= 11.54146 reg_loss= 0.07580
+05/21/2022 17:42:14 - INFO: Time for epoch : 19.917301893234253
+05/21/2022 17:42:20 - INFO: Test results at epoch 0: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B99A830D08>, {'operator_hadamard': [0.718356274291176, 0.718356274291176]}) best is : operator_hadamard 0.718356274291176
+05/21/2022 17:42:21 - INFO: Mini batch Iter: 0 train_loss= 11.44228 graph_loss= 11.36700 reg_loss= 0.07528
+05/21/2022 17:42:22 - INFO: Mini batch Iter: 1 train_loss= 11.35156 graph_loss= 11.27680 reg_loss= 0.07476
+05/21/2022 17:42:23 - INFO: Mini batch Iter: 2 train_loss= 11.25983 graph_loss= 11.18559 reg_loss= 0.07424
+05/21/2022 17:42:23 - INFO: Mini batch Iter: 3 train_loss= 11.22094 graph_loss= 11.14723 reg_loss= 0.07371
+05/21/2022 17:42:23 - INFO: Time for epoch : 1.2600030899047852
+05/21/2022 17:42:25 - INFO: Test results at epoch 1: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A28E18>, {'operator_hadamard': [0.7553427615109567, 0.7553427615109567]}) best is : operator_hadamard 0.7553427615109567
+05/21/2022 17:42:26 - INFO: Mini batch Iter: 0 train_loss= 11.18825 graph_loss= 11.11506 reg_loss= 0.07319
+05/21/2022 17:42:27 - INFO: Mini batch Iter: 1 train_loss= 11.18356 graph_loss= 11.11089 reg_loss= 0.07267
+05/21/2022 17:42:28 - INFO: Mini batch Iter: 2 train_loss= 11.16593 graph_loss= 11.09377 reg_loss= 0.07216
+05/21/2022 17:42:29 - INFO: Mini batch Iter: 3 train_loss= 11.14307 graph_loss= 11.07141 reg_loss= 0.07166
+05/21/2022 17:42:29 - INFO: Time for epoch : 1.2019083499908447
+05/21/2022 17:42:30 - INFO: Test results at epoch 2: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2BE09D8>, {'operator_hadamard': [0.7719438883946224, 0.7719438883946224]}) best is : operator_hadamard 0.7719438883946224
+05/21/2022 17:42:32 - INFO: Mini batch Iter: 0 train_loss= 11.15309 graph_loss= 11.08191 reg_loss= 0.07117
+05/21/2022 17:42:33 - INFO: Mini batch Iter: 1 train_loss= 11.14429 graph_loss= 11.07360 reg_loss= 0.07069
+05/21/2022 17:42:33 - INFO: Mini batch Iter: 2 train_loss= 11.12657 graph_loss= 11.05635 reg_loss= 0.07022
+05/21/2022 17:42:34 - INFO: Mini batch Iter: 3 train_loss= 11.09699 graph_loss= 11.02723 reg_loss= 0.06976
+05/21/2022 17:42:34 - INFO: Time for epoch : 1.2166674137115479
+05/21/2022 17:42:36 - INFO: Test results at epoch 3: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B99A830EA0>, {'operator_hadamard': [0.7749402087035935, 0.7749402087035935]}) best is : operator_hadamard 0.7749402087035935
+05/21/2022 17:42:37 - INFO: Mini batch Iter: 0 train_loss= 11.10839 graph_loss= 11.03908 reg_loss= 0.06931
+05/21/2022 17:42:38 - INFO: Mini batch Iter: 1 train_loss= 11.10243 graph_loss= 11.03356 reg_loss= 0.06887
+05/21/2022 17:42:39 - INFO: Mini batch Iter: 2 train_loss= 11.08340 graph_loss= 11.01494 reg_loss= 0.06846
+05/21/2022 17:42:39 - INFO: Mini batch Iter: 3 train_loss= 11.12079 graph_loss= 11.05273 reg_loss= 0.06806
+05/21/2022 17:42:39 - INFO: Time for epoch : 1.2318789958953857
+05/21/2022 17:42:41 - INFO: Test results at epoch 4: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B99A830730>, {'operator_hadamard': [0.7749652958070721, 0.7749652958070721]}) best is : operator_hadamard 0.7749652958070721
+05/21/2022 17:42:42 - INFO: Mini batch Iter: 0 train_loss= 11.07399 graph_loss= 11.00632 reg_loss= 0.06767
+05/21/2022 17:42:43 - INFO: Mini batch Iter: 1 train_loss= 11.07121 graph_loss= 11.00390 reg_loss= 0.06730
+05/21/2022 17:42:44 - INFO: Mini batch Iter: 2 train_loss= 11.00278 graph_loss= 10.93582 reg_loss= 0.06696
+05/21/2022 17:42:45 - INFO: Mini batch Iter: 3 train_loss= 11.00873 graph_loss= 10.94209 reg_loss= 0.06663
+05/21/2022 17:42:45 - INFO: Time for epoch : 1.2120988368988037
+05/21/2022 17:42:47 - INFO: Test results at epoch 5: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A3C730>, {'operator_hadamard': [0.7765064211991433, 0.7765064211991433]}) best is : operator_hadamard 0.7765064211991433
+05/21/2022 17:42:48 - INFO: Mini batch Iter: 0 train_loss= 10.95287 graph_loss= 10.88654 reg_loss= 0.06633
+05/21/2022 17:42:48 - INFO: Mini batch Iter: 1 train_loss= 10.88371 graph_loss= 10.81765 reg_loss= 0.06605
+05/21/2022 17:42:49 - INFO: Mini batch Iter: 2 train_loss= 10.93470 graph_loss= 10.86889 reg_loss= 0.06580
+05/21/2022 17:42:50 - INFO: Mini batch Iter: 3 train_loss= 10.91894 graph_loss= 10.85336 reg_loss= 0.06558
+05/21/2022 17:42:50 - INFO: Time for epoch : 1.23313307762146
+05/21/2022 17:42:52 - INFO: Test results at epoch 6: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A3C2F0>, {'operator_hadamard': [0.7779023613010783, 0.7779023613010783]}) best is : operator_hadamard 0.7779023613010783
+05/21/2022 17:42:53 - INFO: Mini batch Iter: 0 train_loss= 10.78206 graph_loss= 10.71669 reg_loss= 0.06538
+05/21/2022 17:42:54 - INFO: Mini batch Iter: 1 train_loss= 10.77111 graph_loss= 10.70591 reg_loss= 0.06520
+05/21/2022 17:42:55 - INFO: Mini batch Iter: 2 train_loss= 10.84500 graph_loss= 10.77994 reg_loss= 0.06506
+05/21/2022 17:42:56 - INFO: Mini batch Iter: 3 train_loss= 10.73393 graph_loss= 10.66899 reg_loss= 0.06494
+05/21/2022 17:42:56 - INFO: Time for epoch : 1.2048587799072266
+05/21/2022 17:42:57 - INFO: Test results at epoch 7: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A282F0>, {'operator_hadamard': [0.7775725681296253, 0.7775725681296253]}) best is : operator_hadamard 0.7775725681296253
+05/21/2022 17:42:59 - INFO: Mini batch Iter: 0 train_loss= 10.74177 graph_loss= 10.67693 reg_loss= 0.06484
+05/21/2022 17:42:59 - INFO: Mini batch Iter: 1 train_loss= 10.69880 graph_loss= 10.63403 reg_loss= 0.06477
+05/21/2022 17:43:00 - INFO: Mini batch Iter: 2 train_loss= 10.47051 graph_loss= 10.40580 reg_loss= 0.06471
+05/21/2022 17:43:01 - INFO: Mini batch Iter: 3 train_loss= 10.30963 graph_loss= 10.24497 reg_loss= 0.06466
+05/21/2022 17:43:01 - INFO: Time for epoch : 1.2272865772247314
+05/21/2022 17:43:03 - INFO: Test results at epoch 8: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A28400>, {'operator_hadamard': [0.7784127222528281, 0.7784127222528281]}) best is : operator_hadamard 0.7784127222528281
+05/21/2022 17:43:04 - INFO: Mini batch Iter: 0 train_loss= 10.78510 graph_loss= 10.72046 reg_loss= 0.06463
+05/21/2022 17:43:05 - INFO: Mini batch Iter: 1 train_loss= 10.43821 graph_loss= 10.37359 reg_loss= 0.06462
+05/21/2022 17:43:06 - INFO: Mini batch Iter: 2 train_loss= 10.74762 graph_loss= 10.68301 reg_loss= 0.06461
+05/21/2022 17:43:07 - INFO: Mini batch Iter: 3 train_loss= 10.35816 graph_loss= 10.29355 reg_loss= 0.06461
+05/21/2022 17:43:07 - INFO: Time for epoch : 1.2137336730957031
+05/21/2022 17:43:09 - INFO: Test results at epoch 9: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B99A830950>, {'operator_hadamard': [0.7806254608463531, 0.7806254608463531]}) best is : operator_hadamard 0.7806254608463531
+05/21/2022 17:43:10 - INFO: Mini batch Iter: 0 train_loss= 10.56906 graph_loss= 10.50444 reg_loss= 0.06462
+05/21/2022 17:43:11 - INFO: Mini batch Iter: 1 train_loss= 10.39457 graph_loss= 10.32994 reg_loss= 0.06463
+05/21/2022 17:43:12 - INFO: Mini batch Iter: 2 train_loss= 10.22888 graph_loss= 10.16424 reg_loss= 0.06463
+05/21/2022 17:43:12 - INFO: Mini batch Iter: 3 train_loss= 10.70370 graph_loss= 10.63906 reg_loss= 0.06463
+05/21/2022 17:43:12 - INFO: Time for epoch : 1.19940185546875
+05/21/2022 17:43:14 - INFO: Test results at epoch 10: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B99A830AE8>, {'operator_hadamard': [0.7824370531373435, 0.7824370531373435]}) best is : operator_hadamard 0.7824370531373435
+05/21/2022 17:43:15 - INFO: Mini batch Iter: 0 train_loss= 10.75722 graph_loss= 10.69261 reg_loss= 0.06461
+05/21/2022 17:43:16 - INFO: Mini batch Iter: 1 train_loss= 10.74741 graph_loss= 10.68282 reg_loss= 0.06459
+05/21/2022 17:43:17 - INFO: Mini batch Iter: 2 train_loss= 10.47970 graph_loss= 10.41513 reg_loss= 0.06457
+05/21/2022 17:43:18 - INFO: Mini batch Iter: 3 train_loss= 10.51273 graph_loss= 10.44818 reg_loss= 0.06454
+05/21/2022 17:43:18 - INFO: Time for epoch : 1.201082468032837
+05/21/2022 17:43:20 - INFO: Test results at epoch 11: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2BE0840>, {'operator_hadamard': [0.7836155478566071, 0.7836155478566071]}) best is : operator_hadamard 0.7836155478566071
+05/21/2022 17:43:21 - INFO: Mini batch Iter: 0 train_loss= 10.28384 graph_loss= 10.21933 reg_loss= 0.06451
+05/21/2022 17:43:22 - INFO: Mini batch Iter: 1 train_loss= 10.24588 graph_loss= 10.18140 reg_loss= 0.06448
+05/21/2022 17:43:23 - INFO: Mini batch Iter: 2 train_loss= 10.36652 graph_loss= 10.30207 reg_loss= 0.06445
+05/21/2022 17:43:24 - INFO: Mini batch Iter: 3 train_loss= 10.57304 graph_loss= 10.50863 reg_loss= 0.06441
+05/21/2022 17:43:24 - INFO: Time for epoch : 1.2500498294830322
+05/21/2022 17:43:26 - INFO: Test results at epoch 12: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A28A60>, {'operator_hadamard': [0.782949541325957, 0.782949541325957]}) best is : operator_hadamard 0.782949541325957
+05/21/2022 17:43:27 - INFO: Mini batch Iter: 0 train_loss= 10.37814 graph_loss= 10.31378 reg_loss= 0.06436
+05/21/2022 17:43:28 - INFO: Mini batch Iter: 1 train_loss= 10.57536 graph_loss= 10.51103 reg_loss= 0.06433
+05/21/2022 17:43:28 - INFO: Mini batch Iter: 2 train_loss= 10.16945 graph_loss= 10.10515 reg_loss= 0.06430
+05/21/2022 17:43:29 - INFO: Mini batch Iter: 3 train_loss= 10.26661 graph_loss= 10.20233 reg_loss= 0.06428
+05/21/2022 17:43:29 - INFO: Time for epoch : 1.1536107063293457
+05/21/2022 17:43:31 - INFO: Test results at epoch 13: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A28048>, {'operator_hadamard': [0.784345151623727, 0.784345151623727]}) best is : operator_hadamard 0.784345151623727
+05/21/2022 17:43:32 - INFO: Mini batch Iter: 0 train_loss= 10.35571 graph_loss= 10.29144 reg_loss= 0.06427
+05/21/2022 17:43:33 - INFO: Mini batch Iter: 1 train_loss= 10.21593 graph_loss= 10.15167 reg_loss= 0.06426
+05/21/2022 17:43:34 - INFO: Mini batch Iter: 2 train_loss= 10.54224 graph_loss= 10.47799 reg_loss= 0.06425
+05/21/2022 17:43:35 - INFO: Mini batch Iter: 3 train_loss= 10.47195 graph_loss= 10.40771 reg_loss= 0.06424
+05/21/2022 17:43:35 - INFO: Time for epoch : 1.2235350608825684
+05/21/2022 17:43:37 - INFO: Test results at epoch 14: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A3CEA0>, {'operator_hadamard': [0.7857637547685286, 0.7857637547685286]}) best is : operator_hadamard 0.7857637547685286
+05/21/2022 17:43:38 - INFO: Mini batch Iter: 0 train_loss= 10.37455 graph_loss= 10.31032 reg_loss= 0.06422
+05/21/2022 17:43:39 - INFO: Mini batch Iter: 1 train_loss= 10.42733 graph_loss= 10.36314 reg_loss= 0.06419
+05/21/2022 17:43:40 - INFO: Mini batch Iter: 2 train_loss= 10.05915 graph_loss= 9.99499 reg_loss= 0.06416
+05/21/2022 17:43:40 - INFO: Mini batch Iter: 3 train_loss= 10.36515 graph_loss= 10.30102 reg_loss= 0.06413
+05/21/2022 17:43:40 - INFO: Time for epoch : 1.2189452648162842
+05/21/2022 17:43:43 - INFO: Test results at epoch 15: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A28488>, {'operator_hadamard': [0.782483154262864, 0.782483154262864]}) best is : operator_hadamard 0.782483154262864
+05/21/2022 17:43:44 - INFO: Mini batch Iter: 0 train_loss= 10.52224 graph_loss= 10.45814 reg_loss= 0.06411
+05/21/2022 17:43:44 - INFO: Mini batch Iter: 1 train_loss= 10.67365 graph_loss= 10.60957 reg_loss= 0.06409
+05/21/2022 17:43:46 - INFO: Mini batch Iter: 2 train_loss= 10.20772 graph_loss= 10.14365 reg_loss= 0.06407
+05/21/2022 17:43:46 - INFO: Mini batch Iter: 3 train_loss= 10.40983 graph_loss= 10.34576 reg_loss= 0.06407
+05/21/2022 17:43:46 - INFO: Time for epoch : 1.250349760055542
+05/21/2022 17:43:48 - INFO: Test results at epoch 16: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A3CD08>, {'operator_hadamard': [0.7817478009098022, 0.7817478009098022]}) best is : operator_hadamard 0.7817478009098022
+05/21/2022 17:43:49 - INFO: Mini batch Iter: 0 train_loss= 10.23435 graph_loss= 10.17031 reg_loss= 0.06404
+05/21/2022 17:43:50 - INFO: Mini batch Iter: 1 train_loss= 10.51238 graph_loss= 10.44836 reg_loss= 0.06401
+05/21/2022 17:43:51 - INFO: Mini batch Iter: 2 train_loss= 10.44197 graph_loss= 10.37798 reg_loss= 0.06399
+05/21/2022 17:43:52 - INFO: Mini batch Iter: 3 train_loss= 10.04764 graph_loss= 9.98367 reg_loss= 0.06397
+05/21/2022 17:43:52 - INFO: Time for epoch : 1.2181816101074219
+05/21/2022 17:43:54 - INFO: Test results at epoch 17: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A3C840>, {'operator_hadamard': [0.781172858805824, 0.781172858805824]}) best is : operator_hadamard 0.781172858805824
+05/21/2022 17:43:55 - INFO: Mini batch Iter: 0 train_loss= 10.07977 graph_loss= 10.01583 reg_loss= 0.06394
+05/21/2022 17:43:56 - INFO: Mini batch Iter: 1 train_loss= 10.20080 graph_loss= 10.13688 reg_loss= 0.06392
+05/21/2022 17:43:57 - INFO: Mini batch Iter: 2 train_loss= 10.72090 graph_loss= 10.65700 reg_loss= 0.06390
+05/21/2022 17:43:57 - INFO: Mini batch Iter: 3 train_loss= 10.03766 graph_loss= 9.97379 reg_loss= 0.06387
+05/21/2022 17:43:57 - INFO: Time for epoch : 1.1613249778747559
+05/21/2022 17:44:00 - INFO: Test results at epoch 18: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2BE02F0>, {'operator_hadamard': [0.7799006282461525, 0.7799006282461525]}) best is : operator_hadamard 0.7799006282461525
+05/21/2022 17:44:01 - INFO: Mini batch Iter: 0 train_loss= 9.93833 graph_loss= 9.87448 reg_loss= 0.06385
+05/21/2022 17:44:02 - INFO: Mini batch Iter: 1 train_loss= 10.33899 graph_loss= 10.27515 reg_loss= 0.06384
+05/21/2022 17:44:03 - INFO: Mini batch Iter: 2 train_loss= 10.87683 graph_loss= 10.81299 reg_loss= 0.06384
+05/21/2022 17:44:03 - INFO: Mini batch Iter: 3 train_loss= 9.90638 graph_loss= 9.84254 reg_loss= 0.06384
+05/21/2022 17:44:03 - INFO: Time for epoch : 1.192413330078125
+05/21/2022 17:44:05 - INFO: Test results at epoch 19: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2BE0B70>, {'operator_hadamard': [0.7817550346144863, 0.7817550346144863]}) best is : operator_hadamard 0.7817550346144863
+05/21/2022 17:44:06 - INFO: Mini batch Iter: 0 train_loss= 10.23252 graph_loss= 10.16868 reg_loss= 0.06384
+05/21/2022 17:44:07 - INFO: Mini batch Iter: 1 train_loss= 10.45957 graph_loss= 10.39572 reg_loss= 0.06385
+05/21/2022 17:44:08 - INFO: Mini batch Iter: 2 train_loss= 10.20632 graph_loss= 10.14246 reg_loss= 0.06386
+05/21/2022 17:44:09 - INFO: Mini batch Iter: 3 train_loss= 9.93408 graph_loss= 9.87023 reg_loss= 0.06385
+05/21/2022 17:44:09 - INFO: Time for epoch : 1.2269392013549805
+05/21/2022 17:44:11 - INFO: Test results at epoch 20: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A288C8>, {'operator_hadamard': [0.783785484949321, 0.783785484949321]}) best is : operator_hadamard 0.783785484949321
+05/21/2022 17:44:12 - INFO: Mini batch Iter: 0 train_loss= 10.44335 graph_loss= 10.37950 reg_loss= 0.06385
+05/21/2022 17:44:13 - INFO: Mini batch Iter: 1 train_loss= 10.28558 graph_loss= 10.22175 reg_loss= 0.06383
+05/21/2022 17:44:14 - INFO: Mini batch Iter: 2 train_loss= 10.17926 graph_loss= 10.11544 reg_loss= 0.06382
+05/21/2022 17:44:14 - INFO: Mini batch Iter: 3 train_loss= 10.00157 graph_loss= 9.93777 reg_loss= 0.06380
+05/21/2022 17:44:14 - INFO: Time for epoch : 1.195190191268921
+05/21/2022 17:44:17 - INFO: Test results at epoch 21: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A3CD90>, {'operator_hadamard': [0.7808084142101093, 0.7808084142101093]}) best is : operator_hadamard 0.7808084142101093
+05/21/2022 17:44:18 - INFO: Mini batch Iter: 0 train_loss= 10.37011 graph_loss= 10.30633 reg_loss= 0.06378
+05/21/2022 17:44:19 - INFO: Mini batch Iter: 1 train_loss= 10.14877 graph_loss= 10.08501 reg_loss= 0.06376
+05/21/2022 17:44:19 - INFO: Mini batch Iter: 2 train_loss= 10.12943 graph_loss= 10.06568 reg_loss= 0.06375
+05/21/2022 17:44:20 - INFO: Mini batch Iter: 3 train_loss= 10.11194 graph_loss= 10.04819 reg_loss= 0.06375
+05/21/2022 17:44:20 - INFO: Time for epoch : 1.199159860610962
+05/21/2022 17:44:22 - INFO: Test results at epoch 22: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A28EA0>, {'operator_hadamard': [0.7781470540045086, 0.7781470540045086]}) best is : operator_hadamard 0.7781470540045086
+05/21/2022 17:44:23 - INFO: Mini batch Iter: 0 train_loss= 10.45511 graph_loss= 10.39136 reg_loss= 0.06376
+05/21/2022 17:44:24 - INFO: Mini batch Iter: 1 train_loss= 10.38823 graph_loss= 10.32447 reg_loss= 0.06376
+05/21/2022 17:44:25 - INFO: Mini batch Iter: 2 train_loss= 10.15224 graph_loss= 10.08848 reg_loss= 0.06375
+05/21/2022 17:44:26 - INFO: Mini batch Iter: 3 train_loss= 10.10337 graph_loss= 10.03963 reg_loss= 0.06374
+05/21/2022 17:44:26 - INFO: Time for epoch : 1.1959095001220703
+05/21/2022 17:44:28 - INFO: Test results at epoch 23: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A28378>, {'operator_hadamard': [0.7765416662709017, 0.7765416662709017]}) best is : operator_hadamard 0.7765416662709017
+05/21/2022 17:44:29 - INFO: Mini batch Iter: 0 train_loss= 10.36642 graph_loss= 10.30269 reg_loss= 0.06372
+05/21/2022 17:44:30 - INFO: Mini batch Iter: 1 train_loss= 10.05232 graph_loss= 9.98863 reg_loss= 0.06369
+05/21/2022 17:44:31 - INFO: Mini batch Iter: 2 train_loss= 10.05499 graph_loss= 9.99132 reg_loss= 0.06366
+05/21/2022 17:44:31 - INFO: Mini batch Iter: 3 train_loss= 9.86320 graph_loss= 9.79956 reg_loss= 0.06364
+05/21/2022 17:44:31 - INFO: Time for epoch : 1.2259914875030518
+05/21/2022 17:44:33 - INFO: Test results at epoch 24: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A3C9D8>, {'operator_hadamard': [0.7754204365481412, 0.7754204365481412]}) best is : operator_hadamard 0.7754204365481412
+05/21/2022 17:44:35 - INFO: Mini batch Iter: 0 train_loss= 9.69104 graph_loss= 9.62743 reg_loss= 0.06361
+05/21/2022 17:44:36 - INFO: Mini batch Iter: 1 train_loss= 10.74479 graph_loss= 10.68120 reg_loss= 0.06359
+05/21/2022 17:44:36 - INFO: Mini batch Iter: 2 train_loss= 10.13391 graph_loss= 10.07033 reg_loss= 0.06358
+05/21/2022 17:44:37 - INFO: Mini batch Iter: 3 train_loss= 10.40590 graph_loss= 10.34231 reg_loss= 0.06359
+05/21/2022 17:44:37 - INFO: Time for epoch : 1.2869691848754883
+05/21/2022 17:44:39 - INFO: Test results at epoch 25: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A3C048>, {'operator_hadamard': [0.7758748572167835, 0.7758748572167835]}) best is : operator_hadamard 0.7758748572167835
+05/21/2022 17:44:40 - INFO: Mini batch Iter: 0 train_loss= 10.20415 graph_loss= 10.14055 reg_loss= 0.06360
+05/21/2022 17:44:41 - INFO: Mini batch Iter: 1 train_loss= 10.09783 graph_loss= 10.03421 reg_loss= 0.06361
+05/21/2022 17:44:42 - INFO: Mini batch Iter: 2 train_loss= 10.09903 graph_loss= 10.03541 reg_loss= 0.06362
+05/21/2022 17:44:43 - INFO: Mini batch Iter: 3 train_loss= 9.84351 graph_loss= 9.77989 reg_loss= 0.06362
+05/21/2022 17:44:43 - INFO: Time for epoch : 1.2064318656921387
+05/21/2022 17:44:45 - INFO: Test results at epoch 26: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A3C1E0>, {'operator_hadamard': [0.776215726311442, 0.776215726311442]}) best is : operator_hadamard 0.776215726311442
+05/21/2022 17:44:46 - INFO: Mini batch Iter: 0 train_loss= 10.16047 graph_loss= 10.09685 reg_loss= 0.06362
+05/21/2022 17:44:47 - INFO: Mini batch Iter: 1 train_loss= 10.14950 graph_loss= 10.08590 reg_loss= 0.06361
+05/21/2022 17:44:48 - INFO: Mini batch Iter: 2 train_loss= 10.53357 graph_loss= 10.46999 reg_loss= 0.06358
+05/21/2022 17:44:48 - INFO: Mini batch Iter: 3 train_loss= 10.05646 graph_loss= 9.99290 reg_loss= 0.06355
+05/21/2022 17:44:48 - INFO: Time for epoch : 1.239546537399292
+05/21/2022 17:44:51 - INFO: Test results at epoch 27: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A3CD90>, {'operator_hadamard': [0.7740721751349823, 0.7740721751349823]}) best is : operator_hadamard 0.7740721751349823
+05/21/2022 17:44:52 - INFO: Mini batch Iter: 0 train_loss= 10.34590 graph_loss= 10.28238 reg_loss= 0.06352
+05/21/2022 17:44:53 - INFO: Mini batch Iter: 1 train_loss= 10.34085 graph_loss= 10.27736 reg_loss= 0.06349
+05/21/2022 17:44:54 - INFO: Mini batch Iter: 2 train_loss= 10.32571 graph_loss= 10.26225 reg_loss= 0.06346
+05/21/2022 17:44:54 - INFO: Mini batch Iter: 3 train_loss= 9.77668 graph_loss= 9.71325 reg_loss= 0.06343
+05/21/2022 17:44:54 - INFO: Time for epoch : 1.2113416194915771
+05/21/2022 17:44:56 - INFO: Test results at epoch 28: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A288C8>, {'operator_hadamard': [0.773057422686868, 0.773057422686868]}) best is : operator_hadamard 0.773057422686868
+05/21/2022 17:44:57 - INFO: Mini batch Iter: 0 train_loss= 9.89531 graph_loss= 9.83192 reg_loss= 0.06340
+05/21/2022 17:44:58 - INFO: Mini batch Iter: 1 train_loss= 9.93046 graph_loss= 9.86709 reg_loss= 0.06337
+05/21/2022 17:44:59 - INFO: Mini batch Iter: 2 train_loss= 10.17439 graph_loss= 10.11104 reg_loss= 0.06335
+05/21/2022 17:45:00 - INFO: Mini batch Iter: 3 train_loss= 10.37441 graph_loss= 10.31108 reg_loss= 0.06333
+05/21/2022 17:45:00 - INFO: Time for epoch : 1.1914818286895752
+05/21/2022 17:45:02 - INFO: Test results at epoch 29: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A28BF8>, {'operator_hadamard': [0.7705507021574646, 0.7705507021574646]}) best is : operator_hadamard 0.7705507021574646
+05/21/2022 17:45:02 - INFO: Best epoch 14
+05/21/2022 17:45:04 - INFO: Best epoch test results defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001B9B2A288C8>, {'operator_hadamard': [0.7857637547685286, 0.7857637547685286]})
+
+05/21/2022 17:45:11 - INFO: dict_items([('base_model', 'DyMADC'), ('model', 'default'), ('test_subset', 0.5), ('min_time', 1), ('max_time', 9), ('dataset', 'fb-forum'), ('dataname', 'fb-forum_8_by_edgesNumber_0.5'), ('time_steps', 9), ('GPU_ID', 0), ('epochs', 30), ('batch_size', 256), ('featureless', 'True'), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', 'False'), ('structural_head_config', '16,8,8'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '64'), ('position_ffn', 'True'), ('optimizer', 'adam'), ('seed', 7), ('save_dir', '/output'), ('log_dir', '/log'), ('csv_dir', '/csv'), ('model_dir', '/model'), ('window', -1)])
+05/21/2022 17:45:15 - INFO: # train: 16860, # test: 16860
+05/21/2022 17:45:28 - WARNING: From D:\Anaconda3\envs\tf_1\lib\site-packages\tensorflow\python\ops\sparse_grad.py:281: calling sparse_reduce_sum (from tensorflow.python.ops.sparse_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+05/21/2022 17:46:00 - INFO: Mini batch Iter: 0 train_loss= 13.22290 graph_loss= 13.14541 reg_loss= 0.07749
+05/21/2022 17:46:01 - INFO: Mini batch Iter: 1 train_loss= 12.38950 graph_loss= 12.31269 reg_loss= 0.07681
+05/21/2022 17:46:02 - INFO: Mini batch Iter: 2 train_loss= 11.89294 graph_loss= 11.81679 reg_loss= 0.07615
+05/21/2022 17:46:02 - INFO: Mini batch Iter: 3 train_loss= 11.58503 graph_loss= 11.50949 reg_loss= 0.07554
+05/21/2022 17:46:02 - INFO: Time for epoch : 19.92578411102295
+05/21/2022 17:46:08 - INFO: Test results at epoch 0: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000002089A304D08>, {'operator_hadamard': [0.7061746955951531, 0.7061746955951531]}) best is : operator_hadamard 0.7061746955951531
+05/21/2022 17:46:09 - INFO: Mini batch Iter: 0 train_loss= 11.41929 graph_loss= 11.34435 reg_loss= 0.07494
+05/21/2022 17:46:10 - INFO: Mini batch Iter: 1 train_loss= 11.32911 graph_loss= 11.25475 reg_loss= 0.07436
+05/21/2022 17:46:11 - INFO: Mini batch Iter: 2 train_loss= 11.27188 graph_loss= 11.19809 reg_loss= 0.07380
+05/21/2022 17:46:11 - INFO: Mini batch Iter: 3 train_loss= 11.21437 graph_loss= 11.14115 reg_loss= 0.07322
+05/21/2022 17:46:11 - INFO: Time for epoch : 1.1128039360046387
+05/21/2022 17:46:13 - INFO: Test results at epoch 1: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B24EE840>, {'operator_hadamard': [0.7433842550963978, 0.7433842550963978]}) best is : operator_hadamard 0.7433842550963978
+05/21/2022 17:46:14 - INFO: Mini batch Iter: 0 train_loss= 11.16704 graph_loss= 11.09438 reg_loss= 0.07266
+05/21/2022 17:46:15 - INFO: Mini batch Iter: 1 train_loss= 11.17588 graph_loss= 11.10378 reg_loss= 0.07211
+05/21/2022 17:46:16 - INFO: Mini batch Iter: 2 train_loss= 11.14948 graph_loss= 11.07792 reg_loss= 0.07156
+05/21/2022 17:46:17 - INFO: Mini batch Iter: 3 train_loss= 11.14325 graph_loss= 11.07224 reg_loss= 0.07102
+05/21/2022 17:46:17 - INFO: Time for epoch : 1.155491828918457
+05/21/2022 17:46:18 - INFO: Test results at epoch 2: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000002089A304E18>, {'operator_hadamard': [0.7606539269034363, 0.7606539269034363]}) best is : operator_hadamard 0.7606539269034363
+05/21/2022 17:46:19 - INFO: Mini batch Iter: 0 train_loss= 11.14824 graph_loss= 11.07776 reg_loss= 0.07048
+05/21/2022 17:46:20 - INFO: Mini batch Iter: 1 train_loss= 11.10814 graph_loss= 11.03818 reg_loss= 0.06996
+05/21/2022 17:46:21 - INFO: Mini batch Iter: 2 train_loss= 11.12507 graph_loss= 11.05562 reg_loss= 0.06945
+05/21/2022 17:46:22 - INFO: Mini batch Iter: 3 train_loss= 11.13399 graph_loss= 11.06505 reg_loss= 0.06895
+05/21/2022 17:46:22 - INFO: Time for epoch : 1.1443424224853516
+05/21/2022 17:46:24 - INFO: Test results at epoch 3: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B24F60D0>, {'operator_hadamard': [0.7654158241269601, 0.7654158241269601]}) best is : operator_hadamard 0.7654158241269601
+05/21/2022 17:46:24 - INFO: Mini batch Iter: 0 train_loss= 11.12450 graph_loss= 11.05603 reg_loss= 0.06846
+05/21/2022 17:46:25 - INFO: Mini batch Iter: 1 train_loss= 11.06911 graph_loss= 11.00112 reg_loss= 0.06799
+05/21/2022 17:46:26 - INFO: Mini batch Iter: 2 train_loss= 11.03262 graph_loss= 10.96509 reg_loss= 0.06754
+05/21/2022 17:46:27 - INFO: Mini batch Iter: 3 train_loss= 11.09271 graph_loss= 11.02561 reg_loss= 0.06710
+05/21/2022 17:46:27 - INFO: Time for epoch : 1.0313267707824707
+05/21/2022 17:46:29 - INFO: Test results at epoch 4: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B24F66A8>, {'operator_hadamard': [0.7703453251886656, 0.7703453251886656]}) best is : operator_hadamard 0.7703453251886656
+05/21/2022 17:46:30 - INFO: Mini batch Iter: 0 train_loss= 11.06802 graph_loss= 11.00134 reg_loss= 0.06668
+05/21/2022 17:46:31 - INFO: Mini batch Iter: 1 train_loss= 11.02421 graph_loss= 10.95792 reg_loss= 0.06629
+05/21/2022 17:46:32 - INFO: Mini batch Iter: 2 train_loss= 10.95903 graph_loss= 10.89313 reg_loss= 0.06591
+05/21/2022 17:46:32 - INFO: Mini batch Iter: 3 train_loss= 10.98469 graph_loss= 10.91913 reg_loss= 0.06556
+05/21/2022 17:46:32 - INFO: Time for epoch : 1.1563336849212646
+05/21/2022 17:46:34 - INFO: Test results at epoch 5: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B2506158>, {'operator_hadamard': [0.7751624149193201, 0.7751624149193201]}) best is : operator_hadamard 0.7751624149193201
+05/21/2022 17:46:35 - INFO: Mini batch Iter: 0 train_loss= 10.78186 graph_loss= 10.71663 reg_loss= 0.06523
+05/21/2022 17:46:36 - INFO: Mini batch Iter: 1 train_loss= 10.98114 graph_loss= 10.91621 reg_loss= 0.06493
+05/21/2022 17:46:37 - INFO: Mini batch Iter: 2 train_loss= 10.96125 graph_loss= 10.89659 reg_loss= 0.06466
+05/21/2022 17:46:37 - INFO: Mini batch Iter: 3 train_loss= 10.71737 graph_loss= 10.65295 reg_loss= 0.06442
+05/21/2022 17:46:37 - INFO: Time for epoch : 1.1563377380371094
+05/21/2022 17:46:39 - INFO: Test results at epoch 6: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B2506840>, {'operator_hadamard': [0.7785078076518788, 0.7785078076518788]}) best is : operator_hadamard 0.7785078076518788
+05/21/2022 17:46:40 - INFO: Mini batch Iter: 0 train_loss= 10.88627 graph_loss= 10.82207 reg_loss= 0.06421
+05/21/2022 17:46:41 - INFO: Mini batch Iter: 1 train_loss= 10.78007 graph_loss= 10.71605 reg_loss= 0.06402
+05/21/2022 17:46:42 - INFO: Mini batch Iter: 2 train_loss= 10.52369 graph_loss= 10.45984 reg_loss= 0.06386
+05/21/2022 17:46:43 - INFO: Mini batch Iter: 3 train_loss= 10.44758 graph_loss= 10.38386 reg_loss= 0.06372
+05/21/2022 17:46:43 - INFO: Time for epoch : 1.1573817729949951
+05/21/2022 17:46:45 - INFO: Test results at epoch 7: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B2506F28>, {'operator_hadamard': [0.7807837730018616, 0.7807837730018616]}) best is : operator_hadamard 0.7807837730018616
+05/21/2022 17:46:46 - INFO: Mini batch Iter: 0 train_loss= 10.63460 graph_loss= 10.57098 reg_loss= 0.06362
+05/21/2022 17:46:47 - INFO: Mini batch Iter: 1 train_loss= 10.86094 graph_loss= 10.79741 reg_loss= 0.06353
+05/21/2022 17:46:48 - INFO: Mini batch Iter: 2 train_loss= 10.62954 graph_loss= 10.56607 reg_loss= 0.06347
+05/21/2022 17:46:48 - INFO: Mini batch Iter: 3 train_loss= 10.32670 graph_loss= 10.26329 reg_loss= 0.06341
+05/21/2022 17:46:48 - INFO: Time for epoch : 1.1250848770141602
+05/21/2022 17:46:50 - INFO: Test results at epoch 8: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B2506488>, {'operator_hadamard': [0.7825909679039864, 0.7825909679039864]}) best is : operator_hadamard 0.7825909679039864
+05/21/2022 17:46:51 - INFO: Mini batch Iter: 0 train_loss= 10.40774 graph_loss= 10.34437 reg_loss= 0.06337
+05/21/2022 17:46:52 - INFO: Mini batch Iter: 1 train_loss= 10.49247 graph_loss= 10.42911 reg_loss= 0.06335
+05/21/2022 17:46:53 - INFO: Mini batch Iter: 2 train_loss= 10.26965 graph_loss= 10.20632 reg_loss= 0.06333
+05/21/2022 17:46:54 - INFO: Mini batch Iter: 3 train_loss= 10.54345 graph_loss= 10.48014 reg_loss= 0.06331
+05/21/2022 17:46:54 - INFO: Time for epoch : 1.1563358306884766
+05/21/2022 17:46:56 - INFO: Test results at epoch 9: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B24F6730>, {'operator_hadamard': [0.7838530554465004, 0.7838530554465004]}) best is : operator_hadamard 0.7838530554465004
+05/21/2022 17:46:57 - INFO: Mini batch Iter: 0 train_loss= 10.28889 graph_loss= 10.22559 reg_loss= 0.06330
+05/21/2022 17:46:58 - INFO: Mini batch Iter: 1 train_loss= 10.46765 graph_loss= 10.40437 reg_loss= 0.06328
+05/21/2022 17:46:59 - INFO: Mini batch Iter: 2 train_loss= 10.15835 graph_loss= 10.09507 reg_loss= 0.06328
+05/21/2022 17:46:59 - INFO: Mini batch Iter: 3 train_loss= 10.75147 graph_loss= 10.68820 reg_loss= 0.06327
+05/21/2022 17:46:59 - INFO: Time for epoch : 1.1875882148742676
+05/21/2022 17:47:01 - INFO: Test results at epoch 10: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B24F6BF8>, {'operator_hadamard': [0.7845147041647846, 0.7845147041647846]}) best is : operator_hadamard 0.7845147041647846
+05/21/2022 17:47:02 - INFO: Mini batch Iter: 0 train_loss= 10.39597 graph_loss= 10.33273 reg_loss= 0.06324
+05/21/2022 17:47:03 - INFO: Mini batch Iter: 1 train_loss= 10.23743 graph_loss= 10.17422 reg_loss= 0.06320
+05/21/2022 17:47:04 - INFO: Mini batch Iter: 2 train_loss= 10.31741 graph_loss= 10.25425 reg_loss= 0.06316
+05/21/2022 17:47:05 - INFO: Mini batch Iter: 3 train_loss= 10.27876 graph_loss= 10.21565 reg_loss= 0.06312
+05/21/2022 17:47:05 - INFO: Time for epoch : 1.2032160758972168
+05/21/2022 17:47:07 - INFO: Test results at epoch 11: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B24F62F0>, {'operator_hadamard': [0.7822440860396622, 0.7822440860396622]}) best is : operator_hadamard 0.7822440860396622
+05/21/2022 17:47:08 - INFO: Mini batch Iter: 0 train_loss= 10.09004 graph_loss= 10.02697 reg_loss= 0.06308
+05/21/2022 17:47:09 - INFO: Mini batch Iter: 1 train_loss= 9.72631 graph_loss= 9.66328 reg_loss= 0.06303
+05/21/2022 17:47:10 - INFO: Mini batch Iter: 2 train_loss= 10.41157 graph_loss= 10.34858 reg_loss= 0.06300
+05/21/2022 17:47:11 - INFO: Mini batch Iter: 3 train_loss= 10.17345 graph_loss= 10.11049 reg_loss= 0.06296
+05/21/2022 17:47:11 - INFO: Time for epoch : 1.2032175064086914
+05/21/2022 17:47:12 - INFO: Test results at epoch 12: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B25069D8>, {'operator_hadamard': [0.7797365946479907, 0.7797365946479907]}) best is : operator_hadamard 0.7797365946479907
+05/21/2022 17:47:14 - INFO: Mini batch Iter: 0 train_loss= 10.57139 graph_loss= 10.50847 reg_loss= 0.06292
+05/21/2022 17:47:14 - INFO: Mini batch Iter: 1 train_loss= 10.41380 graph_loss= 10.35091 reg_loss= 0.06289
+05/21/2022 17:47:15 - INFO: Mini batch Iter: 2 train_loss= 10.37149 graph_loss= 10.30863 reg_loss= 0.06285
+05/21/2022 17:47:16 - INFO: Mini batch Iter: 3 train_loss= 10.36200 graph_loss= 10.29919 reg_loss= 0.06281
+05/21/2022 17:47:16 - INFO: Time for epoch : 1.187589406967163
+05/21/2022 17:47:18 - INFO: Test results at epoch 13: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B24F6B70>, {'operator_hadamard': [0.779951259341813, 0.779951259341813]}) best is : operator_hadamard 0.779951259341813
+05/21/2022 17:47:19 - INFO: Mini batch Iter: 0 train_loss= 10.21231 graph_loss= 10.14954 reg_loss= 0.06277
+05/21/2022 17:47:20 - INFO: Mini batch Iter: 1 train_loss= 10.01517 graph_loss= 9.95243 reg_loss= 0.06274
+05/21/2022 17:47:21 - INFO: Mini batch Iter: 2 train_loss= 9.96645 graph_loss= 9.90375 reg_loss= 0.06270
+05/21/2022 17:47:21 - INFO: Mini batch Iter: 3 train_loss= 10.61323 graph_loss= 10.55056 reg_loss= 0.06267
+05/21/2022 17:47:21 - INFO: Time for epoch : 1.1250834465026855
+05/21/2022 17:47:23 - INFO: Test results at epoch 14: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B2506C80>, {'operator_hadamard': [0.7769516192241176, 0.7769516192241176]}) best is : operator_hadamard 0.7769516192241176
+05/21/2022 17:47:24 - INFO: Mini batch Iter: 0 train_loss= 10.18418 graph_loss= 10.12155 reg_loss= 0.06263
+05/21/2022 17:47:25 - INFO: Mini batch Iter: 1 train_loss= 10.33722 graph_loss= 10.27462 reg_loss= 0.06260
+05/21/2022 17:47:26 - INFO: Mini batch Iter: 2 train_loss= 10.02048 graph_loss= 9.95791 reg_loss= 0.06258
+05/21/2022 17:47:27 - INFO: Mini batch Iter: 3 train_loss= 10.22799 graph_loss= 10.16543 reg_loss= 0.06257
+05/21/2022 17:47:27 - INFO: Time for epoch : 1.1563384532928467
+05/21/2022 17:47:29 - INFO: Test results at epoch 15: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B24F6E18>, {'operator_hadamard': [0.7785744808618601, 0.7785744808618601]}) best is : operator_hadamard 0.7785744808618601
+05/21/2022 17:47:30 - INFO: Mini batch Iter: 0 train_loss= 10.04025 graph_loss= 9.97770 reg_loss= 0.06255
+05/21/2022 17:47:31 - INFO: Mini batch Iter: 1 train_loss= 10.55588 graph_loss= 10.49333 reg_loss= 0.06255
+05/21/2022 17:47:32 - INFO: Mini batch Iter: 2 train_loss= 10.28650 graph_loss= 10.22395 reg_loss= 0.06255
+05/21/2022 17:47:32 - INFO: Mini batch Iter: 3 train_loss= 10.39971 graph_loss= 10.33716 reg_loss= 0.06255
+05/21/2022 17:47:32 - INFO: Time for epoch : 1.1875882148742676
+05/21/2022 17:47:34 - INFO: Test results at epoch 16: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B2506840>, {'operator_hadamard': [0.7816536556724909, 0.7816536556724909]}) best is : operator_hadamard 0.7816536556724909
+05/21/2022 17:47:35 - INFO: Mini batch Iter: 0 train_loss= 10.55396 graph_loss= 10.49143 reg_loss= 0.06254
+05/21/2022 17:47:36 - INFO: Mini batch Iter: 1 train_loss= 10.06155 graph_loss= 9.99904 reg_loss= 0.06251
+05/21/2022 17:47:37 - INFO: Mini batch Iter: 2 train_loss= 10.43311 graph_loss= 10.37063 reg_loss= 0.06248
+05/21/2022 17:47:38 - INFO: Mini batch Iter: 3 train_loss= 10.33489 graph_loss= 10.27244 reg_loss= 0.06245
+05/21/2022 17:47:38 - INFO: Time for epoch : 1.1875896453857422
+05/21/2022 17:47:40 - INFO: Test results at epoch 17: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B2506268>, {'operator_hadamard': [0.7770551495886154, 0.7770551495886154]}) best is : operator_hadamard 0.7770551495886154
+05/21/2022 17:47:41 - INFO: Mini batch Iter: 0 train_loss= 10.08505 graph_loss= 10.02262 reg_loss= 0.06243
+05/21/2022 17:47:42 - INFO: Mini batch Iter: 1 train_loss= 10.22445 graph_loss= 10.16204 reg_loss= 0.06241
+05/21/2022 17:47:43 - INFO: Mini batch Iter: 2 train_loss= 10.33067 graph_loss= 10.26827 reg_loss= 0.06240
+05/21/2022 17:47:43 - INFO: Mini batch Iter: 3 train_loss= 10.09608 graph_loss= 10.03370 reg_loss= 0.06238
+05/21/2022 17:47:43 - INFO: Time for epoch : 1.2032132148742676
+05/21/2022 17:47:45 - INFO: Test results at epoch 18: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B24EE6A8>, {'operator_hadamard': [0.7766838200011539, 0.7766838200011539]}) best is : operator_hadamard 0.7766838200011539
+05/21/2022 17:47:46 - INFO: Mini batch Iter: 0 train_loss= 10.08666 graph_loss= 10.02428 reg_loss= 0.06238
+05/21/2022 17:47:47 - INFO: Mini batch Iter: 1 train_loss= 10.05668 graph_loss= 9.99431 reg_loss= 0.06238
+05/21/2022 17:47:48 - INFO: Mini batch Iter: 2 train_loss= 10.53874 graph_loss= 10.47635 reg_loss= 0.06239
+05/21/2022 17:47:49 - INFO: Mini batch Iter: 3 train_loss= 10.00645 graph_loss= 9.94407 reg_loss= 0.06239
+05/21/2022 17:47:49 - INFO: Time for epoch : 1.1407084465026855
+05/21/2022 17:47:51 - INFO: Test results at epoch 19: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B24EE598>, {'operator_hadamard': [0.7787992190940958, 0.7787992190940958]}) best is : operator_hadamard 0.7787992190940958
+05/21/2022 17:47:52 - INFO: Mini batch Iter: 0 train_loss= 9.66965 graph_loss= 9.60726 reg_loss= 0.06239
+05/21/2022 17:47:53 - INFO: Mini batch Iter: 1 train_loss= 10.02879 graph_loss= 9.96641 reg_loss= 0.06239
+05/21/2022 17:47:54 - INFO: Mini batch Iter: 2 train_loss= 10.03045 graph_loss= 9.96807 reg_loss= 0.06238
+05/21/2022 17:47:54 - INFO: Mini batch Iter: 3 train_loss= 10.15942 graph_loss= 10.09704 reg_loss= 0.06238
+05/21/2022 17:47:54 - INFO: Time for epoch : 1.1563382148742676
+05/21/2022 17:47:56 - INFO: Test results at epoch 20: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B2506D08>, {'operator_hadamard': [0.778800981567553, 0.778800981567553]}) best is : operator_hadamard 0.778800981567553
+05/21/2022 17:47:57 - INFO: Mini batch Iter: 0 train_loss= 10.46551 graph_loss= 10.40313 reg_loss= 0.06238
+05/21/2022 17:47:58 - INFO: Mini batch Iter: 1 train_loss= 10.69483 graph_loss= 10.63244 reg_loss= 0.06239
+05/21/2022 17:47:59 - INFO: Mini batch Iter: 2 train_loss= 9.97115 graph_loss= 9.90874 reg_loss= 0.06241
+05/21/2022 17:48:00 - INFO: Mini batch Iter: 3 train_loss= 9.57759 graph_loss= 9.51517 reg_loss= 0.06242
+05/21/2022 17:48:00 - INFO: Time for epoch : 1.1094589233398438
+05/21/2022 17:48:02 - INFO: Test results at epoch 21: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B2506AE8>, {'operator_hadamard': [0.7833626797476673, 0.7833626797476673]}) best is : operator_hadamard 0.7833626797476673
+05/21/2022 17:48:03 - INFO: Mini batch Iter: 0 train_loss= 10.27341 graph_loss= 10.21098 reg_loss= 0.06243
+05/21/2022 17:48:04 - INFO: Mini batch Iter: 1 train_loss= 10.07546 graph_loss= 10.01303 reg_loss= 0.06243
+05/21/2022 17:48:05 - INFO: Mini batch Iter: 2 train_loss= 9.59301 graph_loss= 9.53058 reg_loss= 0.06243
+05/21/2022 17:48:05 - INFO: Mini batch Iter: 3 train_loss= 9.60869 graph_loss= 9.54626 reg_loss= 0.06243
+05/21/2022 17:48:05 - INFO: Time for epoch : 1.2188396453857422
+05/21/2022 17:48:07 - INFO: Test results at epoch 22: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B24F6158>, {'operator_hadamard': [0.7806735920264434, 0.7806735920264434]}) best is : operator_hadamard 0.7806735920264434
+05/21/2022 17:48:08 - INFO: Mini batch Iter: 0 train_loss= 10.37536 graph_loss= 10.31293 reg_loss= 0.06243
+05/21/2022 17:48:09 - INFO: Mini batch Iter: 1 train_loss= 10.60670 graph_loss= 10.54428 reg_loss= 0.06242
+05/21/2022 17:48:10 - INFO: Mini batch Iter: 2 train_loss= 10.01518 graph_loss= 9.95276 reg_loss= 0.06242
+05/21/2022 17:48:11 - INFO: Mini batch Iter: 3 train_loss= 10.10732 graph_loss= 10.04489 reg_loss= 0.06243
+05/21/2022 17:48:11 - INFO: Time for epoch : 1.156337022781372
+05/21/2022 17:48:13 - INFO: Test results at epoch 23: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000002089A3049D8>, {'operator_hadamard': [0.7789571152566176, 0.7789571152566176]}) best is : operator_hadamard 0.7789571152566176
+05/21/2022 17:48:14 - INFO: Mini batch Iter: 0 train_loss= 9.86053 graph_loss= 9.79809 reg_loss= 0.06244
+05/21/2022 17:48:15 - INFO: Mini batch Iter: 1 train_loss= 10.06600 graph_loss= 10.00356 reg_loss= 0.06244
+05/21/2022 17:48:16 - INFO: Mini batch Iter: 2 train_loss= 9.76345 graph_loss= 9.70101 reg_loss= 0.06244
+05/21/2022 17:48:16 - INFO: Mini batch Iter: 3 train_loss= 10.34180 graph_loss= 10.27936 reg_loss= 0.06244
+05/21/2022 17:48:16 - INFO: Time for epoch : 1.1563358306884766
+05/21/2022 17:48:18 - INFO: Test results at epoch 24: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B24F3048>, {'operator_hadamard': [0.7793072529476577, 0.7793072529476577]}) best is : operator_hadamard 0.7793072529476577
+05/21/2022 17:48:19 - INFO: Mini batch Iter: 0 train_loss= 9.89453 graph_loss= 9.83208 reg_loss= 0.06245
+05/21/2022 17:48:20 - INFO: Mini batch Iter: 1 train_loss= 10.43331 graph_loss= 10.37085 reg_loss= 0.06246
+05/21/2022 17:48:21 - INFO: Mini batch Iter: 2 train_loss= 10.01294 graph_loss= 9.95047 reg_loss= 0.06247
+05/21/2022 17:48:22 - INFO: Mini batch Iter: 3 train_loss= 10.28147 graph_loss= 10.21898 reg_loss= 0.06249
+05/21/2022 17:48:22 - INFO: Time for epoch : 1.1563355922698975
+05/21/2022 17:48:24 - INFO: Test results at epoch 25: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B25067B8>, {'operator_hadamard': [0.7819027976539754, 0.7819027976539754]}) best is : operator_hadamard 0.7819027976539754
+05/21/2022 17:48:25 - INFO: Mini batch Iter: 0 train_loss= 10.38314 graph_loss= 10.32064 reg_loss= 0.06250
+05/21/2022 17:48:26 - INFO: Mini batch Iter: 1 train_loss= 9.57296 graph_loss= 9.51046 reg_loss= 0.06250
+05/21/2022 17:48:26 - INFO: Mini batch Iter: 2 train_loss= 9.85060 graph_loss= 9.78811 reg_loss= 0.06249
+05/21/2022 17:48:27 - INFO: Mini batch Iter: 3 train_loss= 10.03006 graph_loss= 9.96758 reg_loss= 0.06248
+05/21/2022 17:48:27 - INFO: Time for epoch : 1.1563372611999512
+05/21/2022 17:48:29 - INFO: Test results at epoch 26: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B2506BF8>, {'operator_hadamard': [0.7808358961315642, 0.7808358961315642]}) best is : operator_hadamard 0.7808358961315642
+05/21/2022 17:48:30 - INFO: Mini batch Iter: 0 train_loss= 10.05958 graph_loss= 9.99712 reg_loss= 0.06246
+05/21/2022 17:48:31 - INFO: Mini batch Iter: 1 train_loss= 9.96681 graph_loss= 9.90436 reg_loss= 0.06245
+05/21/2022 17:48:32 - INFO: Mini batch Iter: 2 train_loss= 10.07614 graph_loss= 10.01370 reg_loss= 0.06243
+05/21/2022 17:48:33 - INFO: Mini batch Iter: 3 train_loss= 10.23217 graph_loss= 10.16975 reg_loss= 0.06242
+05/21/2022 17:48:33 - INFO: Time for epoch : 1.1407086849212646
+05/21/2022 17:48:34 - INFO: Test results at epoch 27: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B2506F28>, {'operator_hadamard': [0.7800114648722505, 0.7800114648722505]}) best is : operator_hadamard 0.7800114648722505
+05/21/2022 17:48:36 - INFO: Mini batch Iter: 0 train_loss= 10.25253 graph_loss= 10.19012 reg_loss= 0.06241
+05/21/2022 17:48:36 - INFO: Mini batch Iter: 1 train_loss= 10.07822 graph_loss= 10.01580 reg_loss= 0.06241
+05/21/2022 17:48:37 - INFO: Mini batch Iter: 2 train_loss= 10.10337 graph_loss= 10.04095 reg_loss= 0.06241
+05/21/2022 17:48:38 - INFO: Mini batch Iter: 3 train_loss= 10.17463 graph_loss= 10.11223 reg_loss= 0.06241
+05/21/2022 17:48:38 - INFO: Time for epoch : 1.218841552734375
+05/21/2022 17:48:40 - INFO: Test results at epoch 28: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B25061E0>, {'operator_hadamard': [0.779774034016793, 0.779774034016793]}) best is : operator_hadamard 0.779774034016793
+05/21/2022 17:48:41 - INFO: Mini batch Iter: 0 train_loss= 9.91945 graph_loss= 9.85705 reg_loss= 0.06240
+05/21/2022 17:48:42 - INFO: Mini batch Iter: 1 train_loss= 10.07704 graph_loss= 10.01465 reg_loss= 0.06239
+05/21/2022 17:48:43 - INFO: Mini batch Iter: 2 train_loss= 10.06515 graph_loss= 10.00277 reg_loss= 0.06238
+05/21/2022 17:48:43 - INFO: Mini batch Iter: 3 train_loss= 10.23419 graph_loss= 10.17183 reg_loss= 0.06236
+05/21/2022 17:48:43 - INFO: Time for epoch : 1.1407103538513184
+05/21/2022 17:48:45 - INFO: Test results at epoch 29: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B24EEAE8>, {'operator_hadamard': [0.779098056846629, 0.779098056846629]}) best is : operator_hadamard 0.779098056846629
+05/21/2022 17:48:45 - INFO: Best epoch 10
+05/21/2022 17:48:48 - INFO: Best epoch test results defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000208B24EE598>, {'operator_hadamard': [0.7845147041647846, 0.7845147041647846]})
+
+05/21/2022 20:09:21 - INFO: dict_items([('base_model', 'DyMADC'), ('model', 'default'), ('test_subset', 0.25), ('min_time', 1), ('max_time', 9), ('dataset', 'fb-forum'), ('dataname', 'fb-forum_8_by_edgesNumber_0.25'), ('time_steps', 9), ('GPU_ID', 0), ('epochs', 30), ('batch_size', 256), ('featureless', 'True'), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', 'False'), ('structural_head_config', '16,8,8'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', 'True'), ('optimizer', 'adam'), ('seed', 7), ('save_dir', '/output'), ('log_dir', '/log'), ('csv_dir', '/csv'), ('model_dir', '/model'), ('window', -1)])
+05/21/2022 20:09:25 - INFO: # train: 25290, # test: 8430
+05/21/2022 20:09:39 - WARNING: From D:\Anaconda3\envs\tf_1\lib\site-packages\tensorflow\python\ops\sparse_grad.py:281: calling sparse_reduce_sum (from tensorflow.python.ops.sparse_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+05/21/2022 20:10:10 - INFO: Mini batch Iter: 0 train_loss= 13.28727 graph_loss= 13.20978 reg_loss= 0.07749
+05/21/2022 20:10:11 - INFO: Mini batch Iter: 1 train_loss= 12.37686 graph_loss= 12.29986 reg_loss= 0.07700
+05/21/2022 20:10:12 - INFO: Mini batch Iter: 2 train_loss= 11.90139 graph_loss= 11.82486 reg_loss= 0.07653
+05/21/2022 20:10:13 - INFO: Mini batch Iter: 3 train_loss= 11.56895 graph_loss= 11.49285 reg_loss= 0.07610
+05/21/2022 20:10:13 - INFO: Time for epoch : 20.08546757698059
+05/21/2022 20:10:18 - INFO: Test results at epoch 0: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000002849BEA3EA0>, {'operator_hadamard': [0.7262801889540406, 0.7262801889540406]}) best is : operator_hadamard 0.7262801889540406
+05/21/2022 20:10:19 - INFO: Mini batch Iter: 0 train_loss= 11.40896 graph_loss= 11.33327 reg_loss= 0.07570
+05/21/2022 20:10:20 - INFO: Mini batch Iter: 1 train_loss= 11.31513 graph_loss= 11.23982 reg_loss= 0.07531
+05/21/2022 20:10:21 - INFO: Mini batch Iter: 2 train_loss= 11.25023 graph_loss= 11.17530 reg_loss= 0.07493
+05/21/2022 20:10:22 - INFO: Mini batch Iter: 3 train_loss= 11.21713 graph_loss= 11.14260 reg_loss= 0.07454
+05/21/2022 20:10:22 - INFO: Time for epoch : 1.2781193256378174
+05/21/2022 20:10:24 - INFO: Test results at epoch 1: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284A2ED2048>, {'operator_hadamard': [0.7620325927426901, 0.7620325927426901]}) best is : operator_hadamard 0.7620325927426901
+05/21/2022 20:10:25 - INFO: Mini batch Iter: 0 train_loss= 11.18849 graph_loss= 11.11435 reg_loss= 0.07414
+05/21/2022 20:10:26 - INFO: Mini batch Iter: 1 train_loss= 11.16278 graph_loss= 11.08904 reg_loss= 0.07374
+05/21/2022 20:10:27 - INFO: Mini batch Iter: 2 train_loss= 11.15401 graph_loss= 11.08067 reg_loss= 0.07334
+05/21/2022 20:10:27 - INFO: Mini batch Iter: 3 train_loss= 11.16835 graph_loss= 11.09540 reg_loss= 0.07295
+05/21/2022 20:10:27 - INFO: Time for epoch : 1.2039668560028076
+05/21/2022 20:10:29 - INFO: Test results at epoch 2: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B332CE18>, {'operator_hadamard': [0.7779180439288594, 0.7779180439288594]}) best is : operator_hadamard 0.7779180439288594
+05/21/2022 20:10:30 - INFO: Mini batch Iter: 0 train_loss= 11.15226 graph_loss= 11.07971 reg_loss= 0.07256
+05/21/2022 20:10:31 - INFO: Mini batch Iter: 1 train_loss= 11.14708 graph_loss= 11.07491 reg_loss= 0.07217
+05/21/2022 20:10:32 - INFO: Mini batch Iter: 2 train_loss= 11.15267 graph_loss= 11.08089 reg_loss= 0.07178
+05/21/2022 20:10:33 - INFO: Mini batch Iter: 3 train_loss= 11.12999 graph_loss= 11.05859 reg_loss= 0.07140
+05/21/2022 20:10:33 - INFO: Time for epoch : 1.216139554977417
+05/21/2022 20:10:35 - INFO: Test results at epoch 3: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B332CEA0>, {'operator_hadamard': [0.7810291719259438, 0.7810291719259438]}) best is : operator_hadamard 0.7810291719259438
+05/21/2022 20:10:36 - INFO: Mini batch Iter: 0 train_loss= 11.11932 graph_loss= 11.04830 reg_loss= 0.07102
+05/21/2022 20:10:37 - INFO: Mini batch Iter: 1 train_loss= 11.07406 graph_loss= 11.00340 reg_loss= 0.07065
+05/21/2022 20:10:37 - INFO: Mini batch Iter: 2 train_loss= 11.06993 graph_loss= 10.99963 reg_loss= 0.07030
+05/21/2022 20:10:38 - INFO: Mini batch Iter: 3 train_loss= 11.12167 graph_loss= 11.05171 reg_loss= 0.06996
+05/21/2022 20:10:38 - INFO: Time for epoch : 1.188746690750122
+05/21/2022 20:10:40 - INFO: Test results at epoch 4: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B3310840>, {'operator_hadamard': [0.7766859026045206, 0.7766859026045206]}) best is : operator_hadamard 0.7766859026045206
+05/21/2022 20:10:41 - INFO: Mini batch Iter: 0 train_loss= 11.05206 graph_loss= 10.98243 reg_loss= 0.06963
+05/21/2022 20:10:42 - INFO: Mini batch Iter: 1 train_loss= 10.99891 graph_loss= 10.92959 reg_loss= 0.06932
+05/21/2022 20:10:43 - INFO: Mini batch Iter: 2 train_loss= 11.08701 graph_loss= 11.01798 reg_loss= 0.06903
+05/21/2022 20:10:44 - INFO: Mini batch Iter: 3 train_loss= 11.08303 graph_loss= 11.01427 reg_loss= 0.06876
+05/21/2022 20:10:44 - INFO: Time for epoch : 1.2551064491271973
+05/21/2022 20:10:46 - INFO: Test results at epoch 5: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284A2ED2D08>, {'operator_hadamard': [0.778948693377462, 0.778948693377462]}) best is : operator_hadamard 0.778948693377462
+05/21/2022 20:10:47 - INFO: Mini batch Iter: 0 train_loss= 10.88757 graph_loss= 10.81907 reg_loss= 0.06850
+05/21/2022 20:10:47 - INFO: Mini batch Iter: 1 train_loss= 10.92128 graph_loss= 10.85301 reg_loss= 0.06827
+05/21/2022 20:10:48 - INFO: Mini batch Iter: 2 train_loss= 10.96628 graph_loss= 10.89822 reg_loss= 0.06806
+05/21/2022 20:10:49 - INFO: Mini batch Iter: 3 train_loss= 10.86184 graph_loss= 10.79396 reg_loss= 0.06788
+05/21/2022 20:10:49 - INFO: Time for epoch : 1.1828982830047607
+05/21/2022 20:10:51 - INFO: Test results at epoch 6: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B3310158>, {'operator_hadamard': [0.7843833172213005, 0.7843833172213005]}) best is : operator_hadamard 0.7843833172213005
+05/21/2022 20:10:52 - INFO: Mini batch Iter: 0 train_loss= 10.87872 graph_loss= 10.81100 reg_loss= 0.06772
+05/21/2022 20:10:53 - INFO: Mini batch Iter: 1 train_loss= 11.01334 graph_loss= 10.94576 reg_loss= 0.06758
+05/21/2022 20:10:54 - INFO: Mini batch Iter: 2 train_loss= 10.65960 graph_loss= 10.59215 reg_loss= 0.06746
+05/21/2022 20:10:55 - INFO: Mini batch Iter: 3 train_loss= 10.65068 graph_loss= 10.58333 reg_loss= 0.06736
+05/21/2022 20:10:55 - INFO: Time for epoch : 1.2124979496002197
+05/21/2022 20:10:57 - INFO: Test results at epoch 7: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284A2ED2950>, {'operator_hadamard': [0.7864341046001613, 0.7864341046001613]}) best is : operator_hadamard 0.7864341046001613
+05/21/2022 20:10:58 - INFO: Mini batch Iter: 0 train_loss= 10.72027 graph_loss= 10.65299 reg_loss= 0.06728
+05/21/2022 20:10:59 - INFO: Mini batch Iter: 1 train_loss= 10.66972 graph_loss= 10.60250 reg_loss= 0.06722
+05/21/2022 20:11:00 - INFO: Mini batch Iter: 2 train_loss= 10.69618 graph_loss= 10.62900 reg_loss= 0.06717
+05/21/2022 20:11:00 - INFO: Mini batch Iter: 3 train_loss= 10.46158 graph_loss= 10.39444 reg_loss= 0.06714
+05/21/2022 20:11:00 - INFO: Time for epoch : 1.2469608783721924
+05/21/2022 20:11:03 - INFO: Test results at epoch 8: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284A2ED29D8>, {'operator_hadamard': [0.7862196105250271, 0.7862196105250271]}) best is : operator_hadamard 0.7862196105250271
+05/21/2022 20:11:04 - INFO: Mini batch Iter: 0 train_loss= 10.54044 graph_loss= 10.47332 reg_loss= 0.06712
+05/21/2022 20:11:05 - INFO: Mini batch Iter: 1 train_loss= 10.53644 graph_loss= 10.46931 reg_loss= 0.06713
+05/21/2022 20:11:05 - INFO: Mini batch Iter: 2 train_loss= 10.84027 graph_loss= 10.77313 reg_loss= 0.06714
+05/21/2022 20:11:06 - INFO: Mini batch Iter: 3 train_loss= 10.16941 graph_loss= 10.10225 reg_loss= 0.06716
+05/21/2022 20:11:06 - INFO: Time for epoch : 1.2139928340911865
+05/21/2022 20:11:08 - INFO: Test results at epoch 9: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000002849BEA3AE8>, {'operator_hadamard': [0.7865585964379038, 0.7865585964379038]}) best is : operator_hadamard 0.7865585964379038
+05/21/2022 20:11:09 - INFO: Mini batch Iter: 0 train_loss= 10.74789 graph_loss= 10.68071 reg_loss= 0.06718
+05/21/2022 20:11:10 - INFO: Mini batch Iter: 1 train_loss= 10.45731 graph_loss= 10.39010 reg_loss= 0.06720
+05/21/2022 20:11:11 - INFO: Mini batch Iter: 2 train_loss= 10.45687 graph_loss= 10.38966 reg_loss= 0.06721
+05/21/2022 20:11:12 - INFO: Mini batch Iter: 3 train_loss= 10.59504 graph_loss= 10.52782 reg_loss= 0.06721
+05/21/2022 20:11:12 - INFO: Time for epoch : 1.1964685916900635
+05/21/2022 20:11:14 - INFO: Test results at epoch 10: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000002849BEA3A60>, {'operator_hadamard': [0.7853227261278071, 0.7853227261278071]}) best is : operator_hadamard 0.7853227261278071
+05/21/2022 20:11:15 - INFO: Mini batch Iter: 0 train_loss= 10.46960 graph_loss= 10.40240 reg_loss= 0.06720
+05/21/2022 20:11:16 - INFO: Mini batch Iter: 1 train_loss= 10.72171 graph_loss= 10.65455 reg_loss= 0.06716
+05/21/2022 20:11:17 - INFO: Mini batch Iter: 2 train_loss= 10.52726 graph_loss= 10.46013 reg_loss= 0.06713
+05/21/2022 20:11:18 - INFO: Mini batch Iter: 3 train_loss= 10.56152 graph_loss= 10.49442 reg_loss= 0.06710
+05/21/2022 20:11:18 - INFO: Time for epoch : 1.2700800895690918
+05/21/2022 20:11:20 - INFO: Test results at epoch 11: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B332B8C8>, {'operator_hadamard': [0.7860650897981986, 0.7860650897981986]}) best is : operator_hadamard 0.7860650897981986
+05/21/2022 20:11:22 - INFO: Mini batch Iter: 0 train_loss= 10.62652 graph_loss= 10.55944 reg_loss= 0.06708
+05/21/2022 20:11:22 - INFO: Mini batch Iter: 1 train_loss= 10.11310 graph_loss= 10.04604 reg_loss= 0.06705
+05/21/2022 20:11:23 - INFO: Mini batch Iter: 2 train_loss= 10.61254 graph_loss= 10.54550 reg_loss= 0.06704
+05/21/2022 20:11:24 - INFO: Mini batch Iter: 3 train_loss= 10.49183 graph_loss= 10.42483 reg_loss= 0.06700
+05/21/2022 20:11:24 - INFO: Time for epoch : 1.2379734516143799
+05/21/2022 20:11:26 - INFO: Test results at epoch 12: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284A2ED2158>, {'operator_hadamard': [0.7874084815429276, 0.7874084815429276]}) best is : operator_hadamard 0.7874084815429276
+05/21/2022 20:11:27 - INFO: Mini batch Iter: 0 train_loss= 10.22029 graph_loss= 10.15333 reg_loss= 0.06696
+05/21/2022 20:11:28 - INFO: Mini batch Iter: 1 train_loss= 10.30276 graph_loss= 10.23585 reg_loss= 0.06692
+05/21/2022 20:11:29 - INFO: Mini batch Iter: 2 train_loss= 10.49898 graph_loss= 10.43210 reg_loss= 0.06687
+05/21/2022 20:11:30 - INFO: Mini batch Iter: 3 train_loss= 10.16982 graph_loss= 10.10299 reg_loss= 0.06683
+05/21/2022 20:11:30 - INFO: Time for epoch : 1.2828752994537354
+05/21/2022 20:11:32 - INFO: Test results at epoch 13: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284A2ED2EA0>, {'operator_hadamard': [0.7835558060308253, 0.7835558060308253]}) best is : operator_hadamard 0.7835558060308253
+05/21/2022 20:11:33 - INFO: Mini batch Iter: 0 train_loss= 10.39625 graph_loss= 10.32945 reg_loss= 0.06680
+05/21/2022 20:11:34 - INFO: Mini batch Iter: 1 train_loss= 10.39541 graph_loss= 10.32862 reg_loss= 0.06679
+05/21/2022 20:11:35 - INFO: Mini batch Iter: 2 train_loss= 10.44102 graph_loss= 10.37424 reg_loss= 0.06678
+05/21/2022 20:11:36 - INFO: Mini batch Iter: 3 train_loss= 10.71741 graph_loss= 10.65063 reg_loss= 0.06677
+05/21/2022 20:11:36 - INFO: Time for epoch : 1.2879602909088135
+05/21/2022 20:11:38 - INFO: Test results at epoch 14: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B3310EA0>, {'operator_hadamard': [0.7845617316002697, 0.7845617316002697]}) best is : operator_hadamard 0.7845617316002697
+05/21/2022 20:11:39 - INFO: Mini batch Iter: 0 train_loss= 10.36119 graph_loss= 10.29443 reg_loss= 0.06676
+05/21/2022 20:11:40 - INFO: Mini batch Iter: 1 train_loss= 10.45361 graph_loss= 10.38687 reg_loss= 0.06674
+05/21/2022 20:11:41 - INFO: Mini batch Iter: 2 train_loss= 10.51078 graph_loss= 10.44406 reg_loss= 0.06672
+05/21/2022 20:11:41 - INFO: Mini batch Iter: 3 train_loss= 10.64652 graph_loss= 10.57983 reg_loss= 0.06669
+05/21/2022 20:11:41 - INFO: Time for epoch : 1.1952385902404785
+05/21/2022 20:11:44 - INFO: Test results at epoch 15: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284A2ED28C8>, {'operator_hadamard': [0.7852420252473443, 0.7852420252473443]}) best is : operator_hadamard 0.7852420252473443
+05/21/2022 20:11:45 - INFO: Mini batch Iter: 0 train_loss= 10.15335 graph_loss= 10.08671 reg_loss= 0.06664
+05/21/2022 20:11:46 - INFO: Mini batch Iter: 1 train_loss= 10.47003 graph_loss= 10.40343 reg_loss= 0.06660
+05/21/2022 20:11:47 - INFO: Mini batch Iter: 2 train_loss= 10.59196 graph_loss= 10.52540 reg_loss= 0.06656
+05/21/2022 20:11:47 - INFO: Mini batch Iter: 3 train_loss= 10.45377 graph_loss= 10.38725 reg_loss= 0.06652
+05/21/2022 20:11:47 - INFO: Time for epoch : 1.2347021102905273
+05/21/2022 20:11:49 - INFO: Test results at epoch 16: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B3310A60>, {'operator_hadamard': [0.7828295543932378, 0.7828295543932378]}) best is : operator_hadamard 0.7828295543932378
+05/21/2022 20:11:50 - INFO: Mini batch Iter: 0 train_loss= 10.07172 graph_loss= 10.00523 reg_loss= 0.06649
+05/21/2022 20:11:51 - INFO: Mini batch Iter: 1 train_loss= 10.68328 graph_loss= 10.61683 reg_loss= 0.06646
+05/21/2022 20:11:52 - INFO: Mini batch Iter: 2 train_loss= 10.08222 graph_loss= 10.01578 reg_loss= 0.06644
+05/21/2022 20:11:53 - INFO: Mini batch Iter: 3 train_loss= 10.54758 graph_loss= 10.48114 reg_loss= 0.06644
+05/21/2022 20:11:53 - INFO: Time for epoch : 1.239605188369751
+05/21/2022 20:11:55 - INFO: Test results at epoch 17: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B3310B70>, {'operator_hadamard': [0.7859388671481984, 0.7859388671481984]}) best is : operator_hadamard 0.7859388671481984
+05/21/2022 20:11:56 - INFO: Mini batch Iter: 0 train_loss= 10.17391 graph_loss= 10.10747 reg_loss= 0.06643
+05/21/2022 20:11:57 - INFO: Mini batch Iter: 1 train_loss= 10.40224 graph_loss= 10.33580 reg_loss= 0.06644
+05/21/2022 20:11:58 - INFO: Mini batch Iter: 2 train_loss= 10.46326 graph_loss= 10.39681 reg_loss= 0.06645
+05/21/2022 20:11:59 - INFO: Mini batch Iter: 3 train_loss= 9.89598 graph_loss= 9.82952 reg_loss= 0.06645
+05/21/2022 20:11:59 - INFO: Time for epoch : 1.2380425930023193
+05/21/2022 20:12:01 - INFO: Test results at epoch 18: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B332B1E0>, {'operator_hadamard': [0.789499401251532, 0.789499401251532]}) best is : operator_hadamard 0.789499401251532
+05/21/2022 20:12:02 - INFO: Mini batch Iter: 0 train_loss= 10.44166 graph_loss= 10.37521 reg_loss= 0.06645
+05/21/2022 20:12:03 - INFO: Mini batch Iter: 1 train_loss= 10.44973 graph_loss= 10.38328 reg_loss= 0.06645
+05/21/2022 20:12:04 - INFO: Mini batch Iter: 2 train_loss= 10.52073 graph_loss= 10.45428 reg_loss= 0.06645
+05/21/2022 20:12:04 - INFO: Mini batch Iter: 3 train_loss= 10.05327 graph_loss= 9.98684 reg_loss= 0.06643
+05/21/2022 20:12:04 - INFO: Time for epoch : 1.1874797344207764
+05/21/2022 20:12:06 - INFO: Test results at epoch 19: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B332B950>, {'operator_hadamard': [0.7896036439930261, 0.7896036439930261]}) best is : operator_hadamard 0.7896036439930261
+05/21/2022 20:12:08 - INFO: Mini batch Iter: 0 train_loss= 10.39047 graph_loss= 10.32405 reg_loss= 0.06642
+05/21/2022 20:12:08 - INFO: Mini batch Iter: 1 train_loss= 10.10421 graph_loss= 10.03779 reg_loss= 0.06642
+05/21/2022 20:12:09 - INFO: Mini batch Iter: 2 train_loss= 10.36609 graph_loss= 10.29968 reg_loss= 0.06641
+05/21/2022 20:12:10 - INFO: Mini batch Iter: 3 train_loss= 10.23170 graph_loss= 10.16529 reg_loss= 0.06641
+05/21/2022 20:12:10 - INFO: Time for epoch : 1.2331013679504395
+05/21/2022 20:12:12 - INFO: Test results at epoch 20: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B3310598>, {'operator_hadamard': [0.7902654615710428, 0.7902654615710428]}) best is : operator_hadamard 0.7902654615710428
+05/21/2022 20:12:13 - INFO: Mini batch Iter: 0 train_loss= 10.57478 graph_loss= 10.50836 reg_loss= 0.06642
+05/21/2022 20:12:14 - INFO: Mini batch Iter: 1 train_loss= 9.76469 graph_loss= 9.69827 reg_loss= 0.06642
+05/21/2022 20:12:15 - INFO: Mini batch Iter: 2 train_loss= 10.55848 graph_loss= 10.49204 reg_loss= 0.06644
+05/21/2022 20:12:16 - INFO: Mini batch Iter: 3 train_loss= 10.03478 graph_loss= 9.96833 reg_loss= 0.06645
+05/21/2022 20:12:16 - INFO: Time for epoch : 1.2437751293182373
+05/21/2022 20:12:18 - INFO: Test results at epoch 21: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B3310620>, {'operator_hadamard': [0.789795665652101, 0.789795665652101]}) best is : operator_hadamard 0.789795665652101
+05/21/2022 20:12:19 - INFO: Mini batch Iter: 0 train_loss= 10.47446 graph_loss= 10.40801 reg_loss= 0.06645
+05/21/2022 20:12:20 - INFO: Mini batch Iter: 1 train_loss= 10.37162 graph_loss= 10.30517 reg_loss= 0.06645
+05/21/2022 20:12:21 - INFO: Mini batch Iter: 2 train_loss= 10.09648 graph_loss= 10.03004 reg_loss= 0.06644
+05/21/2022 20:12:22 - INFO: Mini batch Iter: 3 train_loss= 9.84350 graph_loss= 9.77707 reg_loss= 0.06643
+05/21/2022 20:12:22 - INFO: Time for epoch : 1.279029369354248
+05/21/2022 20:12:24 - INFO: Test results at epoch 22: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028450610D90>, {'operator_hadamard': [0.7883138229984141, 0.7883138229984141]}) best is : operator_hadamard 0.7883138229984141
+05/21/2022 20:12:25 - INFO: Mini batch Iter: 0 train_loss= 9.88079 graph_loss= 9.81436 reg_loss= 0.06643
+05/21/2022 20:12:26 - INFO: Mini batch Iter: 1 train_loss= 10.22366 graph_loss= 10.15724 reg_loss= 0.06642
+05/21/2022 20:12:27 - INFO: Mini batch Iter: 2 train_loss= 10.16725 graph_loss= 10.10084 reg_loss= 0.06640
+05/21/2022 20:12:28 - INFO: Mini batch Iter: 3 train_loss= 9.93465 graph_loss= 9.86825 reg_loss= 0.06640
+05/21/2022 20:12:28 - INFO: Time for epoch : 1.300527811050415
+05/21/2022 20:12:30 - INFO: Test results at epoch 23: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284506109D8>, {'operator_hadamard': [0.7871103456136573, 0.7871103456136573]}) best is : operator_hadamard 0.7871103456136573
+05/21/2022 20:12:31 - INFO: Mini batch Iter: 0 train_loss= 10.39773 graph_loss= 10.33133 reg_loss= 0.06640
+05/21/2022 20:12:32 - INFO: Mini batch Iter: 1 train_loss= 9.99133 graph_loss= 9.92491 reg_loss= 0.06642
+05/21/2022 20:12:33 - INFO: Mini batch Iter: 2 train_loss= 10.00776 graph_loss= 9.94133 reg_loss= 0.06643
+05/21/2022 20:12:33 - INFO: Mini batch Iter: 3 train_loss= 10.33085 graph_loss= 10.26440 reg_loss= 0.06644
+05/21/2022 20:12:33 - INFO: Time for epoch : 1.202925682067871
+05/21/2022 20:12:36 - INFO: Test results at epoch 24: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B332BAE8>, {'operator_hadamard': [0.7870342320892592, 0.7870342320892592]}) best is : operator_hadamard 0.7870342320892592
+05/21/2022 20:12:37 - INFO: Mini batch Iter: 0 train_loss= 9.81397 graph_loss= 9.74751 reg_loss= 0.06646
+05/21/2022 20:12:38 - INFO: Mini batch Iter: 1 train_loss= 10.29404 graph_loss= 10.22757 reg_loss= 0.06647
+05/21/2022 20:12:39 - INFO: Mini batch Iter: 2 train_loss= 10.30512 graph_loss= 10.23866 reg_loss= 0.06646
+05/21/2022 20:12:39 - INFO: Mini batch Iter: 3 train_loss= 10.47019 graph_loss= 10.40374 reg_loss= 0.06645
+05/21/2022 20:12:39 - INFO: Time for epoch : 1.2783401012420654
+05/21/2022 20:12:41 - INFO: Test results at epoch 25: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B332B9D8>, {'operator_hadamard': [0.7868643873417116, 0.7868643873417116]}) best is : operator_hadamard 0.7868643873417116
+05/21/2022 20:12:43 - INFO: Mini batch Iter: 0 train_loss= 10.47355 graph_loss= 10.40711 reg_loss= 0.06644
+05/21/2022 20:12:43 - INFO: Mini batch Iter: 1 train_loss= 9.99743 graph_loss= 9.93101 reg_loss= 0.06642
+05/21/2022 20:12:44 - INFO: Mini batch Iter: 2 train_loss= 10.03928 graph_loss= 9.97289 reg_loss= 0.06639
+05/21/2022 20:12:45 - INFO: Mini batch Iter: 3 train_loss= 9.89526 graph_loss= 9.82890 reg_loss= 0.06636
+05/21/2022 20:12:45 - INFO: Time for epoch : 1.2595829963684082
+05/21/2022 20:12:47 - INFO: Test results at epoch 26: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B3317510>, {'operator_hadamard': [0.7868940081531108, 0.7868940081531108]}) best is : operator_hadamard 0.7868940081531108
+05/21/2022 20:12:48 - INFO: Mini batch Iter: 0 train_loss= 10.00579 graph_loss= 9.93945 reg_loss= 0.06634
+05/21/2022 20:12:49 - INFO: Mini batch Iter: 1 train_loss= 10.33007 graph_loss= 10.26373 reg_loss= 0.06633
+05/21/2022 20:12:50 - INFO: Mini batch Iter: 2 train_loss= 10.71083 graph_loss= 10.64450 reg_loss= 0.06632
+05/21/2022 20:12:51 - INFO: Mini batch Iter: 3 train_loss= 10.49143 graph_loss= 10.42511 reg_loss= 0.06632
+05/21/2022 20:12:51 - INFO: Time for epoch : 1.219663381576538
+05/21/2022 20:12:53 - INFO: Test results at epoch 27: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284B3317E18>, {'operator_hadamard': [0.7868074956835232, 0.7868074956835232]}) best is : operator_hadamard 0.7868074956835232
+05/21/2022 20:12:54 - INFO: Mini batch Iter: 0 train_loss= 9.86112 graph_loss= 9.79479 reg_loss= 0.06633
+05/21/2022 20:12:55 - INFO: Mini batch Iter: 1 train_loss= 9.98605 graph_loss= 9.91973 reg_loss= 0.06633
+05/21/2022 20:12:56 - INFO: Mini batch Iter: 2 train_loss= 10.06654 graph_loss= 10.00022 reg_loss= 0.06632
+05/21/2022 20:12:57 - INFO: Mini batch Iter: 3 train_loss= 10.21548 graph_loss= 10.14918 reg_loss= 0.06631
+05/21/2022 20:12:57 - INFO: Time for epoch : 1.2809762954711914
+05/21/2022 20:12:59 - INFO: Test results at epoch 28: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000002849BEA3950>, {'operator_hadamard': [0.7864114633243696, 0.7864114633243696]}) best is : operator_hadamard 0.7864114633243696
+05/21/2022 20:13:00 - INFO: Mini batch Iter: 0 train_loss= 9.88196 graph_loss= 9.81566 reg_loss= 0.06629
+05/21/2022 20:13:01 - INFO: Mini batch Iter: 1 train_loss= 10.20708 graph_loss= 10.14080 reg_loss= 0.06629
+05/21/2022 20:13:02 - INFO: Mini batch Iter: 2 train_loss= 10.19054 graph_loss= 10.12426 reg_loss= 0.06628
+05/21/2022 20:13:02 - INFO: Mini batch Iter: 3 train_loss= 10.68276 graph_loss= 10.61648 reg_loss= 0.06628
+05/21/2022 20:13:02 - INFO: Time for epoch : 1.2964556217193604
+05/21/2022 20:13:05 - INFO: Test results at epoch 29: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x00000284506106A8>, {'operator_hadamard': [0.7855578492335878, 0.7855578492335878]}) best is : operator_hadamard 0.7855578492335878
+05/21/2022 20:13:05 - INFO: Best epoch 20
+05/21/2022 20:13:07 - INFO: Best epoch test results defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000002849BEA3950>, {'operator_hadamard': [0.7902654615710428, 0.7902654615710428]})
+
+05/21/2022 21:14:15 - INFO: dict_items([('base_model', 'DyMADC'), ('model', 'default'), ('test_subset', 0.25), ('min_time', 1), ('max_time', 9), ('dataset', 'fb-forum'), ('dataname', 'fb-forum_8_by_edgesNumber_0.25'), ('time_steps', 9), ('GPU_ID', 0), ('epochs', 30), ('batch_size', 256), ('featureless', 'True'), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', 'False'), ('structural_head_config', '16,8,8'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', 'True'), ('optimizer', 'adam'), ('seed', 7), ('save_dir', '/output'), ('log_dir', '/log'), ('csv_dir', '/csv'), ('model_dir', '/model'), ('window', -1)])
+05/21/2022 21:14:19 - INFO: # train: 25290, # test: 8430
+05/21/2022 21:14:32 - WARNING: From D:\Anaconda3\envs\tf_1\lib\site-packages\tensorflow\python\ops\sparse_grad.py:281: calling sparse_reduce_sum (from tensorflow.python.ops.sparse_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+05/21/2022 21:15:03 - INFO: Mini batch Iter: 0 train_loss= 11.16986 graph_loss= 11.09236 reg_loss= 0.07749
+05/21/2022 21:15:04 - INFO: Mini batch Iter: 1 train_loss= 11.16707 graph_loss= 11.09107 reg_loss= 0.07600
+05/21/2022 21:15:05 - INFO: Mini batch Iter: 2 train_loss= 11.16664 graph_loss= 11.09212 reg_loss= 0.07452
+05/21/2022 21:15:06 - INFO: Mini batch Iter: 3 train_loss= 11.16437 graph_loss= 11.09128 reg_loss= 0.07309
+05/21/2022 21:15:06 - INFO: Time for epoch : 19.959781646728516
+05/21/2022 21:15:11 - INFO: Test results at epoch 0: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C19AE8>, {'operator_hadamard': [0.6479301877579509, 0.6479301877579509]}) best is : operator_hadamard 0.6479301877579509
+05/21/2022 21:15:12 - INFO: Mini batch Iter: 0 train_loss= 11.16206 graph_loss= 11.09032 reg_loss= 0.07174
+05/21/2022 21:15:13 - INFO: Mini batch Iter: 1 train_loss= 11.16160 graph_loss= 11.09119 reg_loss= 0.07041
+05/21/2022 21:15:14 - INFO: Mini batch Iter: 2 train_loss= 11.16088 graph_loss= 11.09178 reg_loss= 0.06909
+05/21/2022 21:15:14 - INFO: Mini batch Iter: 3 train_loss= 11.15857 graph_loss= 11.09077 reg_loss= 0.06780
+05/21/2022 21:15:14 - INFO: Time for epoch : 1.1372220516204834
+05/21/2022 21:15:16 - INFO: Test results at epoch 1: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C3AA60>, {'operator_hadamard': [0.6249027719732244, 0.6249027719732244]}) best is : operator_hadamard 0.6249027719732244
+05/21/2022 21:15:17 - INFO: Mini batch Iter: 0 train_loss= 11.15668 graph_loss= 11.09015 reg_loss= 0.06654
+05/21/2022 21:15:18 - INFO: Mini batch Iter: 1 train_loss= 11.15538 graph_loss= 11.09010 reg_loss= 0.06528
+05/21/2022 21:15:19 - INFO: Mini batch Iter: 2 train_loss= 11.15419 graph_loss= 11.09013 reg_loss= 0.06405
+05/21/2022 21:15:20 - INFO: Mini batch Iter: 3 train_loss= 11.15304 graph_loss= 11.09020 reg_loss= 0.06284
+05/21/2022 21:15:20 - INFO: Time for epoch : 1.125842571258545
+05/21/2022 21:15:21 - INFO: Test results at epoch 2: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C3A268>, {'operator_hadamard': [0.608676758850009, 0.608676758850009]}) best is : operator_hadamard 0.608676758850009
+05/21/2022 21:15:22 - INFO: Mini batch Iter: 0 train_loss= 11.15152 graph_loss= 11.08986 reg_loss= 0.06166
+05/21/2022 21:15:23 - INFO: Mini batch Iter: 1 train_loss= 11.15018 graph_loss= 11.08967 reg_loss= 0.06050
+05/21/2022 21:15:24 - INFO: Mini batch Iter: 2 train_loss= 11.14963 graph_loss= 11.09027 reg_loss= 0.05936
+05/21/2022 21:15:25 - INFO: Mini batch Iter: 3 train_loss= 11.14799 graph_loss= 11.08976 reg_loss= 0.05823
+05/21/2022 21:15:25 - INFO: Time for epoch : 1.122751235961914
+05/21/2022 21:15:27 - INFO: Test results at epoch 3: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C199D8>, {'operator_hadamard': [0.6019536226744849, 0.6019536226744849]}) best is : operator_hadamard 0.6019536226744849
+05/21/2022 21:15:28 - INFO: Mini batch Iter: 0 train_loss= 11.14611 graph_loss= 11.08898 reg_loss= 0.05713
+05/21/2022 21:15:29 - INFO: Mini batch Iter: 1 train_loss= 11.14532 graph_loss= 11.08927 reg_loss= 0.05605
+05/21/2022 21:15:29 - INFO: Mini batch Iter: 2 train_loss= 11.14460 graph_loss= 11.08961 reg_loss= 0.05499
+05/21/2022 21:15:30 - INFO: Mini batch Iter: 3 train_loss= 11.14283 graph_loss= 11.08889 reg_loss= 0.05394
+05/21/2022 21:15:30 - INFO: Time for epoch : 1.0777881145477295
+05/21/2022 21:15:32 - INFO: Test results at epoch 4: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1BF5598>, {'operator_hadamard': [0.6006255549504748, 0.6006255549504748]}) best is : operator_hadamard 0.6006255549504748
+05/21/2022 21:15:33 - INFO: Mini batch Iter: 0 train_loss= 11.14211 graph_loss= 11.08919 reg_loss= 0.05292
+05/21/2022 21:15:34 - INFO: Mini batch Iter: 1 train_loss= 11.14111 graph_loss= 11.08919 reg_loss= 0.05192
+05/21/2022 21:15:35 - INFO: Mini batch Iter: 2 train_loss= 11.14027 graph_loss= 11.08933 reg_loss= 0.05094
+05/21/2022 21:15:35 - INFO: Mini batch Iter: 3 train_loss= 11.13956 graph_loss= 11.08959 reg_loss= 0.04997
+05/21/2022 21:15:35 - INFO: Time for epoch : 1.1134605407714844
+05/21/2022 21:15:37 - INFO: Test results at epoch 5: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CF9AC9A7B8>, {'operator_hadamard': [0.601057272999751, 0.601057272999751]}) best is : operator_hadamard 0.601057272999751
+05/21/2022 21:15:38 - INFO: Mini batch Iter: 0 train_loss= 11.13808 graph_loss= 11.08905 reg_loss= 0.04903
+05/21/2022 21:15:39 - INFO: Mini batch Iter: 1 train_loss= 11.13726 graph_loss= 11.08916 reg_loss= 0.04810
+05/21/2022 21:15:40 - INFO: Mini batch Iter: 2 train_loss= 11.13557 graph_loss= 11.08838 reg_loss= 0.04719
+05/21/2022 21:15:40 - INFO: Mini batch Iter: 3 train_loss= 11.13514 graph_loss= 11.08883 reg_loss= 0.04630
+05/21/2022 21:15:40 - INFO: Time for epoch : 1.122251272201538
+05/21/2022 21:15:42 - INFO: Test results at epoch 6: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C19378>, {'operator_hadamard': [0.6020288496852877, 0.6020288496852877]}) best is : operator_hadamard 0.6020288496852877
+05/21/2022 21:15:43 - INFO: Mini batch Iter: 0 train_loss= 11.13400 graph_loss= 11.08856 reg_loss= 0.04544
+05/21/2022 21:15:44 - INFO: Mini batch Iter: 1 train_loss= 11.13353 graph_loss= 11.08894 reg_loss= 0.04459
+05/21/2022 21:15:45 - INFO: Mini batch Iter: 2 train_loss= 11.13202 graph_loss= 11.08826 reg_loss= 0.04376
+05/21/2022 21:15:46 - INFO: Mini batch Iter: 3 train_loss= 11.13169 graph_loss= 11.08874 reg_loss= 0.04295
+05/21/2022 21:15:46 - INFO: Time for epoch : 1.1242563724517822
+05/21/2022 21:15:47 - INFO: Test results at epoch 7: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C3AEA0>, {'operator_hadamard': [0.6018988699062406, 0.6018988699062406]}) best is : operator_hadamard 0.6018988699062406
+05/21/2022 21:15:48 - INFO: Mini batch Iter: 0 train_loss= 11.13056 graph_loss= 11.08840 reg_loss= 0.04216
+05/21/2022 21:15:49 - INFO: Mini batch Iter: 1 train_loss= 11.12966 graph_loss= 11.08828 reg_loss= 0.04138
+05/21/2022 21:15:50 - INFO: Mini batch Iter: 2 train_loss= 11.12881 graph_loss= 11.08818 reg_loss= 0.04063
+05/21/2022 21:15:51 - INFO: Mini batch Iter: 3 train_loss= 11.12797 graph_loss= 11.08809 reg_loss= 0.03989
+05/21/2022 21:15:51 - INFO: Time for epoch : 1.1463027000427246
+05/21/2022 21:15:53 - INFO: Test results at epoch 8: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C19F28>, {'operator_hadamard': [0.6021934175661965, 0.6021934175661965]}) best is : operator_hadamard 0.6021934175661965
+05/21/2022 21:15:54 - INFO: Mini batch Iter: 0 train_loss= 11.12740 graph_loss= 11.08823 reg_loss= 0.03917
+05/21/2022 21:15:54 - INFO: Mini batch Iter: 1 train_loss= 11.12652 graph_loss= 11.08805 reg_loss= 0.03847
+05/21/2022 21:15:55 - INFO: Mini batch Iter: 2 train_loss= 11.12563 graph_loss= 11.08785 reg_loss= 0.03778
+05/21/2022 21:15:56 - INFO: Mini batch Iter: 3 train_loss= 11.12510 graph_loss= 11.08799 reg_loss= 0.03711
+05/21/2022 21:15:56 - INFO: Time for epoch : 1.1168887615203857
+05/21/2022 21:15:58 - INFO: Test results at epoch 9: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1BF59D8>, {'operator_hadamard': [0.60084951924227, 0.60084951924227]}) best is : operator_hadamard 0.60084951924227
+05/21/2022 21:15:59 - INFO: Mini batch Iter: 0 train_loss= 11.12422 graph_loss= 11.08776 reg_loss= 0.03646
+05/21/2022 21:16:00 - INFO: Mini batch Iter: 1 train_loss= 11.12401 graph_loss= 11.08818 reg_loss= 0.03582
+05/21/2022 21:16:01 - INFO: Mini batch Iter: 2 train_loss= 11.12297 graph_loss= 11.08777 reg_loss= 0.03520
+05/21/2022 21:16:01 - INFO: Mini batch Iter: 3 train_loss= 11.12147 graph_loss= 11.08688 reg_loss= 0.03459
+05/21/2022 21:16:01 - INFO: Time for epoch : 1.1456799507141113
+05/21/2022 21:16:03 - INFO: Test results at epoch 10: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1BF5D90>, {'operator_hadamard': [0.5951425527932919, 0.5951425527932919]}) best is : operator_hadamard 0.5951425527932919
+05/21/2022 21:16:04 - INFO: Mini batch Iter: 0 train_loss= 11.12201 graph_loss= 11.08801 reg_loss= 0.03400
+05/21/2022 21:16:05 - INFO: Mini batch Iter: 1 train_loss= 11.12057 graph_loss= 11.08714 reg_loss= 0.03343
+05/21/2022 21:16:06 - INFO: Mini batch Iter: 2 train_loss= 11.12003 graph_loss= 11.08716 reg_loss= 0.03287
+05/21/2022 21:16:07 - INFO: Mini batch Iter: 3 train_loss= 11.12044 graph_loss= 11.08811 reg_loss= 0.03233
+05/21/2022 21:16:07 - INFO: Time for epoch : 1.1542489528656006
+05/21/2022 21:16:08 - INFO: Test results at epoch 11: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1BF5488>, {'operator_hadamard': [0.5840053950684515, 0.5840053950684515]}) best is : operator_hadamard 0.5840053950684515
+05/21/2022 21:16:09 - INFO: Mini batch Iter: 0 train_loss= 11.11878 graph_loss= 11.08698 reg_loss= 0.03180
+05/21/2022 21:16:10 - INFO: Mini batch Iter: 1 train_loss= 11.11848 graph_loss= 11.08720 reg_loss= 0.03128
+05/21/2022 21:16:11 - INFO: Mini batch Iter: 2 train_loss= 11.11836 graph_loss= 11.08759 reg_loss= 0.03077
+05/21/2022 21:16:12 - INFO: Mini batch Iter: 3 train_loss= 11.11763 graph_loss= 11.08734 reg_loss= 0.03028
+05/21/2022 21:16:12 - INFO: Time for epoch : 1.1371822357177734
+05/21/2022 21:16:13 - INFO: Test results at epoch 12: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C196A8>, {'operator_hadamard': [0.5745214444824378, 0.5745214444824378]}) best is : operator_hadamard 0.5745214444824378
+05/21/2022 21:16:14 - INFO: Mini batch Iter: 0 train_loss= 11.11609 graph_loss= 11.08629 reg_loss= 0.02980
+05/21/2022 21:16:15 - INFO: Mini batch Iter: 1 train_loss= 11.11678 graph_loss= 11.08744 reg_loss= 0.02934
+05/21/2022 21:16:16 - INFO: Mini batch Iter: 2 train_loss= 11.11524 graph_loss= 11.08636 reg_loss= 0.02889
+05/21/2022 21:16:17 - INFO: Mini batch Iter: 3 train_loss= 11.11632 graph_loss= 11.08787 reg_loss= 0.02845
+05/21/2022 21:16:17 - INFO: Time for epoch : 1.124722957611084
+05/21/2022 21:16:19 - INFO: Test results at epoch 13: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C3A510>, {'operator_hadamard': [0.5697733761674189, 0.5697733761674189]}) best is : operator_hadamard 0.5697733761674189
+05/21/2022 21:16:20 - INFO: Mini batch Iter: 0 train_loss= 11.11553 graph_loss= 11.08752 reg_loss= 0.02802
+05/21/2022 21:16:21 - INFO: Mini batch Iter: 1 train_loss= 11.11375 graph_loss= 11.08615 reg_loss= 0.02760
+05/21/2022 21:16:22 - INFO: Mini batch Iter: 2 train_loss= 11.11323 graph_loss= 11.08603 reg_loss= 0.02719
+05/21/2022 21:16:22 - INFO: Mini batch Iter: 3 train_loss= 11.11357 graph_loss= 11.08677 reg_loss= 0.02680
+05/21/2022 21:16:22 - INFO: Time for epoch : 1.0897433757781982
+05/21/2022 21:16:24 - INFO: Test results at epoch 14: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CF9AC9A9D8>, {'operator_hadamard': [0.5721547909024005, 0.5721547909024005]}) best is : operator_hadamard 0.5721547909024005
+05/21/2022 21:16:25 - INFO: Mini batch Iter: 0 train_loss= 11.11287 graph_loss= 11.08645 reg_loss= 0.02642
+05/21/2022 21:16:26 - INFO: Mini batch Iter: 1 train_loss= 11.11133 graph_loss= 11.08528 reg_loss= 0.02604
+05/21/2022 21:16:27 - INFO: Mini batch Iter: 2 train_loss= 11.11290 graph_loss= 11.08721 reg_loss= 0.02569
+05/21/2022 21:16:27 - INFO: Mini batch Iter: 3 train_loss= 11.11178 graph_loss= 11.08644 reg_loss= 0.02534
+05/21/2022 21:16:27 - INFO: Time for epoch : 1.1215035915374756
+05/21/2022 21:16:29 - INFO: Test results at epoch 15: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C3ABF8>, {'operator_hadamard': [0.575267410493788, 0.575267410493788]}) best is : operator_hadamard 0.575267410493788
+05/21/2022 21:16:30 - INFO: Mini batch Iter: 0 train_loss= 11.11107 graph_loss= 11.08607 reg_loss= 0.02500
+05/21/2022 21:16:31 - INFO: Mini batch Iter: 1 train_loss= 11.11152 graph_loss= 11.08685 reg_loss= 0.02467
+05/21/2022 21:16:32 - INFO: Mini batch Iter: 2 train_loss= 11.11018 graph_loss= 11.08583 reg_loss= 0.02435
+05/21/2022 21:16:33 - INFO: Mini batch Iter: 3 train_loss= 11.10969 graph_loss= 11.08565 reg_loss= 0.02404
+05/21/2022 21:16:33 - INFO: Time for epoch : 1.1523337364196777
+05/21/2022 21:16:34 - INFO: Test results at epoch 16: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CF9AC9ABF8>, {'operator_hadamard': [0.5776676812322257, 0.5776676812322257]}) best is : operator_hadamard 0.5776676812322257
+05/21/2022 21:16:35 - INFO: Mini batch Iter: 0 train_loss= 11.10953 graph_loss= 11.08580 reg_loss= 0.02374
+05/21/2022 21:16:36 - INFO: Mini batch Iter: 1 train_loss= 11.10927 graph_loss= 11.08582 reg_loss= 0.02344
+05/21/2022 21:16:37 - INFO: Mini batch Iter: 2 train_loss= 11.10918 graph_loss= 11.08602 reg_loss= 0.02316
+05/21/2022 21:16:38 - INFO: Mini batch Iter: 3 train_loss= 11.10807 graph_loss= 11.08518 reg_loss= 0.02289
+05/21/2022 21:16:38 - INFO: Time for epoch : 1.1860759258270264
+05/21/2022 21:16:40 - INFO: Test results at epoch 17: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1BF5158>, {'operator_hadamard': [0.575849019698895, 0.575849019698895]}) best is : operator_hadamard 0.575849019698895
+05/21/2022 21:16:41 - INFO: Mini batch Iter: 0 train_loss= 11.10827 graph_loss= 11.08565 reg_loss= 0.02262
+05/21/2022 21:16:41 - INFO: Mini batch Iter: 1 train_loss= 11.10748 graph_loss= 11.08512 reg_loss= 0.02237
+05/21/2022 21:16:42 - INFO: Mini batch Iter: 2 train_loss= 11.10787 graph_loss= 11.08575 reg_loss= 0.02212
+05/21/2022 21:16:43 - INFO: Mini batch Iter: 3 train_loss= 11.10325 graph_loss= 11.08137 reg_loss= 0.02188
+05/21/2022 21:16:43 - INFO: Time for epoch : 1.1230199337005615
+05/21/2022 21:16:45 - INFO: Test results at epoch 18: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C190D0>, {'operator_hadamard': [0.5716793944689994, 0.5716793944689994]}) best is : operator_hadamard 0.5716793944689994
+05/21/2022 21:16:46 - INFO: Mini batch Iter: 0 train_loss= 11.10645 graph_loss= 11.08479 reg_loss= 0.02166
+05/21/2022 21:16:47 - INFO: Mini batch Iter: 1 train_loss= 11.10584 graph_loss= 11.08440 reg_loss= 0.02144
+05/21/2022 21:16:48 - INFO: Mini batch Iter: 2 train_loss= 11.10651 graph_loss= 11.08527 reg_loss= 0.02124
+05/21/2022 21:16:48 - INFO: Mini batch Iter: 3 train_loss= 11.10495 graph_loss= 11.08391 reg_loss= 0.02104
+05/21/2022 21:16:48 - INFO: Time for epoch : 1.1321024894714355
+05/21/2022 21:16:50 - INFO: Test results at epoch 19: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C37F28>, {'operator_hadamard': [0.5710031534555033, 0.5710031534555033]}) best is : operator_hadamard 0.5710031534555033
+05/21/2022 21:16:51 - INFO: Mini batch Iter: 0 train_loss= 11.10398 graph_loss= 11.08313 reg_loss= 0.02084
+05/21/2022 21:16:52 - INFO: Mini batch Iter: 1 train_loss= 11.10441 graph_loss= 11.08374 reg_loss= 0.02066
+05/21/2022 21:16:53 - INFO: Mini batch Iter: 2 train_loss= 11.10466 graph_loss= 11.08417 reg_loss= 0.02049
+05/21/2022 21:16:53 - INFO: Mini batch Iter: 3 train_loss= 11.10468 graph_loss= 11.08435 reg_loss= 0.02032
+05/21/2022 21:16:53 - INFO: Time for epoch : 1.1210274696350098
+05/21/2022 21:16:55 - INFO: Test results at epoch 20: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C19B70>, {'operator_hadamard': [0.5752071416409508, 0.5752071416409508]}) best is : operator_hadamard 0.5752071416409508
+05/21/2022 21:16:56 - INFO: Mini batch Iter: 0 train_loss= 11.10313 graph_loss= 11.08297 reg_loss= 0.02016
+05/21/2022 21:16:57 - INFO: Mini batch Iter: 1 train_loss= 11.10110 graph_loss= 11.08109 reg_loss= 0.02001
+05/21/2022 21:16:58 - INFO: Mini batch Iter: 2 train_loss= 11.10437 graph_loss= 11.08450 reg_loss= 0.01987
+05/21/2022 21:16:59 - INFO: Mini batch Iter: 3 train_loss= 11.10430 graph_loss= 11.08456 reg_loss= 0.01974
+05/21/2022 21:16:59 - INFO: Time for epoch : 1.1467857360839844
+05/21/2022 21:17:00 - INFO: Test results at epoch 21: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C19E18>, {'operator_hadamard': [0.5764344141763373, 0.5764344141763373]}) best is : operator_hadamard 0.5764344141763373
+05/21/2022 21:17:01 - INFO: Mini batch Iter: 0 train_loss= 11.10247 graph_loss= 11.08286 reg_loss= 0.01961
+05/21/2022 21:17:02 - INFO: Mini batch Iter: 1 train_loss= 11.10245 graph_loss= 11.08297 reg_loss= 0.01948
+05/21/2022 21:17:03 - INFO: Mini batch Iter: 2 train_loss= 11.10387 graph_loss= 11.08451 reg_loss= 0.01936
+05/21/2022 21:17:04 - INFO: Mini batch Iter: 3 train_loss= 11.09811 graph_loss= 11.07886 reg_loss= 0.01925
+05/21/2022 21:17:04 - INFO: Time for epoch : 1.1490206718444824
+05/21/2022 21:17:06 - INFO: Test results at epoch 22: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1BF5840>, {'operator_hadamard': [0.555059684879596, 0.555059684879596]}) best is : operator_hadamard 0.555059684879596
+05/21/2022 21:17:07 - INFO: Mini batch Iter: 0 train_loss= 11.10209 graph_loss= 11.08294 reg_loss= 0.01915
+05/21/2022 21:17:08 - INFO: Mini batch Iter: 1 train_loss= 11.10282 graph_loss= 11.08377 reg_loss= 0.01905
+05/21/2022 21:17:09 - INFO: Mini batch Iter: 2 train_loss= 11.10291 graph_loss= 11.08395 reg_loss= 0.01896
+05/21/2022 21:17:09 - INFO: Mini batch Iter: 3 train_loss= 11.09559 graph_loss= 11.07672 reg_loss= 0.01887
+05/21/2022 21:17:09 - INFO: Time for epoch : 1.124171495437622
+05/21/2022 21:17:11 - INFO: Test results at epoch 23: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1BF5BF8>, {'operator_hadamard': [0.5402837406370796, 0.5402837406370796]}) best is : operator_hadamard 0.5402837406370796
+05/21/2022 21:17:12 - INFO: Mini batch Iter: 0 train_loss= 11.09808 graph_loss= 11.07929 reg_loss= 0.01879
+05/21/2022 21:17:13 - INFO: Mini batch Iter: 1 train_loss= 11.10018 graph_loss= 11.08145 reg_loss= 0.01873
+05/21/2022 21:17:14 - INFO: Mini batch Iter: 2 train_loss= 11.09748 graph_loss= 11.07880 reg_loss= 0.01867
+05/21/2022 21:17:14 - INFO: Mini batch Iter: 3 train_loss= 11.09780 graph_loss= 11.07918 reg_loss= 0.01863
+05/21/2022 21:17:14 - INFO: Time for epoch : 1.1132111549377441
+05/21/2022 21:17:16 - INFO: Test results at epoch 24: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C197B8>, {'operator_hadamard': [0.5261986719182044, 0.5261986719182044]}) best is : operator_hadamard 0.5261986719182044
+05/21/2022 21:17:17 - INFO: Mini batch Iter: 0 train_loss= 11.09678 graph_loss= 11.07820 reg_loss= 0.01858
+05/21/2022 21:17:18 - INFO: Mini batch Iter: 1 train_loss= 11.10032 graph_loss= 11.08177 reg_loss= 0.01855
+05/21/2022 21:17:19 - INFO: Mini batch Iter: 2 train_loss= 11.09855 graph_loss= 11.08003 reg_loss= 0.01852
+05/21/2022 21:17:20 - INFO: Mini batch Iter: 3 train_loss= 11.09775 graph_loss= 11.07925 reg_loss= 0.01850
+05/21/2022 21:17:20 - INFO: Time for epoch : 1.1628921031951904
+05/21/2022 21:17:22 - INFO: Test results at epoch 25: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1BF56A8>, {'operator_hadamard': [0.512070107746581, 0.512070107746581]}) best is : operator_hadamard 0.512070107746581
+05/21/2022 21:17:23 - INFO: Mini batch Iter: 0 train_loss= 11.10093 graph_loss= 11.08245 reg_loss= 0.01848
+05/21/2022 21:17:23 - INFO: Mini batch Iter: 1 train_loss= 11.09954 graph_loss= 11.08109 reg_loss= 0.01845
+05/21/2022 21:17:24 - INFO: Mini batch Iter: 2 train_loss= 11.09768 graph_loss= 11.07925 reg_loss= 0.01843
+05/21/2022 21:17:25 - INFO: Mini batch Iter: 3 train_loss= 11.09533 graph_loss= 11.07692 reg_loss= 0.01841
+05/21/2022 21:17:25 - INFO: Time for epoch : 1.1222431659698486
+05/21/2022 21:17:27 - INFO: Test results at epoch 26: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C19400>, {'operator_hadamard': [0.5071706707530722, 0.5071706707530722]}) best is : operator_hadamard 0.5071706707530722
+05/21/2022 21:17:28 - INFO: Mini batch Iter: 0 train_loss= 11.09519 graph_loss= 11.07679 reg_loss= 0.01841
+05/21/2022 21:17:29 - INFO: Mini batch Iter: 1 train_loss= 11.09450 graph_loss= 11.07609 reg_loss= 0.01841
+05/21/2022 21:17:30 - INFO: Mini batch Iter: 2 train_loss= 11.09870 graph_loss= 11.08028 reg_loss= 0.01842
+05/21/2022 21:17:30 - INFO: Mini batch Iter: 3 train_loss= 11.09726 graph_loss= 11.07883 reg_loss= 0.01843
+05/21/2022 21:17:30 - INFO: Time for epoch : 1.1146361827850342
+05/21/2022 21:17:32 - INFO: Test results at epoch 27: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C19E18>, {'operator_hadamard': [0.5042508326895555, 0.5042508326895555]}) best is : operator_hadamard 0.5042508326895555
+05/21/2022 21:17:33 - INFO: Mini batch Iter: 0 train_loss= 11.09519 graph_loss= 11.07675 reg_loss= 0.01844
+05/21/2022 21:17:34 - INFO: Mini batch Iter: 1 train_loss= 11.09383 graph_loss= 11.07537 reg_loss= 0.01846
+05/21/2022 21:17:35 - INFO: Mini batch Iter: 2 train_loss= 11.09322 graph_loss= 11.07474 reg_loss= 0.01848
+05/21/2022 21:17:36 - INFO: Mini batch Iter: 3 train_loss= 11.08949 graph_loss= 11.07097 reg_loss= 0.01852
+05/21/2022 21:17:36 - INFO: Time for epoch : 1.1599881649017334
+05/21/2022 21:17:37 - INFO: Test results at epoch 28: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1BF59D8>, {'operator_hadamard': [0.5078611100557378, 0.5078611100557378]}) best is : operator_hadamard 0.5078611100557378
+05/21/2022 21:17:38 - INFO: Mini batch Iter: 0 train_loss= 11.09630 graph_loss= 11.07773 reg_loss= 0.01856
+05/21/2022 21:17:39 - INFO: Mini batch Iter: 1 train_loss= 11.08996 graph_loss= 11.07135 reg_loss= 0.01861
+05/21/2022 21:17:40 - INFO: Mini batch Iter: 2 train_loss= 11.08938 graph_loss= 11.07071 reg_loss= 0.01867
+05/21/2022 21:17:41 - INFO: Mini batch Iter: 3 train_loss= 11.09055 graph_loss= 11.07180 reg_loss= 0.01875
+05/21/2022 21:17:41 - INFO: Time for epoch : 1.1500825881958008
+05/21/2022 21:17:43 - INFO: Test results at epoch 29: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C37D08>, {'operator_hadamard': [0.5152202704851481, 0.5152202704851481]}) best is : operator_hadamard 0.5152202704851481
+05/21/2022 21:17:43 - INFO: Best epoch 0
+05/21/2022 21:17:44 - INFO: Best epoch test results defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x000001CFA1C371E0>, {'operator_hadamard': [0.6479301877579509, 0.6479301877579509]})
+
+05/21/2022 23:18:26 - INFO: dict_items([('base_model', 'DyMADC'), ('model', 'default'), ('test_subset', 0.25), ('min_time', 1), ('max_time', 9), ('dataset', 'fb-forum'), ('dataname', 'fb-forum_8_by_edgesNumber_0.25'), ('time_steps', 9), ('GPU_ID', 0), ('epochs', 30), ('batch_size', 256), ('featureless', 'True'), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', 'False'), ('structural_head_config', '16,8,8'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '16'), ('position_ffn', 'True'), ('optimizer', 'adam'), ('seed', 7), ('save_dir', '/output'), ('log_dir', '/log'), ('csv_dir', '/csv'), ('model_dir', '/model'), ('window', -1)])
+05/21/2022 23:18:31 - INFO: # train: 25290, # test: 8430
+05/21/2022 23:18:45 - WARNING: From D:\Anaconda3\envs\tf_1\lib\site-packages\tensorflow\python\ops\sparse_grad.py:281: calling sparse_reduce_sum (from tensorflow.python.ops.sparse_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+05/21/2022 23:19:17 - INFO: Mini batch Iter: 0 train_loss= 13.28727 graph_loss= 13.20978 reg_loss= 0.07749
+05/21/2022 23:19:19 - INFO: Mini batch Iter: 1 train_loss= 12.37686 graph_loss= 12.29986 reg_loss= 0.07700
+05/21/2022 23:19:20 - INFO: Mini batch Iter: 2 train_loss= 11.90139 graph_loss= 11.82486 reg_loss= 0.07653
+05/21/2022 23:19:20 - INFO: Mini batch Iter: 3 train_loss= 11.56895 graph_loss= 11.49285 reg_loss= 0.07610
+05/21/2022 23:19:20 - INFO: Time for epoch : 21.06940531730652
+05/21/2022 23:19:35 - INFO: Test results at epoch 0: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E9AF13EA0>, {'operator_hadamard': [0.7248653625066666, 0.7248653625066666], 'operator_l1': [0.6873770103102937, 0.6873770103102937], 'operator_l2': [0.62143413274345, 0.62143413274345], 'operator_avg': [0.7829363652098293, 0.7829363652098293]}) best is : operator_avg 0.7829363652098293
+05/21/2022 23:19:36 - INFO: Mini batch Iter: 0 train_loss= 11.40930 graph_loss= 11.33360 reg_loss= 0.07570
+05/21/2022 23:19:38 - INFO: Mini batch Iter: 1 train_loss= 11.31493 graph_loss= 11.23962 reg_loss= 0.07531
+05/21/2022 23:19:39 - INFO: Mini batch Iter: 2 train_loss= 11.24983 graph_loss= 11.17490 reg_loss= 0.07493
+05/21/2022 23:19:39 - INFO: Mini batch Iter: 3 train_loss= 11.21762 graph_loss= 11.14308 reg_loss= 0.07454
+05/21/2022 23:19:39 - INFO: Time for epoch : 1.3126070499420166
+05/21/2022 23:19:42 - INFO: Test results at epoch 1: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028EA2F11F28>, {'operator_avg': [0.8037262066083257, 0.8037262066083257]}) best is : operator_avg 0.8037262066083257
+05/21/2022 23:19:43 - INFO: Mini batch Iter: 0 train_loss= 11.18845 graph_loss= 11.11431 reg_loss= 0.07414
+05/21/2022 23:19:44 - INFO: Mini batch Iter: 1 train_loss= 11.16547 graph_loss= 11.09173 reg_loss= 0.07374
+05/21/2022 23:19:46 - INFO: Mini batch Iter: 2 train_loss= 11.15263 graph_loss= 11.07928 reg_loss= 0.07335
+05/21/2022 23:19:46 - INFO: Mini batch Iter: 3 train_loss= 11.16749 graph_loss= 11.09453 reg_loss= 0.07296
+05/21/2022 23:19:46 - INFO: Time for epoch : 1.234466314315796
+05/21/2022 23:19:49 - INFO: Test results at epoch 2: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028EA2F11268>, {'operator_avg': [0.8123993490457313, 0.8123993490457313]}) best is : operator_avg 0.8123993490457313
+05/21/2022 23:19:50 - INFO: Mini batch Iter: 0 train_loss= 11.15317 graph_loss= 11.08061 reg_loss= 0.07256
+05/21/2022 23:19:51 - INFO: Mini batch Iter: 1 train_loss= 11.14455 graph_loss= 11.07238 reg_loss= 0.07218
+05/21/2022 23:19:52 - INFO: Mini batch Iter: 2 train_loss= 11.15171 graph_loss= 11.07992 reg_loss= 0.07179
+05/21/2022 23:19:53 - INFO: Mini batch Iter: 3 train_loss= 11.13045 graph_loss= 11.05904 reg_loss= 0.07141
+05/21/2022 23:19:53 - INFO: Time for epoch : 1.359198808670044
+05/21/2022 23:19:55 - INFO: Test results at epoch 3: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA08840>, {'operator_avg': [0.8156144383514222, 0.8156144383514222]}) best is : operator_avg 0.8156144383514222
+05/21/2022 23:19:56 - INFO: Mini batch Iter: 0 train_loss= 11.11830 graph_loss= 11.04726 reg_loss= 0.07103
+05/21/2022 23:19:57 - INFO: Mini batch Iter: 1 train_loss= 11.07843 graph_loss= 11.00777 reg_loss= 0.07066
+05/21/2022 23:19:58 - INFO: Mini batch Iter: 2 train_loss= 11.06944 graph_loss= 10.99913 reg_loss= 0.07031
+05/21/2022 23:19:59 - INFO: Mini batch Iter: 3 train_loss= 11.11925 graph_loss= 11.04927 reg_loss= 0.06997
+05/21/2022 23:19:59 - INFO: Time for epoch : 1.3282246589660645
+05/21/2022 23:20:02 - INFO: Test results at epoch 4: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA08F28>, {'operator_avg': [0.8170402899321607, 0.8170402899321607]}) best is : operator_avg 0.8170402899321607
+05/21/2022 23:20:03 - INFO: Mini batch Iter: 0 train_loss= 11.05171 graph_loss= 10.98207 reg_loss= 0.06964
+05/21/2022 23:20:04 - INFO: Mini batch Iter: 1 train_loss= 10.99649 graph_loss= 10.92716 reg_loss= 0.06933
+05/21/2022 23:20:05 - INFO: Mini batch Iter: 2 train_loss= 11.09139 graph_loss= 11.02235 reg_loss= 0.06905
+05/21/2022 23:20:05 - INFO: Mini batch Iter: 3 train_loss= 11.08228 graph_loss= 11.01351 reg_loss= 0.06877
+05/21/2022 23:20:05 - INFO: Time for epoch : 1.312544345855713
+05/21/2022 23:20:08 - INFO: Test results at epoch 5: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA08730>, {'operator_avg': [0.8162710494210222, 0.8162710494210222]}) best is : operator_avg 0.8162710494210222
+05/21/2022 23:20:09 - INFO: Mini batch Iter: 0 train_loss= 10.87869 graph_loss= 10.81018 reg_loss= 0.06852
+05/21/2022 23:20:10 - INFO: Mini batch Iter: 1 train_loss= 10.92767 graph_loss= 10.85939 reg_loss= 0.06828
+05/21/2022 23:20:11 - INFO: Mini batch Iter: 2 train_loss= 10.96957 graph_loss= 10.90149 reg_loss= 0.06808
+05/21/2022 23:20:12 - INFO: Mini batch Iter: 3 train_loss= 10.87119 graph_loss= 10.80329 reg_loss= 0.06789
+05/21/2022 23:20:12 - INFO: Time for epoch : 1.3438282012939453
+05/21/2022 23:20:14 - INFO: Test results at epoch 6: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028EA2F11268>, {'operator_avg': [0.8170422036757949, 0.8170422036757949]}) best is : operator_avg 0.8170422036757949
+05/21/2022 23:20:16 - INFO: Mini batch Iter: 0 train_loss= 10.86137 graph_loss= 10.79363 reg_loss= 0.06773
+05/21/2022 23:20:17 - INFO: Mini batch Iter: 1 train_loss= 11.00792 graph_loss= 10.94033 reg_loss= 0.06759
+05/21/2022 23:20:17 - INFO: Mini batch Iter: 2 train_loss= 10.72238 graph_loss= 10.65490 reg_loss= 0.06747
+05/21/2022 23:20:18 - INFO: Mini batch Iter: 3 train_loss= 10.64744 graph_loss= 10.58007 reg_loss= 0.06737
+05/21/2022 23:20:18 - INFO: Time for epoch : 1.2558789253234863
+05/21/2022 23:20:21 - INFO: Test results at epoch 7: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028EA2F11C80>, {'operator_avg': [0.8167140529290832, 0.8167140529290832]}) best is : operator_avg 0.8167140529290832
+05/21/2022 23:20:22 - INFO: Mini batch Iter: 0 train_loss= 10.70267 graph_loss= 10.63539 reg_loss= 0.06728
+05/21/2022 23:20:23 - INFO: Mini batch Iter: 1 train_loss= 10.69004 graph_loss= 10.62282 reg_loss= 0.06722
+05/21/2022 23:20:24 - INFO: Mini batch Iter: 2 train_loss= 10.65666 graph_loss= 10.58949 reg_loss= 0.06718
+05/21/2022 23:20:25 - INFO: Mini batch Iter: 3 train_loss= 10.52012 graph_loss= 10.45298 reg_loss= 0.06714
+05/21/2022 23:20:25 - INFO: Time for epoch : 1.3335871696472168
+05/21/2022 23:20:27 - INFO: Test results at epoch 8: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028EA2F11950>, {'operator_avg': [0.8155531563401904, 0.8155531563401904]}) best is : operator_avg 0.8155531563401904
+05/21/2022 23:20:28 - INFO: Mini batch Iter: 0 train_loss= 10.51142 graph_loss= 10.44429 reg_loss= 0.06712
+05/21/2022 23:20:29 - INFO: Mini batch Iter: 1 train_loss= 10.55764 graph_loss= 10.49052 reg_loss= 0.06713
+05/21/2022 23:20:30 - INFO: Mini batch Iter: 2 train_loss= 10.85419 graph_loss= 10.78706 reg_loss= 0.06713
+05/21/2022 23:20:31 - INFO: Mini batch Iter: 3 train_loss= 10.16423 graph_loss= 10.09709 reg_loss= 0.06715
+05/21/2022 23:20:31 - INFO: Time for epoch : 1.2933788299560547
+05/21/2022 23:20:34 - INFO: Test results at epoch 9: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA03D08>, {'operator_avg': [0.8140345444797642, 0.8140345444797642]}) best is : operator_avg 0.8140345444797642
+05/21/2022 23:20:35 - INFO: Mini batch Iter: 0 train_loss= 10.62681 graph_loss= 10.55964 reg_loss= 0.06717
+05/21/2022 23:20:37 - INFO: Mini batch Iter: 1 train_loss= 10.50310 graph_loss= 10.43590 reg_loss= 0.06720
+05/21/2022 23:20:38 - INFO: Mini batch Iter: 2 train_loss= 10.62728 graph_loss= 10.56007 reg_loss= 0.06721
+05/21/2022 23:20:39 - INFO: Mini batch Iter: 3 train_loss= 10.45940 graph_loss= 10.39220 reg_loss= 0.06720
+05/21/2022 23:20:39 - INFO: Time for epoch : 1.7188010215759277
+05/21/2022 23:20:42 - INFO: Test results at epoch 10: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA03C80>, {'operator_avg': [0.8118676660348499, 0.8118676660348499]}) best is : operator_avg 0.8118676660348499
+05/21/2022 23:20:43 - INFO: Mini batch Iter: 0 train_loss= 10.46128 graph_loss= 10.39410 reg_loss= 0.06719
+05/21/2022 23:20:44 - INFO: Mini batch Iter: 1 train_loss= 10.64632 graph_loss= 10.57917 reg_loss= 0.06716
+05/21/2022 23:20:45 - INFO: Mini batch Iter: 2 train_loss= 10.52104 graph_loss= 10.45392 reg_loss= 0.06713
+05/21/2022 23:20:46 - INFO: Mini batch Iter: 3 train_loss= 10.59366 graph_loss= 10.52656 reg_loss= 0.06710
+05/21/2022 23:20:46 - INFO: Time for epoch : 1.4464788436889648
+05/21/2022 23:20:49 - INFO: Test results at epoch 11: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA038C8>, {'operator_avg': [0.8127694614359551, 0.8127694614359551]}) best is : operator_avg 0.8127694614359551
+05/21/2022 23:20:50 - INFO: Mini batch Iter: 0 train_loss= 10.67430 graph_loss= 10.60722 reg_loss= 0.06708
+05/21/2022 23:20:52 - INFO: Mini batch Iter: 1 train_loss= 10.23361 graph_loss= 10.16657 reg_loss= 0.06705
+05/21/2022 23:20:53 - INFO: Mini batch Iter: 2 train_loss= 10.58368 graph_loss= 10.51667 reg_loss= 0.06701
+05/21/2022 23:20:54 - INFO: Mini batch Iter: 3 train_loss= 10.37906 graph_loss= 10.31209 reg_loss= 0.06697
+05/21/2022 23:20:54 - INFO: Time for epoch : 1.437406063079834
+05/21/2022 23:20:57 - INFO: Test results at epoch 12: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA03378>, {'operator_avg': [0.8132389899936536, 0.8132389899936536]}) best is : operator_avg 0.8132389899936536
+05/21/2022 23:20:58 - INFO: Mini batch Iter: 0 train_loss= 10.16128 graph_loss= 10.09435 reg_loss= 0.06693
+05/21/2022 23:20:59 - INFO: Mini batch Iter: 1 train_loss= 10.21360 graph_loss= 10.14671 reg_loss= 0.06689
+05/21/2022 23:21:00 - INFO: Mini batch Iter: 2 train_loss= 10.69552 graph_loss= 10.62867 reg_loss= 0.06685
+05/21/2022 23:21:01 - INFO: Mini batch Iter: 3 train_loss= 10.20026 graph_loss= 10.13345 reg_loss= 0.06681
+05/21/2022 23:21:01 - INFO: Time for epoch : 1.2812366485595703
+05/21/2022 23:21:03 - INFO: Test results at epoch 13: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA03840>, {'operator_avg': [0.8118666669480995, 0.8118666669480995]}) best is : operator_avg 0.8118666669480995
+05/21/2022 23:21:05 - INFO: Mini batch Iter: 0 train_loss= 10.45534 graph_loss= 10.38856 reg_loss= 0.06678
+05/21/2022 23:21:06 - INFO: Mini batch Iter: 1 train_loss= 10.49873 graph_loss= 10.43196 reg_loss= 0.06677
+05/21/2022 23:21:07 - INFO: Mini batch Iter: 2 train_loss= 10.52979 graph_loss= 10.46303 reg_loss= 0.06676
+05/21/2022 23:21:07 - INFO: Mini batch Iter: 3 train_loss= 10.37500 graph_loss= 10.30826 reg_loss= 0.06674
+05/21/2022 23:21:07 - INFO: Time for epoch : 1.2811706066131592
+05/21/2022 23:21:10 - INFO: Test results at epoch 14: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA08840>, {'operator_avg': [0.8117683483688853, 0.8117683483688853]}) best is : operator_avg 0.8117683483688853
+05/21/2022 23:21:11 - INFO: Mini batch Iter: 0 train_loss= 10.28928 graph_loss= 10.22255 reg_loss= 0.06674
+05/21/2022 23:21:12 - INFO: Mini batch Iter: 1 train_loss= 10.45880 graph_loss= 10.39207 reg_loss= 0.06673
+05/21/2022 23:21:13 - INFO: Mini batch Iter: 2 train_loss= 10.48780 graph_loss= 10.42108 reg_loss= 0.06672
+05/21/2022 23:21:14 - INFO: Mini batch Iter: 3 train_loss= 10.80391 graph_loss= 10.73722 reg_loss= 0.06670
+05/21/2022 23:21:14 - INFO: Time for epoch : 1.3125312328338623
+05/21/2022 23:21:17 - INFO: Test results at epoch 15: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA081E0>, {'operator_avg': [0.8124768978778553, 0.8124768978778553]}) best is : operator_avg 0.8124768978778553
+05/21/2022 23:21:18 - INFO: Mini batch Iter: 0 train_loss= 10.31355 graph_loss= 10.24690 reg_loss= 0.06665
+05/21/2022 23:21:19 - INFO: Mini batch Iter: 1 train_loss= 10.39343 graph_loss= 10.32683 reg_loss= 0.06660
+05/21/2022 23:21:20 - INFO: Mini batch Iter: 2 train_loss= 10.57798 graph_loss= 10.51143 reg_loss= 0.06655
+05/21/2022 23:21:20 - INFO: Mini batch Iter: 3 train_loss= 10.24938 graph_loss= 10.18287 reg_loss= 0.06651
+05/21/2022 23:21:20 - INFO: Time for epoch : 1.2968559265136719
+05/21/2022 23:21:23 - INFO: Test results at epoch 16: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA08158>, {'operator_avg': [0.8131346206073603, 0.8131346206073603]}) best is : operator_avg 0.8131346206073603
+05/21/2022 23:21:24 - INFO: Mini batch Iter: 0 train_loss= 9.93292 graph_loss= 9.86645 reg_loss= 0.06647
+05/21/2022 23:21:25 - INFO: Mini batch Iter: 1 train_loss= 10.71053 graph_loss= 10.64408 reg_loss= 0.06645
+05/21/2022 23:21:26 - INFO: Mini batch Iter: 2 train_loss= 10.11209 graph_loss= 10.04566 reg_loss= 0.06643
+05/21/2022 23:21:27 - INFO: Mini batch Iter: 3 train_loss= 10.47169 graph_loss= 10.40526 reg_loss= 0.06643
+05/21/2022 23:21:27 - INFO: Time for epoch : 1.2892451286315918
+05/21/2022 23:21:30 - INFO: Test results at epoch 17: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA08BF8>, {'operator_avg': [0.814937043463088, 0.814937043463088]}) best is : operator_avg 0.814937043463088
+05/21/2022 23:21:31 - INFO: Mini batch Iter: 0 train_loss= 10.29455 graph_loss= 10.22812 reg_loss= 0.06643
+05/21/2022 23:21:32 - INFO: Mini batch Iter: 1 train_loss= 10.39108 graph_loss= 10.32465 reg_loss= 0.06642
+05/21/2022 23:21:33 - INFO: Mini batch Iter: 2 train_loss= 10.37970 graph_loss= 10.31327 reg_loss= 0.06643
+05/21/2022 23:21:34 - INFO: Mini batch Iter: 3 train_loss= 9.85777 graph_loss= 9.79134 reg_loss= 0.06643
+05/21/2022 23:21:34 - INFO: Time for epoch : 1.369997262954712
+05/21/2022 23:21:37 - INFO: Test results at epoch 18: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA08A60>, {'operator_avg': [0.8166948310628735, 0.8166948310628735]}) best is : operator_avg 0.8166948310628735
+05/21/2022 23:21:38 - INFO: Mini batch Iter: 0 train_loss= 10.48167 graph_loss= 10.41525 reg_loss= 0.06643
+05/21/2022 23:21:39 - INFO: Mini batch Iter: 1 train_loss= 10.48273 graph_loss= 10.41631 reg_loss= 0.06643
+05/21/2022 23:21:40 - INFO: Mini batch Iter: 2 train_loss= 10.27643 graph_loss= 10.21001 reg_loss= 0.06642
+05/21/2022 23:21:40 - INFO: Mini batch Iter: 3 train_loss= 10.25619 graph_loss= 10.18977 reg_loss= 0.06642
+05/21/2022 23:21:40 - INFO: Time for epoch : 1.2394874095916748
+05/21/2022 23:21:43 - INFO: Test results at epoch 19: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028EA2F11F28>, {'operator_avg': [0.8168894419045127, 0.8168894419045127]}) best is : operator_avg 0.8168894419045127
+05/21/2022 23:21:44 - INFO: Mini batch Iter: 0 train_loss= 10.36199 graph_loss= 10.29558 reg_loss= 0.06641
+05/21/2022 23:21:45 - INFO: Mini batch Iter: 1 train_loss= 10.10691 graph_loss= 10.04051 reg_loss= 0.06640
+05/21/2022 23:21:46 - INFO: Mini batch Iter: 2 train_loss= 10.42771 graph_loss= 10.36132 reg_loss= 0.06640
+05/21/2022 23:21:47 - INFO: Mini batch Iter: 3 train_loss= 10.22177 graph_loss= 10.15538 reg_loss= 0.06640
+05/21/2022 23:21:47 - INFO: Time for epoch : 1.2902729511260986
+05/21/2022 23:21:50 - INFO: Test results at epoch 20: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA08620>, {'operator_avg': [0.8173620099373953, 0.8173620099373953]}) best is : operator_avg 0.8173620099373953
+05/21/2022 23:21:52 - INFO: Mini batch Iter: 0 train_loss= 10.44730 graph_loss= 10.38090 reg_loss= 0.06640
+05/21/2022 23:21:53 - INFO: Mini batch Iter: 1 train_loss= 9.94336 graph_loss= 9.87695 reg_loss= 0.06641
+05/21/2022 23:21:54 - INFO: Mini batch Iter: 2 train_loss= 10.58399 graph_loss= 10.51758 reg_loss= 0.06642
+05/21/2022 23:21:55 - INFO: Mini batch Iter: 3 train_loss= 9.97188 graph_loss= 9.90546 reg_loss= 0.06642
+05/21/2022 23:21:55 - INFO: Time for epoch : 1.330249309539795
+05/21/2022 23:21:58 - INFO: Test results at epoch 21: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA03510>, {'operator_avg': [0.817099151620561, 0.817099151620561]}) best is : operator_avg 0.817099151620561
+05/21/2022 23:47:59 - INFO: Mini batch Iter: 0 train_loss= 10.32847 graph_loss= 10.26205 reg_loss= 0.06642
+05/21/2022 23:48:01 - INFO: Mini batch Iter: 1 train_loss= 10.37953 graph_loss= 10.31311 reg_loss= 0.06641
+05/21/2022 23:48:02 - INFO: Mini batch Iter: 2 train_loss= 10.16078 graph_loss= 10.09438 reg_loss= 0.06641
+05/21/2022 23:48:02 - INFO: Mini batch Iter: 3 train_loss= 10.10130 graph_loss= 10.03491 reg_loss= 0.06639
+05/21/2022 23:48:02 - INFO: Time for epoch : 1.296734094619751
+05/21/2022 23:48:05 - INFO: Test results at epoch 22: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA03268>, {'operator_avg': [0.8164756933450973, 0.8164756933450973]}) best is : operator_avg 0.8164756933450973
+05/21/2022 23:48:06 - INFO: Mini batch Iter: 0 train_loss= 9.81016 graph_loss= 9.74378 reg_loss= 0.06638
+05/21/2022 23:48:07 - INFO: Mini batch Iter: 1 train_loss= 10.19880 graph_loss= 10.13243 reg_loss= 0.06636
+05/21/2022 23:48:08 - INFO: Mini batch Iter: 2 train_loss= 10.23558 graph_loss= 10.16924 reg_loss= 0.06635
+05/21/2022 23:48:09 - INFO: Mini batch Iter: 3 train_loss= 9.96665 graph_loss= 9.90031 reg_loss= 0.06634
+05/21/2022 23:48:09 - INFO: Time for epoch : 1.4127781391143799
+05/21/2022 23:48:12 - INFO: Test results at epoch 23: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028EA2F1CA60>, {'operator_avg': [0.8163425755893557, 0.8163425755893557]}) best is : operator_avg 0.8163425755893557
+05/21/2022 23:48:13 - INFO: Mini batch Iter: 0 train_loss= 10.46420 graph_loss= 10.39786 reg_loss= 0.06634
+05/21/2022 23:48:14 - INFO: Mini batch Iter: 1 train_loss= 9.94572 graph_loss= 9.87938 reg_loss= 0.06635
+05/21/2022 23:48:15 - INFO: Mini batch Iter: 2 train_loss= 10.09892 graph_loss= 10.03256 reg_loss= 0.06636
+05/21/2022 23:48:15 - INFO: Mini batch Iter: 3 train_loss= 10.26464 graph_loss= 10.19827 reg_loss= 0.06637
+05/21/2022 23:48:15 - INFO: Time for epoch : 1.3006205558776855
+05/21/2022 23:48:18 - INFO: Test results at epoch 24: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028EC91F5F28>, {'operator_avg': [0.8166855719208779, 0.8166855719208779]}) best is : operator_avg 0.8166855719208779
+05/21/2022 23:48:19 - INFO: Mini batch Iter: 0 train_loss= 9.80203 graph_loss= 9.73564 reg_loss= 0.06639
+05/21/2022 23:48:20 - INFO: Mini batch Iter: 1 train_loss= 10.23074 graph_loss= 10.16434 reg_loss= 0.06640
+05/21/2022 23:48:21 - INFO: Mini batch Iter: 2 train_loss= 10.43321 graph_loss= 10.36681 reg_loss= 0.06640
+05/21/2022 23:48:22 - INFO: Mini batch Iter: 3 train_loss= 10.37247 graph_loss= 10.30608 reg_loss= 0.06639
+05/21/2022 23:48:22 - INFO: Time for epoch : 1.2883265018463135
+05/21/2022 23:48:25 - INFO: Test results at epoch 25: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E9AF13840>, {'operator_avg': [0.816706482384412, 0.816706482384412]}) best is : operator_avg 0.816706482384412
+05/21/2022 23:48:26 - INFO: Mini batch Iter: 0 train_loss= 10.32220 graph_loss= 10.25583 reg_loss= 0.06638
+05/21/2022 23:48:27 - INFO: Mini batch Iter: 1 train_loss= 10.01749 graph_loss= 9.95113 reg_loss= 0.06636
+05/21/2022 23:48:28 - INFO: Mini batch Iter: 2 train_loss= 10.11071 graph_loss= 10.04437 reg_loss= 0.06634
+05/21/2022 23:48:29 - INFO: Mini batch Iter: 3 train_loss= 9.95764 graph_loss= 9.89133 reg_loss= 0.06632
+05/21/2022 23:48:29 - INFO: Time for epoch : 1.2757878303527832
+05/21/2022 23:48:32 - INFO: Test results at epoch 26: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E0DA11158>, {'operator_avg': [0.8170618054764026, 0.8170618054764026]}) best is : operator_avg 0.8170618054764026
+05/21/2022 23:48:32 - INFO: Mini batch Iter: 0 train_loss= 10.07694 graph_loss= 10.01064 reg_loss= 0.06630
+05/21/2022 23:48:34 - INFO: Mini batch Iter: 1 train_loss= 10.11946 graph_loss= 10.05316 reg_loss= 0.06630
+05/21/2022 23:48:35 - INFO: Mini batch Iter: 2 train_loss= 10.77174 graph_loss= 10.70543 reg_loss= 0.06631
+05/21/2022 23:48:35 - INFO: Mini batch Iter: 3 train_loss= 10.60103 graph_loss= 10.53471 reg_loss= 0.06632
+05/21/2022 23:48:35 - INFO: Time for epoch : 1.2226190567016602
+05/21/2022 23:48:38 - INFO: Test results at epoch 27: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028E9AF137B8>, {'operator_avg': [0.8184273600610146, 0.8184273600610146]}) best is : operator_avg 0.8184273600610146
+05/21/2022 23:48:39 - INFO: Mini batch Iter: 0 train_loss= 9.72256 graph_loss= 9.65623 reg_loss= 0.06633
+05/21/2022 23:48:40 - INFO: Mini batch Iter: 1 train_loss= 10.03139 graph_loss= 9.96506 reg_loss= 0.06633
+05/21/2022 23:48:41 - INFO: Mini batch Iter: 2 train_loss= 10.16679 graph_loss= 10.10046 reg_loss= 0.06633
+05/21/2022 23:48:42 - INFO: Mini batch Iter: 3 train_loss= 10.19869 graph_loss= 10.13237 reg_loss= 0.06632
+05/21/2022 23:48:42 - INFO: Time for epoch : 1.2657155990600586
+05/21/2022 23:48:44 - INFO: Test results at epoch 28: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028EA2F18AE8>, {'operator_avg': [0.8191355859221641, 0.8191355859221641]}) best is : operator_avg 0.8191355859221641
+05/21/2022 23:48:45 - INFO: Mini batch Iter: 0 train_loss= 10.07941 graph_loss= 10.01310 reg_loss= 0.06631
+05/21/2022 23:48:46 - INFO: Mini batch Iter: 1 train_loss= 10.18581 graph_loss= 10.11952 reg_loss= 0.06629
+05/21/2022 23:48:47 - INFO: Mini batch Iter: 2 train_loss= 10.13427 graph_loss= 10.06799 reg_loss= 0.06628
+05/21/2022 23:48:48 - INFO: Mini batch Iter: 3 train_loss= 10.65259 graph_loss= 10.58632 reg_loss= 0.06627
+05/21/2022 23:48:48 - INFO: Time for epoch : 1.3207035064697266
+05/21/2022 23:48:51 - INFO: Test results at epoch 29: AUC: defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028EA2F18158>, {'operator_avg': [0.8195026025506261, 0.8195026025506261]}) best is : operator_avg 0.8195026025506261
+05/21/2022 23:48:51 - INFO: Best epoch 29
+05/21/2022 23:48:54 - INFO: Best epoch test results defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x0000028EA2F18AE8>, {'operator_avg': [0.8195026025506261, 0.8195026025506261]})
+
