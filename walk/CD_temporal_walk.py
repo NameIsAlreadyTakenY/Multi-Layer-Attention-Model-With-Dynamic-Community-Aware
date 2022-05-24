@@ -1,7 +1,9 @@
+from random import random
 import numpy as np
 from scipy import stats
 from random_state import random_state
 from queue import PriorityQueue
+import math
 
 
 def logsumexp(a, axis=None, b=None, keepdims=False, return_sign=False):
@@ -112,10 +114,12 @@ class CD_temporal_walk(GraphWalk):
         walk_bias=None,
         p_walk_success_threshold=0.01,
         seed=None,
-
         nodes_com_d=None,
         com_nodes_d=None,
-        communities_wight=2.0
+        communities_wight=1.0,
+        k_value = 0.5,
+        node_time_index = [],
+        is_forward = False
     ):
         self.cw_size = cw_size
         self.max_walk_length = max_walk_length
@@ -128,12 +132,16 @@ class CD_temporal_walk(GraphWalk):
         self.nodes_com_d=nodes_com_d #node：com
         self.com_nodes_d=com_nodes_d #com：{node}
         self.communities_wight=communities_wight
+        self.k_value = k_value
+        self.node_time_index = node_time_index
+        self.is_forward = is_forward
     def run(
         self,
         num_cw,
         cw_size=None,
         max_walk_length=None,
         initial_edge_bias=None,
+        # initial_edge_bias='exponential',
         walk_bias=None,
         p_walk_success_threshold=None,
         seed=None,
@@ -173,7 +181,7 @@ class CD_temporal_walk(GraphWalk):
         sources = self.data['source']
         targets = self.data['target']
         times = self.data['time']
-        edge_biases = self._temporal_biases(times, None, bias_type=initial_edge_bias, is_forward=False,)
+        edge_biases = self._temporal_biases(times, None, bias_type=initial_edge_bias, is_forward=self.is_forward)
         successes = 0
         failures = 0
 
@@ -183,7 +191,6 @@ class CD_temporal_walk(GraphWalk):
 
         while num_cw_curr < num_cw:
             first_edge_index = self._sample(len(times), edge_biases, np_rs)
-            
             src = sources[first_edge_index]
             dst = targets[first_edge_index]
             t = times[first_edge_index]
@@ -198,12 +205,15 @@ class CD_temporal_walk(GraphWalk):
             else:
                 failures += 1
                 if not_progressing_enough():
-                    raise RuntimeError(
-                        f"Discarded {failures} walks out of {failures + successes}. "
-                        f"Consider using a smaller context window size (currently cw_size={cw_size})."
-                    )
-        print('successes',successes)
-        print('failures',failures)
+                    walk = walk * math.ceil(cw_size/len(walk))
+                    walks.append(walk)
+                    num_cw_curr += len(walk) - cw_size + 1
+                    # raise RuntimeError(
+                    #     f"Discarded {failures} walks out of {failures + successes}. "
+                    #     f"Consider using a smaller context window size (currently cw_size={cw_size})."
+                    # )
+        # print('successes',successes)
+        # print('failures',failures)
         return walks
 
     def _sample(self, n, biases, np_rs):
@@ -214,19 +224,20 @@ class CD_temporal_walk(GraphWalk):
             return np_rs.choice(n)
 
     def _exp_biases(self, times, t_0, decay):
-        # t_0 assumed to be smaller than all time values
-        return softmax(t_0 - np.array(times) if decay else np.array(times) - t_0)
+        if decay:
+            return softmax(t_0 - np.array(times))
+        else:
+            return softmax(np.array(times) - t_0)
 
     def _temporal_biases(self, times, time, bias_type, is_forward):
         if bias_type is None:
-            # default to uniform random sampling
             return None
-
-        # time is None indicates we should obtain the minimum available time for t_0
-        t_0 = time if time is not None else min(times)
+        if(is_forward):
+            t_0 = time if time is not None else min(times)
+        else:
+            t_0 = time if time is not None else max(times)
 
         if bias_type == "exponential":
-            # exponential decay bias needs to be reversed if looking backwards in time
             return self._exp_biases(times, t_0, decay=is_forward)
         else:
             raise ValueError("Unsupported bias type")
@@ -237,32 +248,33 @@ class CD_temporal_walk(GraphWalk):
         for com_id in list_communites:
             communities_nodesList = self.com_nodes_d[com_id]
             for nodes in communities_nodesList:
-                if(same_communites_nodesList.get(nodes) == None):
+                if(same_communites_nodesList.get(nodes) == None and nodes!= src and nodes!= dst):
                     same_communites_nodesList[nodes]=1
 
         walk = [src, dst]
         node, time = dst, t
         for _ in range(length - 2):
-            result = self._next_step(node, time=time, bias_type=bias_type, np_rs=np_rs,same_communites_nodesList=same_communites_nodesList)
-            if result is not None:
-                node, time = result
-                walk.append(node)
+            k = random()
+            if(k <= self.k_value):
+                result = self._next_step(node, time=time, bias_type=bias_type, np_rs=np_rs,same_communites_nodesList=same_communites_nodesList)
+                if result is not None:#choice node from com 
+                    node, time = result
+                    walk.append(node)
+                else:
+                    break
             else:
-                break #找不到next了
+                result = self._step(node, time=time, bias_type=bias_type, np_rs=np_rs)
+                if result is not None:
+                    node, time = result
+                    walk.append(node)
+                else:
+                    break
         return walk
 
     def _next_step(self, node, time, bias_type, np_rs, same_communites_nodesList):
-        neighbours, times = self._neighbor_arrays(node)
-        index=0
-        for id,t in enumerate(times):
-            if(t>=time):
-                index = id
-                break;
-            
-        neighbours = neighbours[index:]
-        times = times[index:]
+        neighbours, times = self._CD_neighbor_arrays(node, same_communites_nodesList, time, self.is_forward)
         if len(neighbours) > 0:
-            biases = self._temporal_biases(times, time, bias_type, is_forward=True)
+            biases = self._temporal_biases(times, time, bias_type, is_forward=self.is_forward)
             for node_index,node_id in enumerate(neighbours):
                 if(same_communites_nodesList.get(node_id) == 1):
                     biases[node_index]=biases[node_index]*self.communities_wight
@@ -276,20 +288,59 @@ class CD_temporal_walk(GraphWalk):
         else:
             return None
 
-    def _neighbor_arrays(self,node):
+    def _step(self, node, time, bias_type, np_rs):
+        neighbours, times = self._neighbor_arrays(node,time,self.is_forward)
+        if len(neighbours) > 0:
+            biases = self._temporal_biases(times, time, bias_type, is_forward=self.is_forward)
+            chosen_neighbour_index = self._sample(len(neighbours), biases, np_rs)
+            assert chosen_neighbour_index is not None, "biases should never be all zero"
+            next_node = neighbours[chosen_neighbour_index]
+            next_time = times[chosen_neighbour_index]
+            return next_node, next_time
+        else:
+            return None
+
+    def _neighbor_arrays(self,node,time_now,is_forward):
         qr = PriorityQueue()
         neighbor_nodes= self.graph.adj.get(node)
-        time = []
+        times = []
         neighbors = []
         for nbr, eattr in neighbor_nodes.items():
             for id in eattr:
-                qr.put((eattr[id]['time'],nbr))
+                time = eattr[id]['time']
+                if(is_forward):
+                    if(time > time_now):
+                        qr.put((time,nbr))
+                else:
+                    if(time < time_now):
+                        qr.put((time,nbr))
 
-        time = []
+        times = []
         neighbors = []
         while not qr.empty():
             item = qr.get()
-            time.append(item[0])
+            times.append(item[0])
             neighbors.append(item[1])
         
-        return neighbors,time
+        return neighbors,times
+    
+    def _CD_neighbor_arrays(self, node, same_communites_nodesList, time_now, is_forward):
+        qr = PriorityQueue()
+        for node in same_communites_nodesList:
+            timeList = self.node_time_index[node]
+            for time in timeList:
+                if(is_forward):
+                    if(time < time_now):
+                        qr.put((time,node))
+                else:
+                    if(time < time_now):
+                        qr.put((time,node))
+
+        times = []
+        neighbors = []
+        while not qr.empty():
+            item = qr.get()
+            times.append(item[0])
+            neighbors.append(item[1])
+
+        return neighbors,times

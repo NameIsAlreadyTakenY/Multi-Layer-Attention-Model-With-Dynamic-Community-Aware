@@ -119,7 +119,7 @@ placeholders = construct_placeholders(num_time_steps,num_features)
 
 minibatchIterator = NodeMinibatchIterator(graphs, feats_train, adj_train,
                                           placeholders, num_time_steps, batch_size=FLAGS.batch_size,
-                                          context_pairs=context_pairs_train)
+                                          NS=context_pairs_train)
 
 model = DyMADC(placeholders, num_features, num_features_nonzero, minibatchIterator.degs)
 sess.run(tf.global_variables_initializer())
